@@ -1,1 +1,1 @@
-# exo responsive webdesign BTS design graphique numérique
+# exo responsive BTS design graphique numérique
