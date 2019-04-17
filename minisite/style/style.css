@@ -1,0 +1,121 @@
+body{
+     background-color: #A9E5BB;
+}
+
+header{
+     position: fixed;
+     top: 0px;
+     width: 100%;
+          z-index: 8;
+}
+
+
+h1{
+     font-family: 'Space Mono', monospace;
+     font-size: 3em;
+     padding: 3px;
+     color: black;
+
+
+}
+
+h1 a, footer a{
+     color: black;
+     border-bottom: 2px solid currentColor;
+     display: inline-block;
+     line-height: 1.1;
+     text-decoration: none;
+
+
+}
+
+footer{
+     z-index: 5;  
+     position: fixed;
+     bottom: 0px;
+     width: 100vw;
+
+}
+
+p{
+     font-family: 'Space Mono', monospace;
+     font-size: 1em;
+     padding-bottom: 10px;
+     padding-top: 5px;   
+     padding-left: 3px;       
+
+
+}
+
+hr{
+     background-color: black;
+     height: 3px;
+     border: black;
+}
+
+
+
+
+footer{
+     
+     position: fixed;
+     bottom: 0px;
+     width: 100vw;
+
+}
+
+p{
+     font-family: 'Space Mono', monospace;
+     font-size: 1em;
+     padding-bottom: 10px;
+     padding-top: 5px;   
+     padding-left: 3px;       
+
+
+}
+
+
+
+
+#draggable1{background-color: rgba(0,0,0,0);
+          z-index: 12;
+          color: white;
+          border: none;
+          position: fixed;
+          left: 65vw;
+          top: 40vh;
+          cursor: pointer;
+          }
+
+
+#draggable2{background-color: rgba(0,0,0,0);
+          z-index: 13;
+          color: white;
+          border: none;
+          position: fixed;
+          left:10vw;
+          top: 20vh;
+          cursor: pointer;
+          }
+
+
+#draggable3{background-color: rgba(0,0,0,0);
+          z-index: 14;
+          color: white;
+          border: none;
+          position: fixed;
+          left:35vw;
+          top: 60vh;
+          cursor: pointer;
+          }
+
+#draggable4{background-color: rgba(0,0,0,0);
+          z-index: 14;
+          color: white;
+          border: none;
+          position: fixed;
+          left:45vw;
+          top: 5vh;
+          cursor: pointer;
+
+          }
