@@ -27,17 +27,18 @@ header{
 
 
 
-/*header:hover{
-	height: 380px;
+
+header:hover{
+	height: 75px;
 	transition: all 1s ease;
 	background-color: #2DE1FC;	
-}*/
-
+}
+/*
 header:active{
 	height: 380px;
 	transition: all 1s ease;
 	background-color: #2DE1FC;	
-}
+}*/
 
 
 h1{
