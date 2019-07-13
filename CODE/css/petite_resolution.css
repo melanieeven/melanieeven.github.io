@@ -31,13 +31,13 @@ header{
 header:hover{
 	height: 75px;
 	transition: all 1s ease;
-	background-color: #2DE1FC;	
+	background-color: white;	
 }
 /*
 header:active{
 	height: 380px;
 	transition: all 1s ease;
-	background-color: #2DE1FC;	
+	background-color: white;	
 }*/
 
 
