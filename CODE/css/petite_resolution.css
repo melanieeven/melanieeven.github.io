@@ -180,7 +180,6 @@ nav{
 	vertical-align: middle;	
 	width: 95vw;
 	margin :auto;
-	border: 1px solid red;
 }
 
 li{
@@ -196,8 +195,7 @@ li{
 
 .picto{
 	width: auto;
-	border: 1px solid green;
-	height: 10px;
+	height: auto;
 	margin-left: 5px;
 	font-size: 1.3em;
 	padding-top: 0px;
