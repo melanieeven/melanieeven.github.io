@@ -37,7 +37,7 @@ header{
 header:hover{
 	height: 75px;
 	transition: all 1s ease;
-	background-color: #2DE1FC;	
+	background-color: #FAFAFA;	
 }
 /*
 header:active{
