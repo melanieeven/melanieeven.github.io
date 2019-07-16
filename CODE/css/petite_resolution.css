@@ -1,0 +1,229 @@
+
+#bodyindex{
+	background-color: #FAFAFA;
+}
+
+
+
+
+
+/*
+
+
+██╗  ██╗███████╗ █████╗ ██████╗ ███████╗██████╗ 
+██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗
+███████║█████╗  ███████║██║  ██║█████╗  ██████╔╝
+██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══╝  ██╔══██╗
+██║  ██║███████╗██║  ██║██████╔╝███████╗██║  ██║
+╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+                                                
+                                   
+*/
+
+header{
+	height: 85px;
+	position: relative;
+	overflow-x: auto;	
+	top: 0;
+	left: 0;
+	transition: all 1s ease;	
+	background-color: #FAFAFA;
+	/*border: 1px solid black;*/
+	width: 100vw;
+}
+
+
+
+header:hover{
+	height: 85px;
+	transition: all 1s ease;
+	background-color: #FAFAFA;	
+}
+/*
+header:active{
+	height: 380px;
+	transition: all 1s ease;
+	background-color: #2DE1FC;	
+}*/
+
+
+h1{
+	font-size: 0.8em;
+	line-height: 1.6em;
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 300, "wdth" 100;	
+	overflow: hidden;
+	color: black;
+	padding: 5px;
+	margin-top: 0px;
+	height: auto;
+	width: 80vw;
+	display: inline-block;	
+	vertical-align: top;
+
+}
+
+
+#logohaut{
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+	width: 50px;
+}
+
+#logohaut img{
+	transform: rotate(-0.02turn);
+	margin-left: 10px;
+	width: 25px;
+}
+
+
+/*
+
+
+██╗███████╗██████╗  █████╗ ███╗   ███╗███████╗
+██║██╔════╝██╔══██╗██╔══██╗████╗ ████║██╔════╝
+██║█████╗  ██████╔╝███████║██╔████╔██║█████╗  
+██║██╔══╝  ██╔══██╗██╔══██║██║╚██╔╝██║██╔══╝  
+██║██║     ██║  ██║██║  ██║██║ ╚═╝ ██║███████╗
+╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝
+                                                                                                                                               
+                                   
+*/
+
+#grille{
+	margin-top:0px;
+	margin-bottom: 50px;
+
+}
+
+.colonne{
+	margin-top: 0px;
+	display:block;
+	width: 90vw;	
+	margin-left: 20px; 		
+	padding: 5px;
+	background-color:white ;
+	height: 40vh;	
+
+}
+
+
+
+.headerarticletheorie{
+	width: 100%;
+	height: 80px;
+	/*border: 1px solid grey;*/
+	/*background-color: #ff2c5e;*/
+}
+
+.headerarticletheorie .boiteimage{
+	height: 80px;
+	width: 100%;	
+	display: flex;
+	overflow: hidden;
+}
+
+.headerarticletechnique{
+	width: 100%;
+	height: 80px;
+	border: 1px solid red;
+	/*border: 1px solid grey;*/
+	/*background-color: #03CEA4;*/
+}
+
+.headerarticletechnique .boiteimage{
+	height: 80px;
+	width: 100%;	
+	display: flex;
+	overflow: hidden;
+}
+
+/*
+
+
+███████╗ ██████╗  ██████╗ ████████╗███████╗██████╗ 
+██╔════╝██╔═══██╗██╔═══██╗╚══██╔══╝██╔════╝██╔══██╗
+█████╗  ██║   ██║██║   ██║   ██║   █████╗  ██████╔╝
+██╔══╝  ██║   ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗
+██║     ╚██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║
+╚═╝      ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝
+                                                                                                 
+                                   
+*/
+
+footer{
+	height: 25px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	padding-top: 10px;
+	display: block;
+	justify-content: space-between;
+	align-items: center;	
+	background-color: #FAFAFA;
+
+}
+
+#logo{
+	vertical-align: middle;
+	width: 200px;
+	height: 20px;
+	margin: auto ;
+	display: none;
+	align-items: center;		
+
+}
+
+
+nav{
+	vertical-align: middle;	
+	width: 95vw;
+	margin :auto;
+}
+
+li{
+	display: flex;
+	align-items: center;
+	width: auto;
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 400, "wdth" 80;	
+	font-size: 0.6em;
+	text-align: right;
+
+}
+
+.picto{
+	width: auto;
+	height: auto;
+	margin-left: 5px;
+	font-size: 1.3em;
+	padding-top: 0px;
+	transform: rotate(0deg) translate(0%, 0%);
+	transition: all 0.2s ease;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
