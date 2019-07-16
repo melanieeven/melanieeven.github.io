@@ -227,6 +227,10 @@ li{
 
 }
 
+#cache{
+	display: none;
+}
+
 .colonne{
 	display: inline-block;
 	width: 28vw;	
