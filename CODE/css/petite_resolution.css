@@ -1,3 +1,41 @@
+/*
+
+
+████████╗██╗   ██╗██████╗  ██████╗ 
+╚══██╔══╝╚██╗ ██╔╝██╔══██╗██╔═══██╗
+   ██║    ╚████╔╝ ██████╔╝██║   ██║
+   ██║     ╚██╔╝  ██╔═══╝ ██║   ██║
+   ██║      ██║   ██║     ╚██████╔╝
+   ╚═╝      ╚═╝   ╚═╝      ╚═════╝ 
+ 
+
+*/
+
+
+@font-face {
+    font-family: 'resistanceregular';
+    src: url('font/resistance_generale-webfont.eot');
+    src: url('font/resistance_generale-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/resistance_generale-webfont.woff2') format('woff2'),
+         url('font/resistance_generale-webfont.woff') format('woff'),
+         url('font/resistance_generale-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'etc-trispace';
+	 src: url('font/etc/ETCTrispaceVariable.woff2') format('woff2-variations'); 
+}
+
+
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
 
 #bodyindex{
 	background-color: #FAFAFA;
@@ -60,6 +98,7 @@ h1{
 	width: 80vw;
 	display: inline-block;	
 	vertical-align: top;
+
 
 }
 
@@ -207,7 +246,11 @@ li{
 }
 
 
-
+#credits{
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 100, "wdth" 70;	
+	font-size: 0.5em;
+}
 
 
 
