@@ -92,6 +92,10 @@ strong{
 
 }
 
+#cache{
+	display: inline-block;
+}
+
 .colonne{
 	display: inline-block;
 	width: 24vw;	
