@@ -273,10 +273,17 @@ aside{
 h3{
 	font-family: 'etc-trispace';
 	text-transform: uppercase;
+	font-variation-settings: "wght" 900, "wdth" 140;		
 	height: auto;
 	font-size: 0.8em;
 
 }
+
+.light{
+		font-variation-settings: "wght" 90, "wdth" 140;		
+
+}
+
 
 .titreliste{
 	font-family: 'etc-trispace';
