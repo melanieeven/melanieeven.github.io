@@ -77,7 +77,7 @@ header:hover{
 
 
 h1{
-	font-size: 1em;
+	font-size: 0.8em;
 	line-height: 1.6em;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 300, "wdth" 100;	
@@ -133,7 +133,7 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;	
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,1);
 
 }
 
@@ -184,7 +184,7 @@ li{
 	align-items: center;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 400, "wdth" 80;	
-	font-size: 0.8em;
+	font-size: 0.7em;
 
 }
 
@@ -274,9 +274,74 @@ h3{
 	font-family: 'etc-trispace';
 	text-transform: uppercase;
 	height: auto;
-	font-size: 0.7em;
+	font-size: 0.8em;
 
 }
+
+.titreliste{
+	font-family: 'etc-trispace';
+	font-size: 0.6em;
+	height: 10px;
+	margin-bottom: -10px;
+	font-variation-settings: "wght" 90, "wdth" 80;		
+}
+
+.filtre{
+	width: 95%;
+	height: 40px;
+	margin-left: -5%;
+}
+
+.filtre a{
+	text-decoration: underline;
+}
+
+
+.listefiltre{
+	display: flex;
+	justify-content: space-around;	
+	margin-top: 15px;
+}
+
+
+.titrefiltre{
+	margin-left: -8px;
+}
+
+.checkon, .checkoff{
+	width: 10px;
+	height: 10px;
+	transition: left 0.3s ease;
+}
+
+.checkon{
+	position: relative;
+	left: -21px;
+
+}
+
+.checkoff{
+	position: relative;
+	left: 0px;
+}
+
+
+
+.filtrecours .checkon, .filtretechnique .checkon, .filtreref .checkon, .filtreall .checkon{
+ 	opacity: 0;
+}
+
+.filtrecours:hover .checkon, .filtretechnique:hover .checkon, .filtreref:hover .checkon, .filtreall:hover .checkon{
+	opacity: 1;
+	left: -11px;
+}
+
+.filtrecours:hover .checkoff, .filtretechnique:hover .checkoff, .filtreref:hover .checkoff, .filtreall:hover .checkoff{
+ 	opacity: 0;
+ 	left: 10px;	
+}
+
+
 
 
 article{
@@ -308,7 +373,7 @@ box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 .titre{
 	width: 90%;
 	height: auto;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	margin-left: 10px;
 	padding-bottom: 10px;
 	margin-top: -5px;
@@ -365,10 +430,10 @@ box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 	margin-top: -5px;
 	margin-left: -5px;		
 
-	font-size: 0.8em;
+	font-size: 0.7em;
 	text-align: right;
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 200, "wdth" 40;	
+	font-variation-settings: "wght" 200, "wdth" 80;	
 	
 }
 
@@ -398,14 +463,14 @@ box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 .categorietechnique{
 	/*border: 1px solid black;*/	
 	width: 100%;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	text-align: right;	
 	color: #03CEA4;
 	height: 20px;
 	margin-top: -5px;
 	margin-left: -5px;		
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 200, "wdth" 40;	
+	font-variation-settings: "wght" 200, "wdth" 80;	
 	
 }
 .headerarticletechnique .boiteimage{
@@ -513,7 +578,7 @@ box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 
 
 .retour{
-
+	font-size: 0.7em;
 	width: 100%;
 	height: auto;
 	color: black;
@@ -536,7 +601,7 @@ box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 
 h4{
 
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 600, "wdth" 120;	
 }
@@ -581,7 +646,7 @@ margin: auto;
 
 
 .conteneurarticle p{
-	font-size: 1em;
+	font-size: 0.9em;
 	line-height: 1.3em;
 	margin-top: 5px;
 	margin-bottom: 15px;
@@ -590,4 +655,14 @@ margin: auto;
 
 }
 
+.lien {
+	font-size: 0.7em;
+	text-decoration: none;
+	text-align: right;
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 200, "wdth" 80;		
+}
 
+.lien a:hover {
+	text-decoration: underline;
+}
