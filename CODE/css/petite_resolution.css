@@ -59,7 +59,7 @@ a{
 */
 
 header{
-	height: 95px;
+	height: 140px;
 	position: relative;
 	overflow-x: auto;	
 	top: 0;
@@ -90,7 +90,7 @@ h1{
 	font-variation-settings: "wght" 300, "wdth" 100;	
 	overflow: hidden;
 	color: black;
-	padding: 25px 5px 5px 5px;
+	padding: 55px 5px 5px 5px;
 	margin:auto;
 	height: auto;
 	width: 70vw;
@@ -207,7 +207,7 @@ h1{
 */
 
 footer{
-	height: 20px;
+	height: 40px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -247,7 +247,7 @@ h2{
 }
 
 nav{
-	margin-top:-5px;
+	margin-top:0px;
 	vertical-align: middle;	
 	width: auto;
 	margin-right: 20px;
@@ -269,8 +269,9 @@ li{
 	align-items: center;
 	width: auto;
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 500, "wdth" 120;	
-	font-size: 0.6em;
+	font-variation-settings: "wght" 100, "wdth" 90;	
+	font-size: 0.8em;
+	text-transform: uppercase;
 	text-align: right;
 
 }
@@ -278,7 +279,7 @@ li{
 .picto{
 	width: auto;
 	height: auto;
-	margin-left: 5px;
+	margin-left: 15px;
 	font-size: 1.3em;
 	margin-top: 2px;
 	transform: rotate(0deg) translate(0%, 0%);
