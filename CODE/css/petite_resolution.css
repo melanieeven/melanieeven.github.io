@@ -39,6 +39,7 @@ a{
 
 #bodyindex{
 	background-color: #f2f2f2;
+	padding-bottom: 50px;
 }
 
 
@@ -61,13 +62,13 @@ a{
 header{
 	height: 140px;
 	position: relative;
-	overflow-x: auto;	
-	top: 0;
-	left: 0;
+	overflow: auto;	
+	margin:auto;
 	transition: all 1s ease;	
 	background-color: #f2f2f2;
 	/*border: 1px solid black;*/
-	width: 100vw;
+	width: 80vw;
+
 }
 
 
@@ -90,7 +91,7 @@ h1{
 	font-variation-settings: "wght" 300, "wdth" 100;	
 	overflow: hidden;
 	color: black;
-	padding: 55px 5px 5px 5px;
+	padding: 55px 0px 0px 0px;
 	margin:auto;
 	height: auto;
 	width: 70vw;
@@ -119,13 +120,13 @@ h1{
 
 
 .scroll::-webkit-scrollbar {
-  width: 7px;
+  width: 3px;
   height: 8px;
-  background-color: #fff; /* or add it to the track */
+  background-color: #f2f2f2; /* or add it to the track */
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background:#f2f2f2; 
+    background: lightgrey;
 }
 
 
@@ -250,7 +251,6 @@ nav{
 	margin-top:0px;
 	vertical-align: middle;	
 	width: auto;
-	margin-right: 20px;
 	background-color: rgba(255,255,255,1);
 }
 
@@ -269,8 +269,8 @@ li{
 	align-items: center;
 	width: auto;
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 100, "wdth" 90;	
-	font-size: 0.8em;
+	font-variation-settings: "wght" 300, "wdth" 90;	
+	font-size: 0.7em;
 	text-transform: uppercase;
 	text-align: right;
 
