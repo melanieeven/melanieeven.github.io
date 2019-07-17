@@ -71,7 +71,7 @@ header{
 }
 
 header:hover{
-	height: 270px;
+	height: 290px;
 	transition: all 0.9s ease;
 	background-color: #2DE1FC;	
 }
@@ -106,7 +106,7 @@ h1{
 }
 
 strong{
-	font-weight: 800;
+	font-weight: 900;
 }
 
 
@@ -250,8 +250,10 @@ li{
 	height: calc(100vh - 95px);
 	 -webkit-height: calc(100vh - 95px);
 	 -moz-height: calc(100vh - 95px);
+ 
 	/*border: 1px solid lightgrey;	*/
 }
+
 
 
 
@@ -282,10 +284,10 @@ li{
 }
 
 article{
-	width: 85%;
+	width: 90%;
 	height: auto;
 	box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
-	margin:0px auto 30px;
+	margin:10px 20px 40px;
 	transition: all ease 0.4s;
 
 }
@@ -299,7 +301,7 @@ article:hover{
 
 
 aside{
-	width: 85%;
+	width: 90%;
 	height: 20px;
 	margin:0px auto 10px;
 }
@@ -319,9 +321,22 @@ h3{
 
 }
 
+.reference{
+	color:#FF783A;
+}
+
+.technique{
+	color:#03CEA4;
+}
+
+.cours{
+	color:#ff2c5e;
+}
+
+
 
 .filtre{
-	width: 85%;
+	width: 90%;
 	margin:auto;
 	height: 40px;
 	/*border: 1px solid red;*/
@@ -339,7 +354,7 @@ h3{
 
 
 .filtre a{
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 
@@ -437,15 +452,39 @@ h3{
 	font-size: 0.8em;
 	margin-left: 0px;
 	padding-bottom: 10px;
-	margin-top: 0px;
+	margin-top: -2px;
 	line-height: 1.4em;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 200, "wdth" 90;		
 }
 
 
+.plus{
+	/*border: 1px solid black;*/
+	border-radius: 7px;
+	width: 14px;
+	height: 14px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;	
+	text-align: center;
+	position: relative;
+	top: -10px;
+	left: 95%;
+	transform-origin: center;		
+	background-color: white;
+	color:black ;
+
+}
+.plus:hover{
+	transform-origin: center;		
+	background-color: #ff2c5e;
+	transform: rotate(360deg);	
+	color: white;
+	transition: 1s all ease;	
 
 
+}
 
 /*
 
@@ -499,6 +538,26 @@ h3{
 	font-variation-settings: "wght" 200, "wdth" 80;	
 	
 }
+
+
+
+.categoriereference{
+	/*border: 1px solid black;*/	
+	width: 100%;
+	color: #FF783A;
+	height: 20px;
+	margin-top:  -7px;
+	margin-left: -5px;		
+
+	font-size: 0.7em;
+	text-align: right;
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 200, "wdth" 80;	
+	
+}
+
+
+
 
 /*
 
@@ -635,12 +694,14 @@ h3{
 
 .conteneurarticle{
 	width: 90%;
-	margin-bottom: 100px;
+	margin:0px auto 50px;
+
 }
 
 
 
 .retour{
+	margin-top: 30px;
 	font-size: 0.7em;
 	width: 100%;
 	height: auto;
@@ -651,9 +712,37 @@ h3{
 .retour a{
 	text-decoration: underline;
 }
+
+
+.navsec{
+display: flex;
+justify-content: space-between;
+}
+
+.precedent, .suivant{
+	margin-top: 30px;
+	font-size: 0.7em;
+	width: auto;
+	color: black;
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 400, "wdth" 80;	
+}
+.precedent a:hover, .suivant a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
 .entete{
 	margin-top:20px;
-	height: 50px;
+	height:auto;
+	margin-bottom: -10px;
+
 }
 
 .entetetitre{
@@ -672,7 +761,7 @@ h4{
 
 .categorie{
 	color: #ff2c5e;
-	height: 20px;
+
 	font-size: 1em;
 	text-align: left;
 	font-family: 'etc-trispace';
@@ -710,18 +799,19 @@ margin: auto;
 
 .conteneurarticle p{
 	font-size: 0.9em;
-	line-height: 1.3em;
-	margin-top: 5px;
+	line-height: 1.5em;
+	margin-top: 10px;
 	margin-bottom: 15px;
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 300, "wdth" 80;
+	font-variation-settings: "wght" 300, "wdth" 70;
 
 }
 
 .lien {
 	font-size: 0.7em;
+	line-height: 1.4em;
 	text-decoration: none;
-	text-align: right;
+	text-align: left;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 200, "wdth" 80;		
 }
