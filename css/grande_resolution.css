@@ -116,7 +116,9 @@ strong{
 	width: 20vw;	
 	margin-top: 90px;
 	margin-left: 40px; 		
-	height: 93vh;	
+	height: calc(100vh - 125px);
+	 -webkit-height: calc(100vh - 125px);
+	 -moz-height: calc(100vh - 125px);
 }
 
 
