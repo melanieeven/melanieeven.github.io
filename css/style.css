@@ -486,6 +486,31 @@ h3{
 
 }
 
+
+.boiteimage{
+	display: flex;
+
+}
+
+
+.boiteimage #introhtml{
+	width: 100%;
+	margin:auto;
+	text-align: center;
+	font-size: 1.3em;
+	color: black;
+	padding-top:15%;
+	padding-bottom:17%;
+	height: auto;
+	border: 1px solid black;
+	line-height: 1.4em;
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 300, "wdth" 90;		
+
+}
+
+
+
 /*
 
 
@@ -754,18 +779,19 @@ justify-content: space-between;
 h4{
 
 	font-size: 1.1em;
+	line-height: 1.4em;
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 600, "wdth" 120;	
+	font-variation-settings: "wght" 500, "wdth" 90;	
 }
 
 
 .categorie{
 	color: #ff2c5e;
-
+	margin-top: -5px;
 	font-size: 1em;
 	text-align: left;
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 200, "wdth" 40;	
+	font-variation-settings: "wght" 800, "wdth" 40;	
 }
 
 
