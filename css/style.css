@@ -289,7 +289,7 @@ article{
 	width: 90%;
 	height: auto;
 	box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
-	margin:10px 20px 40px;
+	margin:10px 20px 20px;
 	transition: all ease 0.4s;
 
 }
@@ -492,8 +492,13 @@ h3{
 .boiteimage{
 	display: flex;
 
+
 }
 
+.boiteintrohtml{
+	border: 1px solid black;
+	width: 100%;	
+}
 
 .boiteimage #introhtml{
 	width: 100%;
@@ -501,10 +506,10 @@ h3{
 	text-align: center;
 	font-size: 1.3em;
 	color: black;
-	padding-top:15%;
-	padding-bottom:17%;
+	padding-top:20%;
+
 	height: auto;
-	border: 1px solid black;
+
 	line-height: 1.4em;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 300, "wdth" 90;		
@@ -529,13 +534,13 @@ h3{
 
 .headerarticletheorie{
 	width: 100%;
-	height: 180px;
+	height: 200px;
 	/*border: 3px solid green;*/
 	/*background-color: #ff2c5e;*/
 }
 
 .headerarticletheorie .boiteimage{
-	height: 180px;
+	height: 200px;
 	width: 100%;	
 	display: flex;
 	overflow: hidden;
@@ -546,6 +551,7 @@ h3{
 .headerarticletheorie .boiteimage img{
 	width: 100%;
 	margin: auto;	
+	padding:auto;
 
 }
 
@@ -603,7 +609,7 @@ h3{
 
 .headerarticletechnique{
 	width: 100%;
-	height: 180px;
+	height: 200px;
 	/*border: 1px solid grey;*/
 	/*background-color: #03CEA4;*/
 }
@@ -623,7 +629,7 @@ h3{
 	
 }
 .headerarticletechnique .boiteimage{
-	height: 180px;
+	height: 200px;
 	width: 100%;	
 	display: flex;
 	overflow: hidden;
@@ -689,13 +695,13 @@ h3{
 
 .headerarticleportfolio{
 	width: 100%;
-	height: 180px;
+	height: 200px;
 	/*background-color: #2DE1FC;*/
 }
 
 .headerarticleportfolio .boiteimage{
 	width: 100%;	
-	height: 180px;	
+	height: 200px;
 	overflow: hidden;
 	display: flex;
 }
