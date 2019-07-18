@@ -31,7 +31,7 @@ header{
 	background-color: white;
 	overflow-y: hidden;
 	/*border: 1px solid black;*/
-	width: 50vw;
+	width: 40vw;
 
 }
 
@@ -57,9 +57,10 @@ h1{
 	padding: 10px;
 	margin-top: 5px;
 	height: auto;
-	width: calc(60vw - 420px);
+	width: calc(40vw - 200px);
 	display: inline-block;	
 	vertical-align: top;
+	/*border: 1px solid red;*/
 
 }
 
