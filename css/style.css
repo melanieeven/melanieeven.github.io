@@ -59,23 +59,28 @@ a{
 header{
 	height: 45px;
 	position: fixed;
-	overflow-x: auto;	
+	overflow:hidden;	
 	top: 0;
 	left: 0;
 	transition: all 1s ease;
 	background-color: white;	
 	/*background-color: #fcffd9;*/
 	/*border: 1px solid black;*/
-	width: 100vw;
+	width: 55vw;
 
 }
 
 header:hover{
-	height: 290px;
+	height: 100vh;
 	transition: all 0.9s ease;
-	background-color: #2DE1FC;	
+	box-shadow: 5px 0px 50px rgba(0,0,0,0.2);	
+	background-color: white;	
 }
 
+header:active{
+	height: 45px;	
+	transition: all 0s ease;	
+}
 
 h1{
 	font-size: 0.8em;
@@ -85,13 +90,19 @@ h1{
 	overflow: hidden;
 	color: black;
 	padding: 10px;
-	margin-top: 0px;
+	margin-top: -5px;
 	height: auto;
-	width: 90vw;
+	width: calc(55vw - 165px);
 	display: inline-block;	
 	vertical-align: top;
 
 }
+
+h1 a {
+	font-variation-settings: "wght" 400, "wdth" 80;	
+	text-decoration: underline;
+}
+
 
 #logohaut{
 	display: inline-block;
@@ -102,7 +113,7 @@ h1{
 #logohaut img{
 	transform: rotate(-0.02turn);
 	margin-left: 40px;
-	width: 25px;
+	width: 30px;
 }
 
 strong{
