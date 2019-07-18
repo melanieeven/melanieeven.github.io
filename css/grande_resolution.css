@@ -38,7 +38,7 @@ header{
 header:hover{
 	height: 100vh;
 	transition: all 1s ease;
-	box-shadow: 5px 0px 100px grey;
+	box-shadow: 5px 0px 50px rgba(0,0,0,0.2);	
 	background-color: white;	
 }
 header:active{
