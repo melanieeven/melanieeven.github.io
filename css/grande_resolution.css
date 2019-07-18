@@ -67,10 +67,7 @@ h1{
 
 
 
-h1 a {
-	font-variation-settings: "wght" 400, "wdth" 80;	
-	text-decoration: underline;
-}
+
 
 #logohaut{
 	display: inline-block;
@@ -116,7 +113,8 @@ strong{
 	display: inline-block;
 	width: 20vw;	
 	margin-top: 90px;
-	margin-left: 40px; 		
+	margin-left: 40px; 	
+	margin-right: 2vw;	
 	height: calc(100vh - 125px);
 	 -webkit-height: calc(100vh - 125px);
 	 -moz-height: calc(100vh - 125px);
