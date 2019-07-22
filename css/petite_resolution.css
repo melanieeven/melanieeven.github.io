@@ -60,7 +60,7 @@ a{
 */
 
 header{
-	height: 190px;
+	height: auto;
 	position: relative;
 	overflow: auto;	
 	margin:30px auto;
@@ -155,7 +155,7 @@ h1{
 .colonne{
 
 	display:block;
-	width: 80vw;	
+	width: 100vw;	
 	margin: 20px auto 80px;
 	padding: 5px 5px 0px 5px;
 	background-color:white ;
