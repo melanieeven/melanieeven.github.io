@@ -123,7 +123,9 @@ strong{
 	 -moz-height: calc(100vh - 125px);
 }
 
-
+#free{
+	width: 20vw;
+}
 
 
 .headerarticletheorie{
