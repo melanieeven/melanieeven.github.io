@@ -256,6 +256,7 @@ h5:hover{
 
 .colonne{
 	display: inline-block;
+	vertical-align: top;
 	width: 28vw;	
 	margin-top: 50px;
 	margin-left: 40px; 		
