@@ -310,6 +310,15 @@ article:hover{
 
 }
 
+article:hover .plus{
+	transform-origin: center;		
+	background-color: #ff2c5e;
+	transform: rotate(360deg);	
+	color: white;
+	transition: 1s all ease;	
+
+
+}
 
 
 aside{
@@ -489,15 +498,6 @@ h3{
 	left: 95%;
 	transform-origin: center;		
 	color:black ;
-
-}
-.plus:hover{
-	transform-origin: center;		
-	background-color: #ff2c5e;
-	transform: rotate(360deg);	
-	color: white;
-	transition: 1s all ease;	
-
 
 }
 
