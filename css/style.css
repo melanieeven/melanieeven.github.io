@@ -245,13 +245,14 @@ h5:hover{
                                    
 */
 #grille{
-	width: 57vw;
+	width: 55vw;
 	position: relative;
 	left: 44vw;
 	margin-top: 0px;
 	margin-bottom: 40px;
 	box-shadow: -1px 2px 20px rgba(255,255,255,1) inset;
 	height: 100vh;
+	border: 1px solid red;
 }
 
 #cache{
@@ -262,7 +263,7 @@ h5:hover{
 	display: inline-block;
 	background-color: white;
 	vertical-align: top;
-	width: 25vw;	
+	width: 23vw;	
 	margin-top: 10px;
 	margin-bottom: 25px;
 	margin-left: 30px;
