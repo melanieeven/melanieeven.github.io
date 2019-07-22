@@ -275,7 +275,9 @@ h5:hover{
 	/*border: 1px solid lightgrey;	*/
 }
 
-
+iframe{
+		height: 80vh;
+}
 
 
 .scroll::-webkit-scrollbar {
