@@ -156,11 +156,12 @@ h1{
 .colonne{
 
 	display:block;
-	width: 100vw;	
-	margin: 20px auto 80px;
+	width: 95vw;	
+	margin: 0px auto 20px;
 	padding: 5px 5px 0px 5px;
 	background-color:white ;
 	height: 100vh;	
+	border: 1px solid lightgrey;
 
 }
 
