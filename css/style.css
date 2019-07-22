@@ -245,7 +245,7 @@ h5:hover{
                                    
 */
 #grille{
-	width: 55vw;
+	width: 57vw;
 	position: relative;
 	left: 44vw;
 	margin-top: 0px;
@@ -261,9 +261,9 @@ h5:hover{
 	display: inline-block;
 	background-color: white;
 	vertical-align: top;
-	width: 22vw;	
+	width: 25vw;	
 	margin-top: 50px;
-	margin-left: 40px;
+	margin-left: 30px;
 	height: 75vh;
 	box-shadow: 0px 0px 1px #f2f2f2;
 
