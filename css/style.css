@@ -76,7 +76,8 @@ header:hover{
 	height: 100vh;
 	transition: all 0.9s ease;
 	box-shadow: 5px 0px 50px rgba(0,0,0,0.2);	
-	background-color: white;	
+	background-color: white;
+		
 }
 
 header:active{
