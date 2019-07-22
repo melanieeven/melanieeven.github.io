@@ -77,7 +77,7 @@ header:hover{
 	transition: all 0.9s ease;
 	box-shadow: 5px 0px 50px rgba(0,0,0,0.2);	
 	background-color: white;
-		
+
 }
 
 header:active{
@@ -326,7 +326,7 @@ aside{
 h3{
 	font-family: 'etc-trispace';
 	text-transform: uppercase;
-	font-variation-settings: "wght" 400, "wdth" 100;		
+	font-variation-settings: "wght" 600, "wdth" 100;		
 	height: auto;
 	font-size: 1em;
 	color: black;
