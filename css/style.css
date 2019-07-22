@@ -119,11 +119,6 @@ h1 a {
 	width: 30px;
 }
 
-strong{
-	font-variation-settings: "wght" 600, "wdth" 120;
-	text-transform: uppercase;	
-}
-
 
 /*
 
@@ -775,6 +770,22 @@ h3{
 	font-variation-settings: "wght" 400, "wdth" 80;	
 }
 .retour a{
+	text-decoration: underline;
+}
+
+
+
+strong{
+	font-variation-settings: "wght" 600, "wdth" 120;
+	text-transform: uppercase;	
+}
+
+em{
+	font-variation-settings: "wght" 300, "wdth" 120;
+	color: #03CEA4;
+}
+
+p a {
 	text-decoration: underline;
 }
 
