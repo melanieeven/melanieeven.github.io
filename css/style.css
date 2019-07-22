@@ -277,6 +277,7 @@ h5:hover{
 
 iframe{
 		height: 80vh;
+		overflow-y: scroll;
 }
 
 
