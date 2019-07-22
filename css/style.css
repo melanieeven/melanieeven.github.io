@@ -862,7 +862,7 @@ margin: auto;
 	margin-bottom: 25px;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 100, "wdth" 80;
-	font-style: italic;
+	/*font-style: italic;*/
 	text-align: center;
 }
 
