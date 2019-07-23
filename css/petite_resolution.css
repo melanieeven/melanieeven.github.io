@@ -147,6 +147,12 @@ h1{
                                    
 */
 
+#refperso{
+	display: none;
+}
+
+
+
 #grille{
 	margin-top:0px;
 	margin-bottom: 50px;
@@ -157,13 +163,57 @@ h1{
 
 	display:block;
 	width: 85vw;	
-	margin: 0px auto 20px;
+	margin: 0px auto 5em;
 	padding: 5px 5px 0px 5px;
 	background-color:white ;
 	height: 100vh;	
 	border: 1px solid lightgrey;
 
 }
+
+
+#free{
+	width: 45vw;
+	margin-bottom: 0px;	
+	margin-left: 1em;
+	display: inline-block;
+}
+
+#prez{
+	width: 45vw;
+	margin-bottom: 0px;
+	margin-left: 1em;	
+	overflow: scroll;
+	display: inline-block;	
+}
+
+#prez p{
+
+	font-size: 1.4em;
+	line-height: 1.6em;
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 300, "wdth" 100;	
+	color: black;
+	padding: 2em 2em 20px 2em;
+	display: inline-block;	
+	vertical-align: top;
+
+
+}
+
+
+
+sup{
+	position: relative;
+	bottom: 1px;
+	font-size: .8em;
+	line-height: .8em;
+	vertical-align: super;
+	text-decoration: none;
+}
+
+
+
 
 
 
