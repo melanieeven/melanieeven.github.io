@@ -22,9 +22,9 @@
 
 
 header{
-	height: 80px;
+	height: 85px;
 	position: fixed;
-	z-index: 1;	
+	z-index: 2;	
 	overflow-x: auto;	
 	top: 0;
 	left: 0;
@@ -56,6 +56,7 @@ h1{
 	color: black;
 	padding: 10px;
 	margin-top: 5px;
+	margin-left: 135px;
 	height: auto;
 	width: calc(40vw - 200px);
 	display: inline-block;	
@@ -72,13 +73,14 @@ h1{
 #logohaut{
 	display: inline-block;
 	vertical-align: top;
-	padding-top: 20px;
-	width: 90px;
+	padding-top: 10px;
+	width: 110px;
+	z-index: 1;		
 }
 #logohaut img{
 	transform: rotate(-0.02turn);
 	margin-left: 35px;
-	width: 40px;
+	width: 50px;
 }
 
 strong{
@@ -102,7 +104,7 @@ strong{
 	width: 100vw;
 	position: relative;
 	left: 0vw;
-	margin-top:0px;
+	margin-top:110px;
 	margin-bottom: 30px;
 
 
@@ -115,7 +117,7 @@ strong{
 .colonne{
 	display: inline-block;
 	width: 20vw;	
-	margin-top: 90px;
+	margin-top: 0px;
 	margin-left: 40px; 	
 	margin-right: 2vw;	
 	height: calc(100vh - 125px);
