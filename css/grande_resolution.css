@@ -34,7 +34,7 @@ header{
 	width: 40vw;
 
 }
-
+/*
 header:hover{
 	height: 100vh;
 	transition: all 1s ease;
@@ -44,18 +44,18 @@ header:hover{
 header:active{
 	height: 65px;	
 	transition: all 0s ease;	
-}
+}*/
 
 
 h1{
-	font-size: 1.2em;
+	font-size: 1.5em;
 	line-height: 1.6em;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 300, "wdth" 80;	
 	overflow: hidden;
 	color: black;
 	padding: 10px;
-	margin-top: 5px;
+	margin-top: 15px;
 	margin-left: 135px;
 	height: auto;
 	width: calc(40vw - 200px);
