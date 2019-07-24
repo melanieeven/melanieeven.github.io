@@ -85,10 +85,10 @@ header:active{
 
 
 h1{
-	font-size: 0.8em;
+	font-size: 1em;
 	line-height: 1.6em;
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 300, "wdth" 80;	
+	font-variation-settings: "wght" 400, "wdth" 80;	
 	overflow: hidden;
 	color: black;
 	padding: 20px 0px 0px 0px;
