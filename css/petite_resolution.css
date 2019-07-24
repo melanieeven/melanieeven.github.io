@@ -102,6 +102,11 @@ h1{
 
 }
 
+h1 strong{
+	font-variation-settings: "wght" 600, "wdth" 80;	
+
+	text-transform: initial;
+}
 
 #logohaut{
 	display: none;
