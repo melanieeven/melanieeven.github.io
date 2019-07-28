@@ -84,6 +84,7 @@ a{
 	text-transform: uppercase;
 	font-size: 0.8em;
 	letter-spacing: 0.3em;	
+	display: block;
 }
 
 header{
@@ -287,31 +288,7 @@ h5:hover{
 
 
 
-#refperso{
-	position: absolute;
-	top: 100vh;
-	height: 60px;
-	margin-left: 70px;
-	width: 90vw;
-	background-color: white;
-	/*border: 1px solid green;*/
-}
 
-
-
-
-#refperso p{
-	font-size: 0.8em;
-	line-height: 1.6em;
-	text-align: left;
-	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 100, "wdth" 80;	
-	overflow: hidden;
-	color: black;
-	padding-top: 5px;
-
-
-}
 
 
 #grille{
