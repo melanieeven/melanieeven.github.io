@@ -56,13 +56,40 @@ a{
                                    
 */
 
+#about{
+	z-index: 1;
+	position: absolute;
+	top: 40px;
+	right: 60px;
+	width: 90px;
+	height: 20px;
+	font-family: 'Cabin Sketch', arial;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	letter-spacing: 0.3em;
+
+}
 
 
+#haut{
+	z-index: 2;	
+	position: absolute;
+	top: 102vh;
+	text-align: right;
+	right: 60px;	
+	width: 90px;
+	height: 20px;
+	background-color: white;
+	font-family: 'Cabin Sketch', arial;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	letter-spacing: 0.3em;	
+}
 
 header{
 	height: 75px;
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	overflow: scroll;
 	top: 0;
 	left: 0;
@@ -93,7 +120,7 @@ header:active{
 }*/
 
 h1{
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.3em;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 300, "wdth" 80;	
@@ -101,7 +128,7 @@ h1{
 	color: black;
 	padding: 10px;
 	margin-top: 0px;
-	margin-left: 70px;
+	margin-left: 80px;
 	height: auto;
 	width: calc(45vw - 120px);
 	display: inline-block;	
@@ -118,7 +145,7 @@ h1 a {
 #logohaut{
 	display: inline-block;
 	position: fixed;
-	z-index: 1;
+	z-index: 4;
 	vertical-align: top;
 	margin-top: 12px;
 	width: 60px;
@@ -324,12 +351,12 @@ h5:hover{
 	width: 50vw;
 	margin-bottom: 0px;
 	overflow: scroll;
-	background-color: #03CEA4;
+	background-color: white;
 }
 
 #prez p{
 
-	font-size: 1.4em;
+	font-size: 1.1em;
 	line-height: 1.6em;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 300, "wdth" 100;	
@@ -413,6 +440,7 @@ article:hover .plus{
 	background-color: #ff2c5e;
 	transform: rotate(360deg);	
 	color: white;
+	padding-bottom: 1px;
 	transition: 1s all ease;	
 
 
@@ -957,6 +985,7 @@ margin: auto;
 .legendes{
 	font-size: 0.8em;
 	line-height: 1.6em;
+	margin-top: 10px;
 	margin-bottom: 25px;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 100, "wdth" 80;
