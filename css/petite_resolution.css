@@ -28,14 +28,19 @@
 	 src: url('font/etc/ETCTrispaceVariable.woff2') format('woff2-variations'); 
 }
 
-
+strong{
+	font-variation-settings: "wght" 600, "wdth" 120;
+	text-transform: uppercase;	
+}
 
 a{
 	text-decoration: none;
 	color: black;
 }
 
-
+p a {
+	text-decoration: underline;
+}
 
 #bodyindex{
 	background-color: #f2f2f2;
@@ -59,7 +64,43 @@ a{
                                    
 */
 
+
+#about{
+	z-index: 1;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	width: 90px;
+	height: 20px;
+	font-family: 'Cabin Sketch', arial;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	letter-spacing: 0.3em;
+
+}
+
+
+#haut{
+	z-index: 2;	
+	position: absolute;
+	top: 102vh;
+	text-align: right;
+	right: 60px;	
+	width: 90px;
+	height: 20px;
+	background-color: white;
+	font-family: 'Cabin Sketch', arial;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	letter-spacing: 0.3em;	
+	display: none;
+}
+
+
+
+
 header{
+	z-index: 3;	
 	height: auto;
 	position: relative;
 	overflow: auto;	
@@ -152,9 +193,7 @@ h1 strong{
                                    
 */
 
-#refperso{
-	display: none;
-}
+
 
 
 
