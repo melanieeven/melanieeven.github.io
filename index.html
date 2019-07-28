@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" href="css/reset.css" />		
 
-
+		<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap" rel="stylesheet">
 
 		<link rel="stylesheet" media="screen and (max-width: 1023px)" href="css/petite_resolution.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
 
@@ -23,6 +23,21 @@
 
 
 	<body id="bodyindex">
+		
+		<a href="#refperso" class="js-scrollTo">
+			<div id="about">
+				+ infos
+			</div>
+		</a>
+
+		<a href="index.html" class="js-scrollTo">
+			<div id="haut">
+				retour ↑
+			</div>
+		</a>
+		
+
+
 		<header class="scroll">
 			<a href="index.html">
 				<div id="logohaut">
@@ -38,7 +53,7 @@
 
 
 <div id="refperso">
-	<p>projets réalisés dans le cadre de commandes, en tant que graphiste indépendante inscrite à la Maison Des Artistes.</p>
+	<p></p>
 </div>
 
 
@@ -54,6 +69,15 @@
 
 
 
+					Ce site web est édité par <strong>Mélanie Even</strong>, graphiste freelance et enseignante spécialisée en web et motion.
+<br/><br/>
+					Avec une expertise de plus 10 ans des métiers du web et de l'animation numérique, je partage mes connaissances des outils numériques et des langages de programmation avec les étudiants du <a href="http://dnmade-prevert.fr/" target="_blank">DN MADE graphisme augmenté</a> de Boulogne-Billancourt et des différents <a href="http://lyceecotton.net/joom3/index.php/fr/" target="_blank">DN MADE Graphisme</a> de Montreuil. 
+					<br/>
+					Dans l'enseignement que je dipense aux étudiants je défends que la maîtrise des technologies est nécessaire dans le développement d'une écriture personnelle et j'essaie de l'enseigner au mieux.
+<br/><br/>
+					En parralèle des mes activités d'enseignement, je réponds à des commandes de design graphique allant du web au motion en passant par le papier avec cette même exigence du travail bien fait.  
+<br/><br/>
+					N'hésitez pas à me solliciter via le bouton contact pour plus d'informations. 
 
 
 
@@ -123,7 +147,17 @@
 	
 
 
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+				var page = $(this).attr('href'); // Page cible
+				var speed = 750; // Durée de l'animation (en ms)
+				$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+				return false;
+			});
+		});
+	</script>
 
 	</body>
 
