@@ -59,7 +59,7 @@ a{
 #about{
 	z-index: 1;
 	position: absolute;
-	top: 40px;
+	top: 30px;
 	right: 60px;
 	width: 90px;
 	height: 20px;
@@ -67,6 +67,7 @@ a{
 	text-transform: uppercase;
 	font-size: 0.8em;
 	letter-spacing: 0.3em;
+	text-align: center;
 
 }
 
