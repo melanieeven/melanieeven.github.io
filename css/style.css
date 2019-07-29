@@ -334,14 +334,15 @@ h5:hover{
 
 #prez p{
 
-	font-size: 1.1em;
+	font-size: 0.9em;
 	line-height: 1.6em;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 300, "wdth" 100;	
 	color: black;
-	padding: 2em 2em 20px 2em;
+	padding: 3em 5em 20px 3em;
 	display: inline-block;	
 	vertical-align: top;
+	text-align: justify;
 
 
 }
