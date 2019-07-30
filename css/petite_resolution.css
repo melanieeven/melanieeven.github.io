@@ -216,6 +216,13 @@ h1 strong{
 
 }
 
+.enteteimg iframe{
+/*	border: 1px solid red;*/
+	width: 500px;
+	height: 350px;
+	margin: auto;
+}
+
 
 #free{
 	width: 85vw;
