@@ -310,7 +310,7 @@ h5:hover{
 	height: 85vh;	
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;	
-	border: 1px solid red;
+/*	border: 1px solid red;*/
 	width: 28vw;	
 	margin:0px 2vw 95px 2vw;		
 }
