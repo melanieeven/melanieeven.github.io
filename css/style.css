@@ -313,6 +313,7 @@ h5:hover{
 	width: 28vw;	
 	margin:0px 2vw 95px 2vw;
 	height: 85vh;
+	overflow: scroll;
 
 	/* -webkit-height: calc(100vh - 95px);
 	 -moz-height: calc(100vh - 95px);*/
