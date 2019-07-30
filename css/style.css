@@ -312,6 +312,7 @@ h5:hover{
 	vertical-align: top;
 	width: 28vw;	
 	margin:0px 2vw 95px 2vw;
+	-webkit-height: 85vh;
 	height: 85vh;
 	overflow: scroll;
  	-webkit-overflow-scrolling : auto;	
