@@ -315,7 +315,7 @@ h5:hover{
 	-webkit-height: 85vh;
 	height: 85vh;
 	overflow: scroll;
-	-webkit-overflow-scrolling: touch
+	-webkit-overflow-scrolling: touch;
 	/* -webkit-height: calc(100vh - 95px);
 	 -moz-height: calc(100vh - 95px);*/
 	/*border: 1px solid #fafafa;*/	
