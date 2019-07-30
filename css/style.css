@@ -306,19 +306,18 @@ h5:hover{
 
 .containeriframe{
 	display: inline-block;
-	-webkit-height: 85vh;
-	height: 85vh;	
+	-webkit-height: 83vh;
+	height: 83vh;	
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;	
 /*	border: 1px solid red;*/
-	width: 28vw;	
-	margin:0px 2vw 95px 2vw;		
+	width: 31vw;	
+	margin:0px 1vw 95px 1vw;		
 }
 
 
 .colonne{
 	/*background-color: #fafafa;*/
-
 	width: 100%;
 	height: 100%;
 	display: inline-block;	
@@ -514,11 +513,13 @@ h3{
 .checkon{
 	position: relative;
 	left: -21px;
+	top: -1px;	
 
 }
 
 .checkoff{
 	position: relative;
+	top: -2px;
 	left: 0px;
 }
 
@@ -930,7 +931,7 @@ justify-content: space-between;
 .entete{
 	margin-top:20px;
 	height:auto;
-	margin-bottom: -10px;
+	margin-bottom: 20px;
 
 }
 
@@ -941,17 +942,18 @@ justify-content: space-between;
 }
 
 h4{
-	margin-bottom: 20px;
+	margin-bottom: 0px;
+	/*border: 1px solid blue;*/
 	font-size: 1.1em;
-	line-height: 1.4em;
+	line-height: 1.7em;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 500, "wdth" 90;	
 }
 
 
 .categorie{
+	/*border: 1px solid red;*/
 	color: #ff2c5e;
-	margin-top: -5px;
 	font-size: 1em;
 	text-align: left;
 	font-family: 'etc-trispace';
@@ -961,6 +963,11 @@ h4{
 
 
 .enteteimg{
+	width: 100%;
+	margin:0px 0px 10px;
+	/*background-color: #f6f6f6;*/
+	/*border: 1px solid #ebebeb;*/
+	/*box-shadow: 0px 0px 100px #ebebeb;*/
 }
 
 
@@ -969,15 +976,31 @@ width: 100%;
 margin: auto;
 }
 
+
+.enteteimg iframe{
+/*	border: 1px solid red;*/
+	width: 250px;
+	height: 200px;
+	margin: auto;
+}
+
+
+
 .legendes{
+	hyphens: auto;	
+	-webkit-hyphens : auto;	
+	hyphenate-limit-lines :2;	
+	width: 95%;
+	margin-left: 2%;
 	font-size: 0.8em;
 	line-height: 1.6em;
 	margin-top: 10px;
-	margin-bottom: 25px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 100, "wdth" 80;
 	/*font-style: italic;*/
-	text-align: center;
+	text-align: justify;
 }
 
 
@@ -990,9 +1013,10 @@ margin: auto;
 
 .conteneurarticle p{
 	font-size: 0.9em;
-	line-height: 1.5em;
+	line-height: 1.6em;
 	margin-top: 10px;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
+	text-align: left;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 300, "wdth" 90;
 
@@ -1011,9 +1035,4 @@ margin: auto;
 	text-decoration: underline;
 }
 
-.enteteimg iframe{
-/*	border: 1px solid red;*/
-	width: 250px;
-	height: 200px;
-	margin: auto;
-}
+
