@@ -1002,3 +1002,10 @@ margin: auto;
 .lien a:hover {
 	text-decoration: underline;
 }
+
+.enteteimg iframe{
+/*	border: 1px solid red;*/
+	width: 350px;
+	height: 250px;
+	margin: auto;
+}
