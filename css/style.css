@@ -297,7 +297,7 @@ h5:hover{
 	position: relative;
 	left: 0vw;
 	margin-top: 90px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 	height: auto;
 	/*border: 1px solid red;*/
 }
@@ -346,7 +346,7 @@ h5:hover{
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 300, "wdth" 100;	
 	color: black;
-	padding: 3em 5em 20px 3em;
+	padding: 1em 5em 20px 3em;
 	display: inline-block;	
 	vertical-align: top;
 	text-align: justify;
@@ -410,7 +410,7 @@ article{
 	width: 90%;
 	height: auto;
 	box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
-	margin:0px 20px 70px 20px;
+	margin:0px 20px 110px 20px;
 	transition: all ease 0.4s;
 
 }
@@ -667,7 +667,7 @@ h3{
 }
 
 .headerarticletheorie .boiteimage{
-	height: 200px;
+	height: 230px;
 	width: 100%;	
 	display: flex;
 	overflow: hidden;
@@ -770,7 +770,7 @@ h3{
 	
 }
 .headerarticletechnique .boiteimage{
-	height: 200px;
+	height: 230px;
 	width: 100%;	
 	display: flex;
 	overflow: hidden;
@@ -842,7 +842,7 @@ h3{
 
 .headerarticleportfolio .boiteimage{
 	width: 100%;	
-	height: 200px;
+	height: 230px;
 	overflow: hidden;
 	display: flex;
 }
