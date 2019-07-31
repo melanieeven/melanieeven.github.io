@@ -147,15 +147,14 @@ strong{
 }
 
 .containeriframe{
-
 	display: inline-block;
 	width: 20vw;	
 	margin-left: 40px; 	
 	margin-right: 2vw;	
-
 	height: calc(100vh - 125px);
 	 -webkit-height: calc(100vh - 125px);
 	 -moz-height: calc(100vh - 125px);		
+	 overflow: hidden;
 }
 
 
@@ -168,6 +167,9 @@ strong{
 
 #free{
 	width: 20vw;
+	border: 1px solid red;
+	margin-top: 0px;
+	vertical-align: top;
 }
 
 
