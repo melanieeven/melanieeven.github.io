@@ -308,7 +308,8 @@ h5:hover{
 	display: inline-block;
 	-webkit-height: 83vh;
 	height: 83vh;	
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x:hidden;
 	-webkit-overflow-scrolling: touch;	
 /*	border: 1px solid red;*/
 	width: 31vw;	
@@ -319,7 +320,7 @@ h5:hover{
 .colonne{
 	/*background-color: #fafafa;*/
 	width: 100%;
-	height: 100%;
+	height: 99%;
 	display: inline-block;	
 	vertical-align: top;
 	/* -webkit-height: calc(100vh - 95px);
