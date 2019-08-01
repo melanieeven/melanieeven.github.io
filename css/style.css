@@ -308,7 +308,7 @@ h5:hover{
 	display: inline-block;
 	-webkit-height: 83vh;
 	height: 83vh;	
-	overflow: hidden;
+	overflow: scroll;
 	-webkit-overflow-scrolling: touch;	
 /*	border: 1px solid red;*/
 	width: 31vw;	
