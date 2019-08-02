@@ -219,6 +219,8 @@ aside{
 
 
 aside .checkon{
+	position: relative;
+	top:2px;
  	opacity: 0;
 }
 
@@ -232,7 +234,11 @@ aside:hover .checkoff{
  	left: 10px;	
 }
 
-
+aside .checkoff{
+	position: relative;
+	top:2px;
+ 	opacity:1;
+}
 
 
 
