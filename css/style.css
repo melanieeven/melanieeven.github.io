@@ -201,6 +201,8 @@ footer{
 
 }
 
+
+
 h2{
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 400, "wdth" 80;	
@@ -216,6 +218,51 @@ h2{
 		top: 1px;
 
 }
+
+
+
+
+
+
+#logoedu{
+
+	display: flex;
+	align-items: center;	
+	justify-content: flex-end;	
+}
+
+#logoedu img{
+		height: 20px;
+		position: relative;
+		margin-left: 10px;
+		top: 1px;
+
+}
+
+
+
+#logoedu h2{
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 400, "wdth" 80;	
+	font-size: 1.2em;
+	padding-left: 10px;	
+}
+
+
+
+.retouraccueil{
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 100, "wdth" 70;	
+	font-size: 0.8em;
+	display: block;
+	text-align: left;
+	margin-left: 20px;
+
+}
+
+
+
+
 
 #credits{
 	font-family: 'etc-trispace';
@@ -274,6 +321,29 @@ h5:hover{
 
 
 }
+
+
+/*
+                                         __    _ __   
+   ____  ____ __   __   ____ ___  ____  / /_  (_) /__ 
+  / __ \/ __ `/ | / /  / __ `__ \/ __ \/ __ \/ / / _ \
+ / / / / /_/ /| |/ /  / / / / / / /_/ / /_/ / / /  __/
+/_/ /_/\__,_/ |___/  /_/ /_/ /_/\____/_.___/_/_/\___/ 
+                                                      
+
+*/
+
+
+
+
+#navmobile{
+	display: none;
+}
+
+
+
+
+
 
 /*
 
