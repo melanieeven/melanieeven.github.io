@@ -252,7 +252,7 @@ ul{
 
 }
 
-li{
+li a{
 	display: flex;
 	align-items: center;
 	font-family: 'etc-trispace';
@@ -265,7 +265,7 @@ li{
 .picto{
 	width: 20px;
 	height: 30px;
-	margin-left: 10px;
+	margin-right: 5px;
 	font-size: 1.5em;
 	padding-top: 15px;
 	transform: rotate(0deg) translate(0%, 0%);
