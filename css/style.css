@@ -224,45 +224,6 @@ h2{
 
 
 
-#logoedu{
-
-	display: flex;
-	align-items: center;	
-	justify-content: flex-end;	
-}
-
-#logoedu img{
-		height: 20px;
-		position: relative;
-		margin-left: 10px;
-		top: 1px;
-
-}
-
-
-
-#logoedu h2{
-	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 400, "wdth" 80;	
-	font-size: 1.2em;
-	padding-left: 10px;	
-}
-
-
-
-.retouraccueil{
-	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 100, "wdth" 70;	
-	font-size: 0.8em;
-	display: block;
-	text-align: left;
-	margin-left: 20px;
-
-}
-
-
-
-
 
 #credits{
 	font-family: 'etc-trispace';
@@ -339,6 +300,47 @@ h5:hover{
 #navmobile{
 	display: none;
 }
+
+
+
+#logoedu{
+
+	display: flex;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	align-items: center;	
+	justify-content: flex-end;	
+}
+
+#logoedu img{
+		height: 20px;
+		position: relative;
+		margin-left: 10px;
+		top: 1px;
+
+}
+
+
+
+#logoedu h2{
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 400, "wdth" 80;	
+	font-size: 1.2em;
+	padding-left: 10px;	
+}
+
+
+
+.retouraccueil{
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 100, "wdth" 70;	
+	font-size: 0.8em;
+	display: block;
+	text-align: left;
+	margin-left: 20px;
+
+}
+
 
 
 
