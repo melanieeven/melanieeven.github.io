@@ -207,7 +207,7 @@ h1 strong{
 
 
 .containeriframe{
-	display:block;
+	display:none;
 	width: 85vw;	
 	overflow: scroll;
 	-webkit-overflow-scrolling: touch;		
@@ -230,7 +230,7 @@ h1 strong{
 
 #free{
 	width: 85vw;
-	display: block;
+	display: none;
 	margin: 0px auto 3em;
 	padding: 5px 5px 0px 5px;	
 
@@ -246,7 +246,7 @@ h1 strong{
 
 #prez p{
 /*	width: 80vw;
-*/	font-size: 0.7em;
+*/	font-size: 0.9em;
 	line-height: 1.6em;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 300, "wdth" 100;	
