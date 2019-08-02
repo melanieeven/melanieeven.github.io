@@ -246,6 +246,7 @@ nav{
 ul{
 	display: flex;
 	width: 100%;
+	align-items: center;	
 	justify-content: space-around;
 
 
@@ -271,6 +272,10 @@ li{
 	transition: all 0.2s ease;
 
 
+}
+
+.picto img{
+	width: 70%;
 }
 
 h5:hover{
