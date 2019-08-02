@@ -245,13 +245,21 @@ aside .checkoff{
 h3{
 	font-family: 'etc-trispace';
 	text-transform: initial;
-	font-variation-settings: "wght" 100, "wdth" 90;		
+	font-variation-settings: "wght" 290 , "wdth" 80 ;		
 	height: auto;
 	font-size: 0.9em;
 	color: black;
 
 }
+.titrefiltre{
+	font-family: 'etc-trispace';	
+	font-variation-settings: "wght" 100, "wdth" 90;
+	text-transform: initial;	
+	margin-bottom: 40px;
+	font-size: 0.9em;
 
+
+}
 
 
 .reference{
@@ -297,13 +305,7 @@ h3{
 }
 
 
-.titrefiltre{
-	font-family: 'etc-trispace';	
-	font-variation-settings: "wght" 290, "wdth" 80;
-	text-transform: initial;	
-	margin-bottom: 40px;
 
-}
 
 .checkon, .checkoff{
 	width: 10px;
