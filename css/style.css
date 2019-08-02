@@ -601,7 +601,7 @@ h3{
 
 .checkon{
 	position: relative;
-	left: -21px;
+	left: -22px;
 	top: -1px;	
 
 }
@@ -609,10 +609,12 @@ h3{
 .checkoff{
 	position: relative;
 	top: -2px;
-	left: 0px;
+	left: -2px;
 }
 
-
+.filtrecours, .filtretechnique, .filtreref, .filtreall{
+	display: flex;
+}
 
 .filtrecours .checkon, .filtretechnique .checkon, .filtreref .checkon, .filtreall .checkon{
  	opacity: 0;
@@ -620,7 +622,7 @@ h3{
 
 .filtrecours:hover .checkon, .filtretechnique:hover .checkon, .filtreref:hover .checkon, .filtreall:hover .checkon{
 	opacity: 1;
-	left: -11px;
+	left: -17px;
 }
 
 .filtrecours:hover .checkoff, .filtretechnique:hover .checkoff, .filtreref:hover .checkoff, .filtreall:hover .checkoff{
