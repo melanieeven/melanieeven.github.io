@@ -307,8 +307,9 @@ h5:hover{
 
 .containeriframe{
 	display: inline-block;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;		
+	overflow: hidden;
+/*	overflow: scroll;
+	-webkit-overflow-scrolling: touch;	*/	
 
 /*	border: 1px solid red;*/
 	width: 31vw;	
