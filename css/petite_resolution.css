@@ -545,7 +545,7 @@ li{
 
 .picto{
 	width: 30px;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	height: auto;
 	margin-left: 15px;
 	font-size: 1.3em;
