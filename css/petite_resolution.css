@@ -105,7 +105,7 @@ header{
 	height: auto;
 	position: relative;
 	overflow: auto;	
-	margin:30px auto;
+	margin:30px auto 20px;
 	transition: all 1s ease;	
 	background-color: #f2f2f2;
 	/*border: 1px solid black;*/
@@ -181,6 +181,162 @@ h1 strong{
 
 
 
+
+
+
+
+
+/*
+                                         __    _ __   
+   ____  ____ __   __   ____ ___  ____  / /_  (_) /__ 
+  / __ \/ __ `/ | / /  / __ `__ \/ __ \/ __ \/ / / _ \
+ / / / / /_/ /| |/ /  / / / / / / /_/ / /_/ / / /  __/
+/_/ /_/\__,_/ |___/  /_/ /_/ /_/\____/_.___/_/_/\___/ 
+                                                      
+
+*/
+
+
+
+#navmobile{
+	display: block;
+	width: 80vw;
+	margin: auto;
+	padding: 1em;	
+}
+
+
+
+
+
+
+
+aside{
+	display: flex;
+	height: auto;
+	margin:0px auto 10px;
+}
+
+
+aside .checkon{
+ 	opacity: 0;
+}
+
+aside:hover .checkon{
+	opacity: 1;
+	left: -11px;
+}
+
+aside:hover .checkoff{
+ 	opacity: 0;
+ 	left: 10px;	
+}
+
+
+
+
+
+h3{
+	font-family: 'etc-trispace';
+	text-transform: initial;
+	font-variation-settings: "wght" 100, "wdth" 90;		
+	height: auto;
+	font-size: 0.9em;
+	color: black;
+
+}
+
+
+
+.reference{
+	color:#FF783A;
+}
+
+.technique{
+	color:#03CEA4;
+}
+
+.cours{
+	color:#ff2c5e;
+}
+
+
+
+.filtre{
+	width: 90%;
+	margin:auto;
+	height: auto;
+	/*border: 1px solid red;*/
+
+}
+
+.titreliste{
+	font-family: 'etc-trispace';
+	font-size: 0.6em;
+	font-variation-settings: "wght" 200, "wdth" 80;		
+}
+
+
+
+.filtre a{
+	text-decoration: none;
+}
+
+
+.listefiltre{
+	display: flex;
+	justify-content: space-between;	
+
+
+}
+
+
+.titrefiltre{
+	font-variation-settings: "wght" 290, "wdth" 80;
+	text-transform: initial;	
+	margin-bottom: 40px;
+
+}
+
+.checkon, .checkoff{
+	width: 10px;
+	height: 10px;
+	transition: all 0.3s ease-out;
+}
+
+.checkon{
+	position: relative;
+	left: -21px;
+	top: -1px;	
+
+}
+
+.checkoff{
+	position: relative;
+	top: -2px;
+	left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 
@@ -238,6 +394,7 @@ h1 strong{
 
 #prez{
 	width: 85vw;
+	height: auto;
 	margin: 0px auto 3em;
 	/*padding: 5px 5px 0px 5px;*/	
 	overflow: scroll;
