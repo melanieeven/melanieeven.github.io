@@ -533,13 +533,17 @@ nav ul{
 	justify-content: space-around;
 	position: relative;
 	top: 5px;
+
 }
 
 
 
-li{
+li a{
 	display: flex;
+	height: 20px;
+	width: 60px;
 	align-items: center;
+	justify-content: space-around;
 	width: auto;
 	font-family: 'etc-trispace';
 	font-variation-settings: "wght" 300, "wdth" 90;	
@@ -550,20 +554,19 @@ li{
 }
 
 .picto{
-	width: 30px;
+	width: 15px;
 	/*border: 1px solid red;*/
 	height: auto;
-	margin-left: 15px;
-		margin-right: 10px;
+	margin-left: 0px;
+	margin-right: 10px;
 	font-size: 1.3em;
 	margin-top: 2px;
 	transform: rotate(0deg) translate(0%, 0%);
 	transition: all 0.2s ease;
 
-
 }
 .picto img{
-	width: 50%;
+	width: 90%;
 }
 
 #credits{
