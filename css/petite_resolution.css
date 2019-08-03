@@ -250,6 +250,13 @@ aside .checkoff{
 	
 }
 
+.filtrecours, .filtretechnique, .filtreref, .filtreall{
+	display: flex;
+}
+
+.filtrecours .checkon, .filtretechnique .checkon, .filtreref .checkon, .filtreall .checkon{
+ 	opacity: 0;
+}
 
 
 
