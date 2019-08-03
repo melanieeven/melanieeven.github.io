@@ -312,7 +312,7 @@ h5:hover{
 
 	display: flex;
 	margin-right: 20px;
-	margin-bottom: 20px;
+	margin-bottom: -0.8em;
 	align-items: center;	
 	justify-content: flex-end;	
 }
@@ -343,6 +343,7 @@ h5:hover{
 	display: block;
 	text-align: left;
 	margin-left: 20px;
+	margin-bottom: 20px;
 
 }
 
@@ -786,11 +787,24 @@ h3{
 	font-size: 0.7em;
 	text-align: left;
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 200, "wdth" 80;	
+	font-variation-settings: "wght" 500, "wdth" 80;	
 	
 }
 
 
+.categorietechnique{
+	/*border: 1px solid black;*/	
+	width: 100%;
+	font-size: 0.7em;
+	text-align: left;	
+	color: #03CEA4;
+	height: 20px;
+	margin-top: -7px;
+	margin-left: 0px;		
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 500, "wdth" 80;	
+	
+}
 
 .categoriereference{
 	/*border: 1px solid black;*/	
@@ -803,7 +817,7 @@ h3{
 	font-size: 0.7em;
 	text-align: left;
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 200, "wdth" 80;	
+	font-variation-settings: "wght" 500, "wdth" 80;	
 	
 }
 
@@ -819,7 +833,7 @@ h3{
 	font-size: 0.7em;
 	text-align: left;
 	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 200, "wdth" 80;	
+	font-variation-settings: "wght" 500, "wdth" 80;	
 	
 }
 
@@ -847,19 +861,6 @@ h3{
 }
 
 
-.categorietechnique{
-	/*border: 1px solid black;*/	
-	width: 100%;
-	font-size: 0.7em;
-	text-align: left;	
-	color: #03CEA4;
-	height: 20px;
-	margin-top: -7px;
-	margin-left: 0px;		
-	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 200, "wdth" 80;	
-	
-}
 .headerarticletechnique .boiteimage{
 	height: 230px;
 	width: 100%;	
