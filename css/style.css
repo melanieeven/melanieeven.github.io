@@ -27,9 +27,10 @@
 
 @font-face {
 	font-family: 'etc-trispace';
+    src: url('font/etc/ETCTrispaceVariable.eot');	 
+	
 	 src: url('font/etc/ETCTrispaceVariable.woff2') format('woff2-variations'); 
 }
-
 
 
 a{
@@ -123,7 +124,7 @@ header:active{
 h1{
 	font-size: 1em;
 	line-height: 1.3em;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Ubuntu Mono', monospace;
 	font-variation-settings: "wght" 300, "wdth" 80;	
 	overflow: hidden;
 	color: black;
@@ -204,7 +205,7 @@ footer{
 
 
 h2{
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Ubuntu Mono', monospace;
 	font-variation-settings: "wght" 400, "wdth" 80;	
 	font-size: 1.2em;
 	padding-left: 10px;	
@@ -226,7 +227,7 @@ h2{
 
 
 #credits{
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 100, "wdth" 70;	
 	font-size: 0.8em;
 	display: block;
@@ -255,7 +256,7 @@ ul{
 li a{
 	display: flex;
 	align-items: center;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 300, "wdth" 90;	
 	font-size: 0.7em;
 
@@ -328,7 +329,7 @@ h5:hover{
 
 
 #logoedu h2{
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 400, "wdth" 80;	
 	font-size: 1.2em;
 	padding-left: 10px;	
@@ -337,7 +338,7 @@ h5:hover{
 
 
 .retouraccueil{
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 100, "wdth" 70;	
 	font-size: 0.8em;
 	display: block;
@@ -429,7 +430,7 @@ h5:hover{
 
 	font-size: 0.9em;
 	line-height: 1.6em;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 400, "wdth" 100;	
 	color: black;
 	padding: 1em 5em 20px 3em;
@@ -530,7 +531,7 @@ aside{
 }
 
 h3{
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	text-transform: uppercase;
 	font-variation-settings: "wght" 600, "wdth" 100;		
 	height: auto;
@@ -567,7 +568,7 @@ h3{
 }
 
 .titreliste{
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-size: 0.6em;
 	height: 10px;
 	margin-bottom: -10px;
@@ -684,7 +685,7 @@ h3{
 	margin-top: -2px;
 	margin-bottom: 10px;
 	line-height: 1.4em;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 500, "wdth" 80;		
 
 }
@@ -730,7 +731,7 @@ h3{
 	height: auto;
 
 	line-height: 1.4em;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 300, "wdth" 90;		
 
 }
@@ -786,7 +787,7 @@ h3{
 
 	font-size: 0.7em;
 	text-align: left;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 500, "wdth" 80;	
 	
 }
@@ -801,7 +802,7 @@ h3{
 	height: 20px;
 	margin-top: -7px;
 	margin-left: 0px;		
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 500, "wdth" 80;	
 	
 }
@@ -816,7 +817,7 @@ h3{
 
 	font-size: 0.7em;
 	text-align: left;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 500, "wdth" 80;	
 	
 }
@@ -832,7 +833,7 @@ h3{
 
 	font-size: 0.7em;
 	text-align: left;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 500, "wdth" 80;	
 	
 }
@@ -972,7 +973,7 @@ h3{
 	width: 100%;
 	height: auto;
 	color: black;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 400, "wdth" 80;	
 }
 .retour a{
@@ -1006,7 +1007,7 @@ justify-content: space-between;
 	font-size: 0.7em;
 	width: auto;
 	color: black;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 400, "wdth" 80;	
 }
 .precedent a:hover, .suivant a:hover{
@@ -1038,7 +1039,7 @@ h4{
 	/*border: 1px solid blue;*/
 	font-size: 1.1em;
 	line-height: 1.7em;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 500, "wdth" 90;	
 }
 
@@ -1079,7 +1080,7 @@ margin: auto;
 	margin-top: 10px;
 	margin-bottom: 2em;
 	padding-bottom: 5px;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 100, "wdth" 80;
 	/*font-style: italic;*/
 	text-align: center;
@@ -1099,13 +1100,15 @@ margin: auto;
 	margin-top: 0px;
 	margin-bottom: 20px;
 	text-align: left;
-	font-family: 'etc-trispace';
+	font-family: 'Open Sans', sans-serif;
 	font-variation-settings: "wght" 300, "wdth" 80;
 
 }
 
 .categorie:before{
-	    content: "›"; 
+	    content: "›";
+	    position:relative;
+	    right: 5px;
 }
 
 .categorie{
@@ -1116,8 +1119,10 @@ margin: auto;
 	font-size: 2em;
 	text-align: left;
 	padding-left: 0.2em;
-	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 800, "wdth" 90;	
+	font-weight: 300;
+	font-style: italic;
+	letter-spacing: 0.1em;
+
 }
 
 
@@ -1127,7 +1132,7 @@ margin: auto;
 	line-height: 1.4em;
 	text-decoration: none;
 	text-align: left;
-	font-family: 'etc-trispace';
+	font-family: 'etc-trispace','Overpass Mono', monospace;
 	font-variation-settings: "wght" 200, "wdth" 80;		
 }
 
