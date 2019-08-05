@@ -258,6 +258,9 @@ aside .checkoff{
  	opacity: 0;
 }
 
+.checkon .checkoff{
+	margin-right: 5px;
+}
 
 
 h3{
