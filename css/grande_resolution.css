@@ -98,8 +98,10 @@ h1{
 }
 
 
-
-
+h1 strong{
+	text-transform: initial;
+	font-variation-settings: "wght" 500, "wdth" 100;		
+}
 
 
 #logohaut{
@@ -231,7 +233,7 @@ article:hover img{
 
 
 #prez{
-	width: 45vw;
+	width: 40vw;
 	margin-bottom: 0px;
 	overflow: scroll;
 	background-color: white;
