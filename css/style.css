@@ -609,6 +609,12 @@ h3{
 
 }
 
+.filtrecours, .filtretechnique, .filtreref, .filtreall{
+	display: flex;
+	justify-content: space-between;
+}
+
+
 .checkon, .checkoff{
 	width: 10px;
 	height: 10px;
