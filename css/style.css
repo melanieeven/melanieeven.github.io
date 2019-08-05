@@ -103,9 +103,6 @@ header{
 
 }
 
-h1 strong{
-	text-transform: initial;
-}
 
 /*
 header:hover{
@@ -129,7 +126,7 @@ h1{
 	overflow: hidden;
 	color: black;
 	padding: 10px;
-	margin-top: 0px;
+	margin-top: 2px;
 	margin-left: 80px;
 	height: auto;
 	width: calc(45vw - 120px);
@@ -138,6 +135,13 @@ h1{
 
 
 }
+
+h1 strong{
+	text-transform: initial;
+	font-variation-settings: "wght" 700, "wdth" 100;		
+}
+
+
 
 h1 a {
 	font-variation-settings: "wght" 400, "wdth" 80;	
@@ -430,9 +434,9 @@ h5:hover{
 
 	font-size: 0.9em;
 	line-height: 1.6em;
-	font-family: 'etc-trispace','Overpass Mono', monospace;
-	font-variation-settings: "wght" 400, "wdth" 100;	
+	font-family: 'Overpass', sans-serif;
 	color: black;
+	font-weight: 400;
 	padding: 1em 5em 20px 3em;
 	display: inline-block;	
 	vertical-align: top;
@@ -441,7 +445,17 @@ h5:hover{
 
 }
 
+#prez p a{
 
+
+	font-family: 'Overpass', sans-serif;
+
+	font-weight: 400;
+	font-style: italic;
+	text-decoration: underline;
+
+
+}
 
 sup{
 	position: relative;
@@ -679,14 +693,16 @@ h3{
 .titre{
 	width: 100%;
 	height: auto;
-	font-size: 1.2em;
+	font-size: 1em;
 	margin-left: 0px;
 	padding-bottom: 0px;
 	margin-top: -2px;
 	margin-bottom: 10px;
 	line-height: 1.4em;
-	font-family: 'etc-trispace','Overpass Mono', monospace;
-	font-variation-settings: "wght" 500, "wdth" 80;		
+	font-family: 'Overpass', sans-serif;	
+	font-weight: 600;
+	/*font-family: 'etc-trispace','Overpass Mono', monospace;
+	font-variation-settings: "wght" 500, "wdth" 80;	*/	
 
 }
 
@@ -1038,8 +1054,10 @@ h4{
 	margin-bottom: 0px;
 	/*border: 1px solid blue;*/
 	font-size: 1.1em;
-	line-height: 1.7em;
-	font-family: 'etc-trispace','Overpass Mono', monospace;
+	line-height: 1.4em;
+	font-family: 'Overpass', sans-serif;
+	font-weight: 600;
+	margin-bottom: 5px;
 	font-variation-settings: "wght" 500, "wdth" 90;	
 }
 
@@ -1100,9 +1118,8 @@ margin: auto;
 	margin-top: 0px;
 	margin-bottom: 20px;
 	text-align: left;
-	font-family: 'Open Sans', sans-serif;
-	font-variation-settings: "wght" 300, "wdth" 80;
-
+	font-family: 'Overpass', sans-serif;
+	font-weight: 400;
 }
 
 .categorie:before{
@@ -1114,12 +1131,13 @@ margin: auto;
 .categorie{
 	/*border: 1px dotted #ffd6e0;*/
 	color: #ff2c5e;
+	font-family: 'Overpass', sans-serif;	
 /*	color: white;
 	background-color: #ff2c5e;*/
 	font-size: 2em;
 	text-align: left;
 	padding-left: 0.2em;
-	font-weight: 300;
+	font-weight: 600;
 	font-style: italic;
 	letter-spacing: 0.1em;
 
