@@ -105,7 +105,7 @@ header{
 	height: auto;
 	position: relative;
 	overflow: auto;	
-	margin:30px auto 20px;
+	margin:50px auto 20px;
 	transition: all 1s ease;	
 	background-color: #f2f2f2;
 	/*border: 1px solid black;*/
@@ -145,8 +145,8 @@ h1{
 }
 
 h1 strong{
-	font-variation-settings: "wght" 600, "wdth" 80;	
-
+	font-variation-settings: "wght" 500, "wdth" 80;	
+	font-size: 1.2em;	
 	text-transform: initial;
 }
 
@@ -276,6 +276,7 @@ h3{
 	margin-bottom: 40px;
 	margin-left: 0.7em;
 	font-size: 0.9em;
+	line-height: 1.4em;
 
 
 }
@@ -412,9 +413,9 @@ h3{
 /*	width: 80vw;
 */	font-size: 0.9em;
 	line-height: 1.6em;
-	font-family: 'etc-trispace';
-	font-variation-settings: "wght" 300, "wdth" 100;	
+	font-family: 'Overpass', sans-serif;
 	color: black;
+	font-weight: 400;
 	padding: 30px 2em 20px 2em;
 	display: inline-block;	
 	vertical-align: top;
