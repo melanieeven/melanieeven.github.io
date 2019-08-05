@@ -235,7 +235,7 @@ article:hover img{
 #prez{
 	width: 40vw;
 	margin-bottom: 0px;
-	overflow: none;
+	overflow: hidden;
 	background-color: white;
 }
 
