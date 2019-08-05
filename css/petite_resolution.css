@@ -252,6 +252,7 @@ aside .checkoff{
 
 .filtrecours, .filtretechnique, .filtreref, .filtreall{
 	display: flex;
+	justify-content: space-between;
 }
 
 .filtrecours .checkon, .filtretechnique .checkon, .filtreref .checkon, .filtreall .checkon{
