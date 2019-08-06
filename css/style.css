@@ -76,7 +76,7 @@ a{
 #haut{
 	z-index: 3;	
 	position: absolute;
-	top: 102vh;
+	top: 99vh;
 	text-align: right;
 	right: 60px;	
 	width: 110px;
@@ -380,7 +380,7 @@ h5:hover{
 	width: 100vw;
 	position: relative;
 	left: 0vw;
-	margin-top: 90px;
+	margin-top: 70px;
 	margin-bottom: 60px;
 	height: auto;
 	/*border: 1px solid red;*/
@@ -422,12 +422,14 @@ h5:hover{
 #free{
 	width: 40vw;
 	margin-bottom: 0px;	
+
 }
 
 #prez{
 	width: 50vw;
 	margin-bottom: 0px;
 	background-color: white;
+
 }
 
 #prez p{
