@@ -29,7 +29,7 @@
 			</div>
 
 
-			<br/>
+			
 			<p>
 				<strong>hypertext</strong> : document ou ensemble de documents contenant des unités d'informations liées entre elles par des hyperliens.
 				Le langage permettant d'écrire de l'hypertext est le HTML.<br/>
@@ -98,7 +98,7 @@
 
 			<p class="categorie">Écriture des paragraphes</p>	
 
-			<p> Un paragraphe en html permet d'écrire du texte courant dans une page. On peut utiliser autant de fois que l'on veut la balise paragraphe dans une page. Il faudra juste bien penser à la refermer à chaque fois qu'on l'a ouverte. Une des erreurs les plus fréquentes lorsque l'on commence à coder est l'oubli de fermeture de balise.</p>
+			<p> Un paragraphe en html permet d'écrire du texte courant dans une page. On peut utiliser autant de fois que l'on veut la balise paragraphe dans une page. Il faudra juste bien penser à la refermer à chaque fois qu'on l'a ouverte. Une des erreurs les plus fréquentes lorsque l'on commence à coder est l'oubli de fermeture de balises.</p>
 
 
 			<figure class="enteteimg">
@@ -138,7 +138,7 @@
 			<p class="categorie">vers une autre page de son site</p>	
 
 			<p> 
-				La balise html permettant de faire des liens est la balise <em>< a ></em> à laquelle on ajoutera l'attibut <em>href=""</em> pour indiquer vers ou mène le lien.
+				La balise html permettant de faire des liens est la balise <em>< a ></em> à laquelle on ajoutera l'attribut <em>href=""</em> pour indiquer vers ou mène le lien.
 				Le premier type de lien est celui qui permet de lier deux pages entre elles dans un site, on fera un lien d'un fichier vers un autre fichier. 
 			</p>
 
@@ -150,13 +150,13 @@
 
 			<figure class="enteteimg">
 				<img src="image/lienpage2.jpg" alt="exemple de lien page avec infobulle"><br/>
-				<figcaption class="legendes">Il est possible d'ajouter l'attibut title à la balise a pour indiquer le contenu à faire apparaître dans l'infobulle, lorsque l'on positionne la souris sur le lien.</figcaption>
+				<figcaption class="legendes">Il est possible d'ajouter l'attribut title à la balise a pour indiquer le contenu à faire apparaître dans l'infobulle, lorsque l'on positionne la souris sur le lien.</figcaption>
 			</figure>
 
 			<p class="categorie">vers un autre site web</p>	
 
 			<p> 
-				Il est aussi possible de faire des liens externes à son site en indiquant l'URL à la place du nom du fichier vers où aller. Dans ce cas on utilisera l'attribut <em>target="_blank"</em> pour indiquer au navigateur d'ouvrir le lien dans un nouvel onglet et ainsi éviter de perdre l'utilisateur. 
+				Il est aussi possible de faire des liens externes à son site en indiquant l'URL à atteindre à la place du nom du fichier. Dans ce cas on utilisera l'attribut <em>target="_blank"</em> pour indiquer au navigateur d'ouvrir le lien dans un nouvel onglet et ainsi éviter de perdre l'utilisateur. 
 			</p>
 
 
@@ -186,20 +186,20 @@
 
 			<figure class="enteteimg">
 				<img src="image/lienmail.jpg" alt="exemple de lien vers un mail"><br/>
-				<figcaption class="legendes">Avec à cette méthode l'ulisateur verra son logiciel de mail s'ouvrir avec l'adresse du destinataire déjà remplie par ce qui est indiqué après <em>mailto:</em>. Il faudra bien veiller à ne jamais rendre son adresse visible dans la page web. En effet, il existe des robots mal attentionnés qui vont dans chaque page existant sur web chercher les adresses email visibles. Ils les vendent ensuite à des annonceurs et on peut très rapidement se retrouver avec un nombre important de spam arrivant chaque jour dans sa boite mail.</figcaption>
+				<figcaption class="legendes">Avec à cette méthode l'ulisateur verra son logiciel de mail s'ouvrir avec l'adresse du destinataire située après <em>mailto:</em>. Il faudra bien veiller à ne jamais rendre son adresse visible dans la page web. En effet, il existe des robots voleurs qui vont dans chaque page existant sur le web pour récupérer les adresses email visibles. Ils les vendent ensuite à des annonceurs. On peut très rapidement se retrouver avec un nombre important de spams arrivant chaque jour dans sa boite mail.</figcaption>
 			</figure>
 
 
 			<p class="categorie">lien vers une ancre</p>	
 
 			<p> 
-				Les liens vers des ancres sont utilisés dans le cas des sites one-page. Il est possible de faire non pas un lien vers une autre page de son site mais vers une zone de sa page. Dans ce cas deux choses sont indispensables à faire. Dans un premier temps on va identifier la zone vers laquelle va renvoyer notre lien. Il nous suffira pour ce faire d'ajouter un <em>id="nomAncre"</em> à notre balise ciblée.
+				Les liens vers des ancres sont utilisés dans le cas des sites one-page. Il est possible de faire non pas un lien vers une autre page de son site mais vers une zone de sa page. Dans ce cas, il y a deux choses indispensables à faire. Dans un premier temps on va identifier la zone vers laquelle va renvoyer notre lien. Il nous suffira pour ce faire d'ajouter un <em>id="nomAncre"</em> à notre balise ciblée.
 			</p>
 
 
 			<figure class="enteteimg">
 				<img src="image/idcible.jpg" alt="exemple d'identification de balise pour ancre"><br/>
-				<figcaption class="legendes">Le choix de l'identifiant n'est pas très important mais il ne faut surtout pas utiliser d'accent ni d'espace dans son nom.</figcaption>
+				<figcaption class="legendes">Le choix de l'identifiant n'est pas très important mais il ne faut surtout pas utiliser d'accent ni d'espace.</figcaption>
 			</figure>
 
 			<p>
@@ -213,24 +213,24 @@
 
 			<h4>Les images</h4>
 			<p> 
-				Avant d’insérer une image dans sa page il faut bien la ranger dans le dossier data à la racine de son dossier www. Il ne faudra mettre aucun espace ni aucun accent au nom du fichier image. On utilise la balise <em>< img ></em> à laquelle on ajoute l'attribut <em>src=""</em> pour indiquer la source de l'image (où elle est rangée sur notre serveur). Pour le web on utilise le format jpg pour les images sans transparence, png pour celles avec de la transparence et gif pour les images animées. On pourra aussi utiliser le svg pour reduire leurs poids. En effet le poids des images est une contrainte très importante lors de l'intégration web, on voudra toujours gagner en temps d'affichage des pages et plus les images seront lourdes plus la page mettra du temps à se charger. 
+				Avant d’insérer une image dans sa page il faut bien la ranger dans le dossier data à la racine de son dossier www. Il ne faudra mettre aucun espace ni aucun accent au nom du fichier image. On utilise la balise <em>< img ></em> à laquelle on ajoute l'attribut <em>src=""</em> pour indiquer la source de l'image (où elle est rangée sur notre serveur). Pour le web on utilise le format jpg pour les images sans transparence, png pour celles avec de la transparence et gif pour les images animées. On pourra aussi utiliser le svg pour reduire leurs poids. En effet, le poids des images est une contrainte très importante lors de l'intégration web, on voudra toujours gagner en temps d'affichage des pages et plus les images seront lourdes plus la page mettra du temps à se charger. 
 			</p>
 
 			<figure class="enteteimg">
 				<img src="image/image.jpg" alt="exemple de balise image"><br/>
 				<figcaption class="legendes">
-					La balise img est une balise auto-fermante on la finit par un <em>/</em> <br/>
+					La balise img est une balise auto-fermante on la finit par un <em>/</em>.
 					Il est très important de rajouter l'attribut <em>alt=""</em> pour décrire le contenu de l'image, car les robots des moteurs de recherches s'en servent pour les référencer. Il est aussi indispensable de le faire figurer pour que les logiciels utilisés par les non ou mal-voyants puissent lire les images. En effet, une image matricielle etant une suite de pixels les robots ne sont pas encore assez intelligents pour déchiffrer le contenu d'une image en l'analysant point par point.</figcaption>
 			</figure>		
 
 
 
 			<h4>Le langage CSS</h4>
-			<p class="categorie">fonctionnement et nomenclature</p>	
+			<p class="categorie">nomenclature et fonctionnement</p>	
 
 			<p> 
-				Il est possible d’attribuer du style à des balises HTML de trois manières, soit directement à l’intérieur d’une balise, soit écrire le code CSS dans la partie <em>< head ></em> de la page, ou bien la manière la plus propre, écrire les styles dans un fichier à part que l’on liera avec la page html en écrivant cette ligne de code dans la partie <em>< head ></em> de la page :<br/>				
-				< link rel="stylesheet" href="style.css" >	<br/>
+				Il est possible d’attribuer du style à des balises HTML de trois manières, soit directement à l’intérieur d’une balise, soit en écrivant le code CSS dans la partie <em>< head ></em> de la page, ou bien la manière la plus propre, écrire les styles dans un fichier à part que l’on liera avec la page html en écrivant cette ligne de code dans la partie <em>< head ></em> de la page :<br/>				
+				<em>< link rel="stylesheet" href="style.css" ></em>	<br/>
 				Grace à cette ligne de code on indique au navigateur que le style qui sera attribué aux balises html de la page sera situé dans un fichier nommé style.css rangé dans le même dossier que le fichier html.
 			</p>
 
