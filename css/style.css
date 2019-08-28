@@ -550,7 +550,7 @@ article:hover img{
 aside{
 	width: 90%;
 	height: 20px;
-	margin:0px auto 10px;
+	margin:0px auto 30px;
 }
 
 h3{
@@ -821,7 +821,6 @@ h3{
 
 
 .categorietheorie{
-	display: none;
 	/*border: 1px solid black;*/	
 	width: 100%;
 	color: #ff2c5e;
@@ -838,7 +837,6 @@ h3{
 
 
 .categorietechnique{
-	display: none;
 	/*border: 1px solid black;*/	
 	width: 100%;
 	font-size: 0.7em;
@@ -853,7 +851,6 @@ h3{
 }
 
 .categoriereference{
-	display: none;
 	/*border: 1px solid black;*/	
 	width: 100%;
 	color: #FF783A;
@@ -870,7 +867,6 @@ h3{
 
 
 .categorieall{
-	display: none;
 	/*border: 1px solid black;*/	
 	width: 100%;
 	color: black;
