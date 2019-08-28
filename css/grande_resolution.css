@@ -243,7 +243,7 @@ article:hover img{
 #prez{
 	width: 40vw;
 	margin-bottom: 0px;
-	overflow: hidden;
+	overflow: scroll;
 	background-color: white;
 }
 
@@ -257,7 +257,7 @@ article:hover img{
 	padding: 2em 2em 20px 2em;
 	display: inline-block;	
 	vertical-align: top;
-		overflow: hidden;
+
 		width: 80%;
 	text-align: left;
 
