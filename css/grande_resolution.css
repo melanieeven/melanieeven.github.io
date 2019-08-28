@@ -245,6 +245,7 @@ article:hover img{
 	margin-bottom: 0px;
 	overflow: hidden;
 	background-color: white;
+	border-right: 3px solid green;
 }
 
 #prez p{
