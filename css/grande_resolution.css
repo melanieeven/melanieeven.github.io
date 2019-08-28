@@ -241,7 +241,7 @@ article:hover img{
 
 #prez p{
 
-	font-size: 1.6em;
+	font-size: 1em;
 	line-height: 1.7em;
 	font-family: 'Overpass', sans-serif;
 	color: black;
@@ -249,6 +249,7 @@ article:hover img{
 	padding: 2em 2em 20px 2em;
 	display: inline-block;	
 	vertical-align: top;
+		overflow: hidden;
 	text-align: left;
 
 }
