@@ -519,8 +519,10 @@ iframe{
 article{
 	width: 90%;
 	height: auto;
+	/*border: 1px solid green;*/
 	box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
-	margin:0px 20px 110px 20px;
+/*	margin:0px 20px 110px 20px;*/
+	margin: 10px auto 65px;
 	transition: all ease 0.4s;
 
 }
@@ -533,7 +535,7 @@ article:hover{
 
 article:hover .plus{
 	transform-origin: center;		
-	background-color: #ff2c5e;
+	background-color: /*#ff2c5e*/ lightgrey;
 	transform: rotate(360deg);	
 	color: white;
 	padding-bottom: 1px;
@@ -548,9 +550,10 @@ article:hover img{
 }
 
 aside{
-	width: 90%;
+	width: 	90%;
 	height: 20px;
 	margin:0px auto 30px;
+/*	border: 1px solid green;*/
 }
 
 h3{
@@ -748,6 +751,7 @@ h3{
 	left: 95%;
 	transform-origin: center;		
 	color:black ;
+	/*border: 1px solid green;*/
 
 }
 
@@ -798,12 +802,12 @@ h3{
 .headerarticletheorie{
 	width: 100%;
 	height: 200px;
-	/*border: 3px solid green;*/
+	/*border: 1px solid black;*/
 	/*background-color: #ff2c5e;*/
 }
 
 .headerarticletheorie .boiteimage{
-	height: 230px;
+	height: 200px;
 	width: 100%;	
 	display: flex;
 	overflow: hidden;
@@ -900,13 +904,13 @@ h3{
 .headerarticletechnique{
 	width: 100%;
 	height: 200px;
-	/*border: 1px solid grey;*/
+	/*border: 1px solid black;*/
 	/*background-color: #03CEA4;*/
 }
 
 
 .headerarticletechnique .boiteimage{
-	height: 230px;
+	height: 200px;
 	width: 100%;	
 	display: flex;
 	overflow: hidden;
@@ -973,12 +977,13 @@ h3{
 .headerarticleportfolio{
 	width: 100%;
 	height: 200px;
+	/*border: 1px solid black;*/
 	/*background-color: #2DE1FC;*/
 }
 
 .headerarticleportfolio .boiteimage{
 	width: 100%;	
-	height: 230px;
+	height: 200px;
 	overflow: hidden;
 	display: flex;
 }
