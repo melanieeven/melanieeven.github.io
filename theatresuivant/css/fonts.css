@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Interstate;
+    font-style: normal;
+    font-weight: normal;  
+    src: url('../fonts/Interstate-Regular.otf') format("opentype");
+}
+
+@font-face {
+        font-family: Interstate;
+        font-style: normal;
+        font-weight: bold;
+        src: url('../fonts/Interstate-Bold.otf') format("opentype");
+}
+
+@font-face {
+        font-family: Interstate;
+        font-style: normal;
+        font-weight: lighter;
+        src: url('../fonts/Interstate-Light.otf') format("opentype");
+}
