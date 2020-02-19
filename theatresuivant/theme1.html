@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Théâtre Suivant</title>
+		<meta name="viewport" content="width=1280"  />
+		<title>Théâtre Suivant</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">
+		<link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style.theme1.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/box.css" type="text/css" media="screen" />
+	 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />	
+		<link rel="stylesheet" type="text/css" href="css/scrollbar.css" />
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+        	<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/facescroll.js"></script>
+        	<script type="text/javascript" src="js/jquery.zoomooz.js"></script>
+
+		<script type="text/javascript">
+		        jQuery.fx.interval = 42;
+		jQuery(function(){
+                                $('#article1-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                                $('#article2-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                                $('#article3-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                        })	
+			$(document).ready(function(){
+			
+			var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+                        var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+
+                        if (isChrome || isSafari) {
+                                $.zoomooz.setup({nativeanimation:true});
+                        }	
+		
+
+			function displayPage() {
+				$("#top").fadeOut(2000);
+			}
+
+			window.addEventListener("load", displayPage, false);
+			window.addEventListener("unload", displayPage, false);
+
+		    	$("a.transition").click(function(event){
+      				event.preventDefault();
+       				linkLocation = this.href;
+       				$("#top").fadeIn(2000, redirectPage);     
+			});
+         
+			 function redirectPage() {
+       				window.location = linkLocation;
+			  }
+			
+                        	$(".infos_link").click(function(evt) {
+                                	$("#shadowing").css("height", $("#global").height() + "px");
+                                	$("#shadowing").css("display", "block");
+                                	$("#shadowing").animate( {"opacity": "0.8"}, 1500,'swing');
+                        	});
+
+                        	$(".infos_link_close").click(function(evt) {
+                                	$("#shadowing").css("display", "none");
+                                	$("#shadowing").css("opacity", "0.1");
+                                	$(".box").css("opacity", "0.1");
+                        	});
+
+				$('#infos_link1').click(function(evt) {
+    					$("#box1").css("display", "block");
+					$("#box1").animate( {"opacity": "1"}, 500, 'swing');
+				});
+				$('#infos_link2').click(function(evt) {
+                                        $("#box2").css("display", "block");
+                                        $("#box2").animate( {"opacity": "1"}, 500, 'swing');
+                                });
+				$('#infos_link3').click(function(evt) {
+                                        $("#box3").css("display", "block");
+                                        $("#box3").animate( {"opacity": "1"}, 500, 'swing');
+                                });
+				$('#infos_link4').click(function(evt) {
+                                        $("#box4").css("display", "block");
+                                        $("#box4").animate( {"opacity": "1"}, 500, 'swing');
+                                });
+
+                	});
+		</script>
+	</head>
+	<body>
+		<div id="top"></div>
+		<div id="global">
+		<div id="menu">
+		<a href="index.html" class="transition" title="Accueil"><img src="img/logo.jpg" width="184"></a>
+		<ul>
+                        <li><a href="theme1.html" title="">REGARDS</a></li>
+                        <li><a href="theme2.html" title="">DITES-NOUS</a></li>
+                        <li><a href="theme3.html" title="">REPÈRES</a></li>
+                        <li><a href="theme4.html" title="">ÉCRITS</a></li>
+                        <li><a href="theme5.html" title="">RÉFÉRENCES</a></li>
+                </ul>
+		</div>
+		<div id="content">
+ 			<div id="infos">
+			<a class="infos_link" id="infos_link1" href="javascript:void(0);">CONTACTS</a> |
+			<a class="infos_link" id="infos_link2" href="javascript:void(0);">PARTENAIRES</a> |
+			<a class="infos_link" id="infos_link3" href="javascript:void(0);">CRÉDITS</a> |
+			<a class="infos_link" id="infos_link4" href="javascript:void(0);">LIENS</a>
+			</div>
+
+			<div id="shadowing"></div>
+			<div class="box" id="box1">
+      				  <div id="boxheader">
+					<h2>CONTACTS</h2>
+   					<span class="infos_link_close" id="boxclose" onClick="document.getElementById('box1').style.display='none';"> </span>
+        			</div>
+        	      		<div id="boxcontent">
+        	     			<p>
+Direction artistique artistique@theatresuivant.fr <br/>
+Administration administration@theatresuivant.fr <br/>
+<br/>
+Tél. 01 30 96 96 23<br/>
+Fax. 01 30 96 96 30<br/>
+<br/>
+Siège social<br/>
+Théâtre Suivant<br/>
+Mairie - 19, place Saint-Christophe<br/>
+78117 Châteaufort<br/>
+<br/>
+Adresse postale / locaux de la compagnie temporairement installés à<br/>
+Médiathèque du Canal<br/>
+Bruissements - la Revue<br/>
+Quai François Truffaut - BP 607<br/>
+78056 Saint-Quentin-en-Yvelines cedex<br/>
+<br/>
+Théâtre Suivant est une association loi 1901<br/>
+Siret 384 851 093 00045<br/>
+Licences 2-1047059 3-1060835</p> 
+				</div>
+			</div>	
+			<div class="box" id="box2">
+                                  <div id="boxheader">
+					<h2>PARTENAIRES</h2>
+                                        <span class="infos_link_close" id="boxclose" onClick="document.getElementById('box2').style.display='none';"></span>
+                                </div>
+                                <div id="boxcontent">
+                                <p>
+                               Les Bruissements<br/>
+<br/>
+2011/12<br/>
+<br/>
+Communauté d'agglomération de Saint-Quentin-en-Yvelines, réseau des médiathèques de Saint-Quentin-en-Yvelines, la Ferme de Bel Ebat / théâtre de Guyancourt, rectorat de Versailles, Centre National du Théâtre, Maison Antoine Vitez / centre international de la traduction théâtrale, la Maison d'Europe et d'Orient, ville de Guyancourt
+<br/><br/>
+Résidence d’écrivain 2010 / Dorcy Rugamba
+<br/><br/>
+Conseil régional d'Ile-de-France, ville de Trappes, médiathèque Anatole France / Trappes, Maison de la Poésie à Saint-Quentin-en-Yvelines, Service Pénitentiaire d’Insertion et de Probation des Yvelines (SPIP) / Maison d’arrêt de Bois d’Arcy 
+<br/><br/>
+Les Ateliers Urbains
+<br/><br/>
+La ville de Montigny-le-Bretonneux, maison de quartier André Malraux / Montigny-le-Bretonneux<br/>
+
+                                </p>
+                                </div>
+          </div>
+			<div class="box" id="box3">
+                                  <div id="boxheader">
+					<h2>CRÉDITS</h2>
+                                        <span class="infos_link_close" id="boxclose" onClick="document.getElementById('box3').style.display='none';"></span>
+                                </div>
+                                <div id="boxcontent">
+                                <p>
+                                Webdesign et développement : Minyin Tu, Meddy Messaoudi, Mélanie Even<br/>
+Affiches Grand bruit 2010, 2011, 2012 et 2013 Mélanie Even<br/>
+Affiche Grand bruit 2009 Pierre Antoine Thierry<br/>
+<br/>
+Photo Grand bruit 2012 Homme-bulle, 2006 © Emilio López-Menchero, avec l’aimable autorisation de la galerie Nadja Vilenne, Liège<br/>
+<br/>
+Les bruissements de la langue est une formule empruntée à Roland Barthes in Le bruissement de la langue - Editions Points.  <br/>
+                                </p>
+                                </div>
+          </div>
+			<div class="box" id="box4">
+                                  <div id="boxheader">
+					<h2>LIENS</h2>
+                                        <span class="infos_link_close" id="boxclose" onClick="document.getElementById('box4').style.display='none';"></span>
+                                </div>
+                                <div id="boxcontent">
+                                <p>
+<ul>
+<li><a href="http://www.cnt.asso.fr">Centre National du Théâtre - www.cnt.asso.fr</a></li>
+<li><a href="http://www.mediatheques.agglo-sqy.fr/">Réseau des médiathèques de Saint-Quentin-en-Yvelines - www.mediatheques.agglo-sqy.fr</a></li>
+<li><a href="http://www.maisonantoinevitez.com/">Maison Antoine Vitez / Centre international de la traduction théâtrale - www.maisonantoinevitez.com</a></li>
+<li><a href="http://www.collectif-inoui.org/">Collectif Inouï - www.collectif-inoui.org</a></li>
+<li><a href="http://www.lafermedebelebat.fr/">La Ferme de Bel Ebat / théâtre de Guyancourt - www.lafermedebelebat.fr</a></li>
+<li><a href="http://www.editionstheatrales.fr/">Editions Théâtrales - www.editionstheatrales.fr</a></li>
+<li><a href="http://nicolasguadagno.com/bienvenue.html">Nicolas Guadagno - http://nicolasguadagno.com</a></li>
+<li><a href="http://www.myspace.com/archipass">ArchiPass - http://www.myspace.com/archipass </a></li>
+<li><a href="http://www.amin-theatre.fr/fr/">La Friche des Lacs de l'Essonne - http://www.amin-theatre.fr/fr/</a></li>
+</ul>
+ </p>
+                                </div>
+          </div>
+		<h1 id="sommaire">REGARDS : Images & points de vue</h1>	
+		<h1 id="bruissements">BRUISSEMENTS</h1>	
+				<div id="article1" class="zoomTarget bloc" class="scroll-pane" data-debug="false" data-closeclick="true">
+					<h3>ELOGE DE L'HOSPITALITE</h3>
+				       <div id="article1-content" style="width:360px; height:290px; overflow:scroll">
+					<p>Par Etienne B. </p><br>
+                    
+                    <p>Au moment où je rédige ce billet, que <i>Télérama</i> m’a demandé pour conclure son passionnant dossier sur les « Figures de l’étranger », les images embarrassantes, insupportables, des barques atterrissant sur les plages de Lampedusa avec leurs chargements de « boat people » en provenance de Tunisie, de Libye, et de plus loin encore, occupent les écrans de télévision sans fin prévisible. Après Madame Le Pen, c’est Silvio Berlusconi qui se rend sur place, promettant la déportation aux réfugiés et le Prix Nobel aux habitants qui n’en demandaient pas tant… Les gouvernements européens, qui avaient sous-traité aux dictatures d’Afrique du Nord la « régulation » brutale de ces flux, observent, comme on dit, un silence assourdissant. Italiens, débrouillez-vous. Africains, mourez ou rentrez chez vous le fusil dans les reins.</p>
+                    <br>
+                    <p> Si l’on a quelque honnêteté intellectuelle, de telles situations interdisent tout discours bien-pensant. Me risquerai-je alors, comme je l’avais proposé, à faire <i>l’éloge de l’hospitalité</i>, voire de cette hospitalité « inconditionnelle » que mon maître et ami, le philosophe Jacques Derrida, dans des essais désormais célèbres, avait définie comme la forme même de la démocratie, et donc de la politique à venir ? Cette hospitalité qui nous demande d’accueillir l’étranger, non seulement comme un « semblable » ou un « frère », mais comme un <i>égal</i> avec qui construire la « maison commune » de nos droits et de nos projets ? Eh bien oui, en dépit des difficultés dont j’ai une conscience aiguë. Et cela pour trois raisons.</p><br>
+					<p> Premièrement, l’appel à une hospitalité inconditionnée doit certes exercer une influence, et même une contrainte, sur les Etats. Mais il ne s’adresse pas à eux. Des Etats, qui gèrent (fort mal) les flux de populations, les codes de nationalité, les polices de frontières, nous n’attendons rien de tel. Non seulement parce qu’ils n’en sont pas capables, mais parce que telle n’est pas leur fonction. Cela ne veut pas dire que nous les déchargions de leur responsabilité dans le déchaînement d’une <i>inhospitalité généralisée</i> qui – surtout pour les plus démunis – affecte désormais la circulation et la condition des hommes dans le monde. Au contraire, <i>au nom</i> du principe d’hospitalité et de l’inconditionnalité qu’il comporte, nous exigeons des Etats qu’ils <i>créent les conditions</i>, autant qu’ils le peuvent, d’une circulation des habitants de la planète, convenablement « réglementée » ou, mieux, organisée avec le concours de tous ceux qu’elle concerne, mais essentiellement libre. Et, pour cela, qu’ils cessent d’instrumentaliser les peurs et les xénophobies, mais exposent à la discussion les vraies dimensions économiques, culturelles ou démographiques de la migration, les changements qu’elle induit, les problèmes qu’elle pose et les bénéfices mutuels qu’elle comporte.</p>
+					<br>
+					<p> Deuxièmement, un tel appel ne s’adresse pas non plus aux personnes qui nous entourent, mais pour une raison inverse : c’est qu’elles n’ont pas besoin qu’on les exhorte à ce qu’elles font déjà, et dont elles nous enseignent à la fois l’urgence, la valeur, et la difficulté. L’hospitalité inconditionnelle, c’est la solidarité, c’est l’hébergement, les secours, l’écoute, la connaissance qui brisent l’isolement des étrangers sur le territoire national, et particulièrement de ceux qui s’y trouvent en situation de précarité, d’illégalité ou d’exclusion, en raison de la contradiction violente entre les nécessités de leur existence et le pouvoir des intérêts dominants. C’est ce que chaque jour pratiquent les militants associatifs – par exemple ceux du Réseau Education Sans Frontières ou de la Cimade et de l’ANAFE, mais il y en a d’autres, qui souvent peuvent compter sur l’aide de syndicats, d’églises, de municipalités ou d’écoles. Ce qu’ils nous montrent par là, c’est que l’hospitalité (au contraire des procédures d’administration ou de police) ne saurait être <i>impersonnelle</i> : elle vient <i>de quelqu’un</i>, elle s’adresse <i>à quelqu’un</i>. Pour autant, elle n’exige pas de l’autre qu’il se conforme à telle ou telle définition, revête  telle ou telle « figure » ou « vêtement » d’acceptabilité (ce qui finit toujours par la purification raciale, ethnique ou religieuse). Ainsi que l’expliquait Derrida, elle reçoit de l’autre une leçon d’humanité et d’universalité, bien plutôt qu’elle ne lui en donne. Dans un monde où personne ne sera plus jamais absolument « différent » de personne, sans pour autant se fondre dans une seule et même « identité », il s’agit de retrouver une très vieille tradition de respect de soi-même et des autres, et de l’actualiser. Mais beaucoup d’entre nous, Occidentaux, avons oublié à cet égard les enseignements de notre histoire, et de nos textes fondateurs : l’Odyssée, la Bible ou la Déclaration des droits de l’homme… Nous avons déchu par rapport à d’autres civilisations à qui nous ne nous privons pas de donner des leçons.</p>
+					<br>
+					<p> Enfin la résistance à l’inhospitalité importe à notre <i>citoyenneté</i> : je veux parler de cette citoyenneté active, collectivement instituée, qui ne se réduit jamais à l’obéissance aux gouvernements, mais ne se réfugie pas pour autant dans l’irresponsabilité politique. Faute d’hospitalité les <i>étrangers</i> (ou certains d’entre eux, en quelque sorte « plus étranges » que d’autres) sont traités comme des <i>ennemis</i> redoutables, indésirables et haïssables. Cette perversion de l’appartenance ne renforce pas les Etats et ne préserve pas les nations. Au contraire elle les délégitime et les déstabilise. Elle instaure un état d’exception permanent qui s’apparente à une guerre civile mondialisée. Elle annonce des catastrophes qui ne seront plus seulement « humanitaires ». Faute d’hospitalité, les <i>citoyens d’ici</i> et les <i>citoyens d’ailleurs</i> (par exemple ceux d’Europe et ceux d’Afrique), entre lesquels se dresse un mur de ségrégation et de préjugés, sont privés des moyens de penser leurs <i>intérêts communs</i> (travail, emploi, création, environnement, éducation…) et de régler leurs <i>différends</i> (soit qu’ils datent d’hier ou d’aujourd’hui).  Personne ne peut croire que les intérêts s’harmoniseront spontanément, mais personne ne doit, non plus, prétendre sans débat qu’ils soient inconciliables. Faute d’hospitalité, les populations ne sont que des « variables d’ajustement » pour l’économie de marché ou des « races » servant de boucs émissaires en temps de crise (comme vient de le montrer la stigmatisation des Roms) : ce ne sont pas des <i>peuples</i>, au sens historique, culturel et démocratique du terme. Faire l’éloge de l’hospitalité, et la pratiquer en dépit de tout, ce n’est donc pas se réfugier dans le moralisme ou, comme disent certains, dans « l’angélisme », mais c’est travailler sans relâche, en tant que citoyens de certains Etats et du monde, à faire en sorte que l’inconditionnel, qui est tout simplement l’humain, entre dans la réalité. C’est faire de la politique, et recréer la politique.</p>
+          </div>
+		  </div>
+				<div id="article2" class="zoomTarget bloc" class="scroll-pane" data-debug="false" data-closeclick="true">
+                                        <h3>LE SAC EST UN MYSTERE</h3>
+                                       <div id="article2-content" style="width:200px; height:190px; overflow:scroll">
+                                       
+                                        <p>Par Juliette Garcia*</p>
+                                        <p>&nbsp; </p>
+                                        <p>Quand on part, que prend-on ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Cette question on se la pose pour la valise des vacances.<br>
+                                          Mais quand on part vraiment ? pour construire sa vie ailleurs… que prend-on ?<br>
+                                          Emmène-t-on seulement des choses utiles ou aussi des objets-fétiches ?<br>
+                                          Prend-on tout ce que l'on peut, quitte à en laisser en chemin, ou voyage-t-on léger dès le seuil de la porte ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Je serais bien en peine de répondre à cette question, moi qui transporte toujours “ma maison” avec moi, telle une tortue ! <br>
+                                          Moi qui m'encombre tant que tout déménagement devient un enfer !</p>
+                                        <p>&nbsp;</p>
+                                        <p>Je suppose que cela dépend si le départ est précipité ou minutieusement préparé.<br>
+                                          Quelqu'un raconte qu'une femme migrante n'avait rien emporté avec elle qu'un rouge à lèvres : sa féminité.</p>
+                                        <p>&nbsp;</p>
+                                        <p>J'ai remarqué dans beaucoup de témoignages que les personnes qui avaient fait ce type de voyage avaient une grande foi.<br>
+                                          J'imagine que quand on croit si fort en Dieu, on est certain qu'il pourvoira à tous nos besoins. Alors à quoi bon se charger ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Le sac est un mystère.<br>
+                                          Quel rapport entre le sac du départ et celui de l’arrivée, à supposer qu'on arrive ?<br>
+                                          Comment s'est-il transformé en chemin ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>*Juliette Garcia est bibliothécaire à la médiathèque Anatole France de Trappes<br>
+                                        </p>
+          </div>
+    </div>
+				<div id="article3" class="zoomTarget bloc" class="scroll-pane" data-debug="false" data-closeclick="true">
+                                        <h3>PRAGMATISME OU ABANDON ?</h3>
+                                       <div id="article3-content" style="width:260px; height:180px; overflow:scroll">
+                                        <p>Par Violette Soriano*</p>
+                                        <p>&nbsp;</p>
+                                        <p>“Le but de ce guide est de te donner quelques conseils pratiques qui pourraient être utiles au cas où tu aurais pris la décision difficile de rechercher de nouvelles opportunités d’emploi hors de ton pays”</p>
+                                        <p><br>
+                                          Certains mouvements politiques modernes parlent d'un système qui serait plus proche de ce que l'on appelle le “sens commun” ou le “pragmatisme”. En effet, on pourrait se demander pourquoi tout doit toujours être compliqué lorsqu'on en vient à la politique. L'Afrique a besoin de nourriture, nous en avons trop, le problème devrait être simple, mais il ne l'est pas. La première fois que j'ai été confrontée au « Guide du migrant », publié en 2004 par le gouvernement Mexicain, j'ai pensé qu'il pourrait être le résultat d'une nouvelle sorte de politique pragmatique qui aiderait les citoyens à arriver sains et saufs dans un autre pays et non pas à essayer de les garder à tout prix, quand ils veulent partir. Il m'a semblé qu'il pourrait s'agir d'une tentative assez intelligente. Les citoyens Mexicains essaient toujours de passer la frontière américaine, presque dix ans après la publication de ce guide...donc, peut être que leur fuite est inévitable ? Cela pourrait être un acte courageux, une confrontation à la dure vérité.<br>
+                                          Mais après une lecture plus attentive, j'ai été frappée par le fait que ce guide était en fait un acte d'abandon, le signe d'un gouvernement qui ne se concentre pas sur la bonne question. Le gouvernement ne devrait pas s'intéresser au “comment” les mexicains quittent le pays, mais à la question de savoir pourquoi ils fuient. Là devrait être leur attention. Ce document inspire donc deux sentiments contradictoires.  Quoiqu'il en soit, il possède indéniablement une qualité unique et en dit beaucoup sur l'Amérique Latine d'aujourd'hui. Le guide du migrant est symbolique de ces gens dépourvus de mobilité économique, des différences grandissantes entre les riches et les pauvres en Amérique Latine. Le néo-libéralisme, la globalisation, le libre échange, ont certes été bénéfiques dans une certaine mesure à l'Amérique Latine, mais ils sont surtout synonymes d'une répartition inégale de la richesse.<br>
+                                          La première étape de la destruction des communautés agricoles qui est à l'origine de la fuite des sud-américains aux Etats Unis sont les accords sur le libre échange. La signature du NAFTA ( North American Free Trade Agreements) le 1er Janvier 1994 a promis beaucoup de choses à l'Amérique Latine, mais l' égalité et une distribution égale de la richesse n'était certainement pas l'une d'entre elle. Après l'implantation du NAFTA et la crise économique, les agriculteurs mexicains ne pouvaient plus vivre de manière stable et se contentaient de survivre dans les villages . L'introduction du NAFTA et du néolibéralisme au Mexique a été une catastrophe économique pour un grand nombre des habitants des zone rurales. L'urbanisation et l'industrialisation ont aussi contribué à affaiblir la capacité économique des fermiers ruraux. C'est ainsi que les paysans et les fermiers mexicains sont partis au Nord en quête d'une vie meilleure. Cela n'est pas arrivé seulement au Mexique mais dans une grande partie de l'Amérique centrale également. Les effets du NAFTA ont complètement déstabilisé le système économique de l'Amérique Latine et il est indispensable de comprendre le rôle qu'il a joué sur la communauté agricole et les communautés rurales qui ont été forcées de migrer vers le Nord. Pour bien appréhender ce guide, il faut également comprendre que si 10,6 millions de mexicains n'avaient pas tenté de migrer aux Etats Unis, la situation économique du Mexique aurait été catastrophique.</p><br>
+                                      <p> Le guide du Migrant est écrit en forme d'historieta, une forme bon marché de bande dessinée souvent destinée à une population pauvre et illettrée. D'une certaine façon, ce guide pourrait être compris comme un autoportrait social du Mexique et peut-être d'une partie de l'Amérique Latine. Les migrants mexicains sont représentés de façon très sexuée,  ce qui témoigne d'une vision encore très traditionnelle  des genres. Les hommes sont des caricatures, forts, musclés, larges, traversant de dangereuses rivières, comme dans les contes héroïques. Les femmes sont représentées cambrées, avec des courbes et des chemises échancrées révélant leurs poitrines et leurs fesses saillantes. Il me semble que c'est assez révélateur de la culture populaire latine. En outre, tout est mis en oeuvre par le gouvernement mexicain pour faire apparaitre favorablement cette quête du pays nouveau . La traversée est présentée comme excitante, presque amusante, un conte, une aventure dans laquelle le migrant se bat pour une vie pleine de succès et d'argent. Le ton infantilisant du guide  (“ traverser la rivière peut être dangereux”) me semble complètement déplacé. Des Mexicains meurent tous les jours en traversant la frontière, ce n'est pas une aventure. La mort peut être le prix à payer du départ.<br>
+                                            <br>
+                                         L'histoire du guide du migrant, c'est l'histoire d'un peuple qui fait face à l'incapacité de son gouvernement de lui fournir assez d'espoir en un lendemain meilleur et en des conditions matérielles meilleures. C'est ce que révèle vraiment ce guide. Un gouvernement dos au mur, incapable de fournir les moyens matériels nécessaires à ces situations. Le fait qu'il se concentre sur le “comment” n'a en fait rien à voir avec le pragmatisme. C'est une mesure désespérée, qui montre l'abandon du gouvernement, qui préfère envoyer ses citoyens à l'abattoir. Face à cette réalité, ils n'ont en effet plus qu' à imprimer ce petit guide pour espérer que certains survivent dans l'illégalité aux Etats-Unis. Voeux pieux pour un Etat, qui connait parfaitement les risques encourus par les candidats à la traversée. </p><br>
+                                        <p> “Pour entrer dans un autre pays en toute sécurité, tu devras obtenir ton passeport qui est émis par les Délégations du Secrétariat des Relations Etrangères, ainsi que ton visa, que tu pourras demander à l’Ambassade ou au Consulat du pays où tu désireras te rendre ». Pourtant, nombre de Mexicains essaient de franchir la frontière nord sans les papiers nécessaires, en passant par des zones extrêmement dangereuses, particulièrement dans les régions désertiques ou encore en traversant des rivières avec des courants forts,  difficiles à repérer.<br>
+                                          Le gouvernement mexicain est en effet parfaitement au courant que le filet de sécurité américain est très dangereux. Et si je devais trouver une image, ce serait celle du mouvement que font les parents quand ils veulent dire quelque chose d'important à leur jeune enfant : ils se mettent à leur hauteur et leur parle dans les yeux et de très près. Le guide du migrant montre que le gouvernement mexicain tente désespérément de se mettre à la hauteur du peuple pour aider le plus possible, à la manière d'une figure patriarcale. Cela montre que L'Amérique Latine a encore beaucoup à faire. Traiter ses citoyens comme des enfants ne semble pas être une solution intelligente et efficace. En fait, cela sonne plus comme une attitude lâche et populiste.<br>
+                                          On pourrait donc dire que ce guide est pertinent dans la mesure où il indique à quel point le NAFTA a entamé la souveraineté du Mexique sur ses propres ressortissants et a créé une forte immigration illégale. Puisque comme le dit clairement le guide, l'immigration légale n'est pas une option viable. Ce traité a poussé un gouvernement à promouvoir en quelque sorte l'immigration illégale et cela en dit beaucoup sur la réalité économique de L'Amérique latine moderne et de sa dépendance aux Etats Unis. Ce guide du migrant raconte l'histoire d'un abandon de l'Etat.</p>
+                                        <p>&nbsp;</p>
+                                        <p>*Violette Soriano est étudiante en 3ème année de Sciences-Po Paris</p>
+    </div>
+</div>
+				<div id="image0" class="">
+                                        <img id="theme2-bloc1-image1" class="zoomTarget" data-closeclick="true" src="img/nuage.png" width="180" height="200">
+                                </div>
+				<div id="image1" class="">	
+                                        <img id="theme2-bloc1-image1" class="zoomTarget" data-closeclick="true" src="img/revue/theme1/9.jpg" width="200" height="280">
+                                </div>	
+				<div id="image2" class="">
+                                        <img id="theme2-bloc1-image1" class="zoomTarget" data-closeclick="true" src="img/revue/theme1/1.jpg" width="160" height="120">
+                                </div>
+				<div id="image3" class="">
+                                        <img id="theme2-bloc1-image1" class="zoomTarget" data-closeclick="true" src="img/revue/theme1/2.jpg" width="160" height="120">
+                                </div>
+				<div id="image4" class="">
+                                        <img id="theme2-bloc1-image1" class="zoomTarget" data-closeclick="true" src="img/revue/theme1/3.jpg" width="115" height="160">
+                                </div>
+				<div id="image5" class="">
+                                        <img id="theme2-bloc1-image1" class="zoomTarget" data-closeclick="true" src="img/revue/theme1/4.jpg" width="90" height="70">
+                                </div>
+				<div id="image6" class="">
+                                        <img id="theme2-bloc1-image1" class="zoomTarget" data-closeclick="true" src="img/revue/theme1/5.jpg" width="90" height="70">
+                                </div>
+				<div id="image7" class="">
+                                        <img id="theme2-bloc1-image1" class="zoomTarget" data-closeclick="true" src="img/revue/theme1/6.jpg" width="115" height="160">
+                                </div>
+				<div id="image8" class="">
+                                        <img id="theme2-bloc1-image1" class="zoomTarget" data-closeclick="true" src="img/revue/theme1/7.jpg" width="90" height="70">
+                                </div>
+                                <div id="image9" class="">
+					<img id="theme2-bloc1-image2" class="zoomTarget" data-closeclick="true" src="img/revue/theme1/8.jpg" width="90" height="70">
+				</div>
+			<iframe class="player" id="player1" width="300" height="60" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F89723173&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+	
+		</div>
+		</div>
+		<script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-40455655-1']);
+                _gaq.push(['_trackPageview']);
+                (function() {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+                </script>
+	</body>
+</html>
