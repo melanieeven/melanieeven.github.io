@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Théâtre Suivant</title>
+		<meta name="viewport" content="width=1280"  />
+		<title>Théâtre Suivant</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">
+		<link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style.theme5.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/box.css" type="text/css" media="screen" />
+	 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />	
+		<link rel="stylesheet" type="text/css" href="css/scrollbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css" />	
+	
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+        	<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/facescroll.js"></script>
+		<script type="text/javascript" src="js/lightbox.js"></script>
+        	<script type="text/javascript" src="js/jquery.zoomooz.js"></script>
+
+		<script type="text/javascript">
+		        jQuery.fx.interval = 42;
+		jQuery(function(){
+                                $('#article1-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                                $('#article2-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                                $('#article3-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                                $('#article4-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                        })	
+			$(document).ready(function(){
+			
+
+			function displayPage() {
+				$("#top").fadeOut(2000);
+			}
+
+			window.addEventListener("load", displayPage, false);
+			window.addEventListener("unload", displayPage, false);
+
+		    	$("a.transition").click(function(event){
+      				event.preventDefault();
+       				linkLocation = this.href;
+       				$("#top").fadeIn(2000, redirectPage);     
+			});
+         
+			 function redirectPage() {
+       				window.location = linkLocation;
+			  }
+			
+                        	$(".infos_link").click(function(evt) {
+                                	$("#shadowing").css("height", $("#global").height() + "px");
+                                	$("#shadowing").css("display", "block");
+                                	$("#shadowing").animate( {"opacity": "0.8"}, 1500,'swing');
+                        	});
+
+                        	$(".infos_link_close").click(function(evt) {
+                                	$("#shadowing").css("display", "none");
+                                	$("#shadowing").css("opacity", "0.1");
+                                	$(".box").css("opacity", "0.1");
+                        	});
+
+				$('#infos_link1').click(function(evt) {
+    					$("#box1").css("display", "block");
+					$("#box1").animate( {"opacity": "1"}, 500, 'swing');
+				});
+				$('#infos_link2').click(function(evt) {
+                                        $("#box2").css("display", "block");
+                                        $("#box2").animate( {"opacity": "1"}, 500, 'swing');
+                                });
+				$('#infos_link3').click(function(evt) {
+                                        $("#box3").css("display", "block");
+                                        $("#box3").animate( {"opacity": "1"}, 500, 'swing');
+                                });
+				$('#infos_link4').click(function(evt) {
+                                        $("#box4").css("display", "block");
+                                        $("#box4").animate( {"opacity": "1"}, 500, 'swing');
+                                });
+
+                	});
+		</script>
+</head>
+	<body>
+		<div id="top"></div>
+		<div id="global">
+		<div id="menu">
+		<a href="index.html" class="transition" title="Accueil"><img src="img/logo.jpg" width="184"></a>
+		<ul>
+  			<li><a href="theme1.html" title="">REGARDS</a></li>
+  			<li><a href="theme2.html" title="">DITES-NOUS</a></li>
+  			<li><a href="theme3.html" title="">REPÈRES</a></li>
+  			<li><a href="theme4.html" title="">ÉCRITS</a></li>
+  			<li><a href="theme5.html" title="">RÉFÉRENCES</a></li>
+		</ul>
+		</div>
+		<div id="content">
+ 			<div id="infos">
+			<a class="infos_link" id="infos_link1" href="javascript:void(0);">CONTACTS</a> |
+			<a class="infos_link" id="infos_link2" href="javascript:void(0);">PARTENAIRES</a> |
+			<a class="infos_link" id="infos_link3" href="javascript:void(0);">CRÉDITS</a> |
+			<a class="infos_link" id="infos_link4" href="javascript:void(0);">LIENS</a>
+			</div>
+
+			<div id="shadowing"></div>
+			<div class="box" id="box1">
+      				  <div id="boxheader">
+					<h2>CONTACTS</h2>
+   					<span class="infos_link_close" id="boxclose" onClick="document.getElementById('box1').style.display='none';"> </span>
+        			</div>
+        	      		<div id="boxcontent">
+        	     			<p>
+Direction artistique artistique@theatresuivant.fr <br/>
+Administration administration@theatresuivant.fr <br/>
+<br/>
+Tél. 01 30 96 96 23<br/>
+Fax. 01 30 96 96 30<br/>
+<br/>
+Siège social<br/>
+Théâtre Suivant<br/>
+Mairie - 19, place Saint-Christophe<br/>
+78117 Châteaufort<br/>
+<br/>
+Adresse postale / locaux de la compagnie temporairement installés à<br/>
+Médiathèque du Canal<br/>
+Bruissements - la Revue<br/>
+Quai François Truffaut - BP 607<br/>
+78056 Saint-Quentin-en-Yvelines cedex<br/>
+<br/>
+Théâtre Suivant est une association loi 1901<br/>
+Siret 384 851 093 00045<br/>
+Licences 2-1047059 3-1060835</p> 
+				</div>
+			</div>	
+			<div class="box" id="box2">
+                                  <div id="boxheader">
+					<h2>PARTENAIRES</h2>
+                                        <span class="infos_link_close" id="boxclose" onClick="document.getElementById('box2').style.display='none';"></span>
+                                </div>
+                                <div id="boxcontent">
+                                <p>
+                               Les Bruissements<br/>
+<br/>
+2011/12<br/>
+<br/>
+Communauté d'agglomération de Saint-Quentin-en-Yvelines, réseau des médiathèques de Saint-Quentin-en-Yvelines, la Ferme de Bel Ebat / théâtre de Guyancourt, rectorat de Versailles, Centre National du Théâtre, Maison Antoine Vitez / centre international de la traduction théâtrale, la Maison d'Europe et d'Orient, ville de Guyancourt
+<br/><br/>
+Résidence d’écrivain 2010 / Dorcy Rugamba
+<br/><br/>
+Conseil régional d'Ile-de-France, ville de Trappes, médiathèque Anatole France / Trappes, Maison de la Poésie à Saint-Quentin-en-Yvelines, Service Pénitentiaire d’Insertion et de Probation des Yvelines (SPIP) / Maison d’arrêt de Bois d’Arcy 
+<br/><br/>
+Les Ateliers Urbains
+<br/><br/>
+La ville de Montigny-le-Bretonneux, maison de quartier André Malraux / Montigny-le-Bretonneux<br/>
+
+                                </p>
+                                </div>
+                        </div>
+			<div class="box" id="box3">
+                                  <div id="boxheader">
+					<h2>CRÉDITS</h2>
+                                        <span class="infos_link_close" id="boxclose" onClick="document.getElementById('box3').style.display='none';"></span>
+                                </div>
+                                <div id="boxcontent">
+                                <p>
+                                Webdesign et développement : Minyin Tu, Meddy Messaoudi, Mélanie Even<br/>
+Affiches Grand bruit 2010, 2011, 2012 et 2013 Mélanie Even<br/>
+Affiche Grand bruit 2009 Pierre Antoine Thierry<br/>
+<br/>
+Photo Grand bruit 2012 Homme-bulle, 2006 © Emilio López-Menchero, avec l’aimable autorisation de la galerie Nadja Vilenne, Liège<br/>
+<br/>
+Les bruissements de la langue est une formule empruntée à Roland Barthes in Le bruissement de la langue - Editions Points.  <br/>
+                                </p>
+                                </div>
+                        </div>
+			<div class="box" id="box4">
+                                  <div id="boxheader">
+					<h2>LIENS</h2>
+                                        <span class="infos_link_close" id="boxclose" onClick="document.getElementById('box4').style.display='none';"></span>
+                                </div>
+                                <div id="boxcontent">
+                                <p>
+<ul>
+<li><a href="http://www.cnt.asso.fr">Centre National du Théâtre - www.cnt.asso.fr</a></li>
+<li><a href="http://www.mediatheques.agglo-sqy.fr/">Réseau des médiathèques de Saint-Quentin-en-Yvelines - www.mediatheques.agglo-sqy.fr</a></li>
+<li><a href="http://www.maisonantoinevitez.com/">Maison Antoine Vitez / Centre international de la traduction théâtrale - www.maisonantoinevitez.com</a></li>
+<li><a href="http://www.collectif-inoui.org/">Collectif Inouï - www.collectif-inoui.org</a></li>
+<li><a href="http://www.lafermedebelebat.fr/">La Ferme de Bel Ebat / théâtre de Guyancourt - www.lafermedebelebat.fr</a></li>
+<li><a href="http://www.editionstheatrales.fr/">Editions Théâtrales - www.editionstheatrales.fr</a></li>
+<li><a href="http://nicolasguadagno.com/bienvenue.html">Nicolas Guadagno - http://nicolasguadagno.com</a></li>
+<li><a href="http://www.myspace.com/archipass">ArchiPass - http://www.myspace.com/archipass </a></li>
+<li><a href="http://www.amin-theatre.fr/fr/">La Friche des Lacs de l'Essonne - http://www.amin-theatre.fr/fr/</a></li>
+</ul>
+ </p>
+                                </div>
+                        </div>
+		 <h1 id="sommaire">RÉFÉRENCES : À lire et à voir</h1>
+		<h1 id="bruissements">BRUISSEMENTS</h1>	
+		<div id="article1" class="zoomTarget bloc" class="scroll-pane" data-debug="false" data-closeclick="true">
+                            <h3>TITRE ARTICLE</h3>
+                                       <div id="article1-content" style="width:160px; height:210px; overflow:scroll">
+
+                                        <p>Par Juliette Garcia*</p>
+                                        <p>&nbsp; </p>
+                                        <p>Quand on part, que prend-on ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Cette question on se la pose pour la valise des vacances.<br>
+                                          Mais quand on part vraiment ? pour construire sa vie ailleurs… que prend-on ?<br>
+                                          Emmène-t-on seulement des choses utiles ou aussi des objets-fétiches ?<br>
+                                          Prend-on tout ce que l'on peut, quitte à en laisser en chemin, ou voyage-t-on léger dès le seuil de la porte ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Je serais bien en peine de répondre à cette question, moi qui transporte toujours “ma maison” avec moi, telle une tortue ! <br>
+                                          Moi qui m'encombre tant que tout déménagement devient un enfer !</p>
+                                        <p>&nbsp;</p>
+                                        <p>Je suppose que cela dépend si le départ est précipité ou minutieusement préparé.<br>
+                                          Quelqu'un raconte qu'une femme migrante n'avait rien emporté avec elle qu'un rouge à lèvres : sa féminité.</p>
+                                        <p>&nbsp;</p>
+                                        <p>J'ai remarqué dans beaucoup de témoignages que les personnes qui avaient fait ce type de voyage avaient une grande foi.<br>
+                                          J'imagine que quand on croit si fort en Dieu, on est certain qu'il pourvoira à tous nos besoins. Alors à quoi bon se charger ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Le sac est un mystère.<br>
+                                          Quel rapport entre le sac du départ et celui de l’arrivée, à supposer qu'on arrive ?<br>
+                                          Comment s'est-il transformé en chemin ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>*Juliette Garcia est bibliothécaire à la médiathèque Anatole France de Trappes<br>
+                                        </p>
+                                </div>
+                        </div>
+		<div id="article2" class="zoomTarget bloc" class="scroll-pane" data-debug="false" data-closeclick="true">
+                            <h3>TITRE DEUXIEME ARTICLE</h3>
+                                       <div id="article2-content" style="width:470px; height:310px; overflow:scroll">
+
+                                        <p>Par Juliette Garcia*</p>
+                                        <p>&nbsp; </p>
+                                        <p>Quand on part, que prend-on ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Cette question on se la pose pour la valise des vacances.<br>
+                                          Mais quand on part vraiment ? pour construire sa vie ailleurs… que prend-on ?<br>
+                                          Emmène-t-on seulement des choses utiles ou aussi des objets-fétiches ?<br>
+                                          Prend-on tout ce que l'on peut, quitte à en laisser en chemin, ou voyage-t-on léger dès le seuil de la porte ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Je serais bien en peine de répondre à cette question, moi qui transporte toujours “ma maison” avec moi, telle une tortue ! <br>
+                                          Moi qui m'encombre tant que tout déménagement devient un enfer !</p>
+                                        <p>&nbsp;</p>
+                                        <p>Je suppose que cela dépend si le départ est précipité ou minutieusement préparé.<br>
+                                          Quelqu'un raconte qu'une femme migrante n'avait rien emporté avec elle qu'un rouge à lèvres : sa féminité.</p>
+                                        <p>&nbsp;</p>
+                                        <p>J'ai remarqué dans beaucoup de témoignages que les personnes qui avaient fait ce type de voyage avaient une grande foi.<br>
+                                          J'imagine que quand on croit si fort en Dieu, on est certain qu'il pourvoira à tous nos besoins. Alors à quoi bon se charger ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Le sac est un mystère.<br>
+                                          Quel rapport entre le sac du départ et celui de l’arrivée, à supposer qu'on arrive ?<br>
+                                          Comment s'est-il transformé en chemin ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>*Juliette Garcia est bibliothécaire à la médiathèque Anatole France de Trappes<br>
+                                        </p>
+          			</div>
+    			</div>
+			<div id="article3" class="zoomTarget bloc" class="scroll-pane" data-debug="false" data-closeclick="true">
+                            <h3>TITRE TROISIEME ARTICLE</h3>
+                                       <div id="article3-content" style="width:240px; height:170px; overflow:scroll">
+
+                                        <p>Par Juliette Garcia*</p>
+                                        <p>&nbsp; </p>
+                                        <p>Quand on part, que prend-on ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Cette question on se la pose pour la valise des vacances.<br>
+                                          Mais quand on part vraiment ? pour construire sa vie ailleurs… que prend-on ?<br>
+                                          Emmène-t-on seulement des choses utiles ou aussi des objets-fétiches ?<br>
+                                          Prend-on tout ce que l'on peut, quitte à en laisser en chemin, ou voyage-t-on léger dès le seuil de la porte ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Je serais bien en peine de répondre à cette question, moi qui transporte toujours “ma maison” avec moi, telle une tortue ! <br>
+                                          Moi qui m'encombre tant que tout déménagement devient un enfer !</p>
+                                        <p>&nbsp;</p>
+                                        <p>Je suppose que cela dépend si le départ est précipité ou minutieusement préparé.<br>
+                                          Quelqu'un raconte qu'une femme migrante n'avait rien emporté avec elle qu'un rouge à lèvres : sa féminité.</p>
+                                        <p>&nbsp;</p>
+                                        <p>J'ai remarqué dans beaucoup de témoignages que les personnes qui avaient fait ce type de voyage avaient une grande foi.<br>
+                                          J'imagine que quand on croit si fort en Dieu, on est certain qu'il pourvoira à tous nos besoins. Alors à quoi bon se charger ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Le sac est un mystère.<br>
+                                          Quel rapport entre le sac du départ et celui de l’arrivée, à supposer qu'on arrive ?<br>
+                                          Comment s'est-il transformé en chemin ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>*Juliette Garcia est bibliothécaire à la médiathèque Anatole France de Trappes<br>
+                                        </p>
+                                </div>
+                        </div>
+			<div id="article4" class="zoomTarget bloc" class="scroll-pane" data-debug="false" data-closeclick="true">
+                            <h3>TITRE QUATRIEME ARTICLE</h3>
+                                       <div id="article4-content" style="width:180px; height:150px; overflow:scroll">
+
+                                        <p>Par Juliette Garcia*</p>
+                                        <p>&nbsp; </p>
+                                        <p>Quand on part, que prend-on ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Cette question on se la pose pour la valise des vacances.<br>
+                                          Mais quand on part vraiment ? pour construire sa vie ailleurs… que prend-on ?<br>
+                                          Emmène-t-on seulement des choses utiles ou aussi des objets-fétiches ?<br>
+                                          Prend-on tout ce que l'on peut, quitte à en laisser en chemin, ou voyage-t-on léger dès le seuil de la porte ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Je serais bien en peine de répondre à cette question, moi qui transporte toujours “ma maison” avec moi, telle une tortue ! <br>
+                                          Moi qui m'encombre tant que tout déménagement devient un enfer !</p>
+                                        <p>&nbsp;</p>
+                                        <p>Je suppose que cela dépend si le départ est précipité ou minutieusement préparé.<br>
+                                          Quelqu'un raconte qu'une femme migrante n'avait rien emporté avec elle qu'un rouge à lèvres : sa féminité.</p>
+                                        <p>&nbsp;</p>
+                                        <p>J'ai remarqué dans beaucoup de témoignages que les personnes qui avaient fait ce type de voyage avaient une grande foi.<br>
+                                          J'imagine que quand on croit si fort en Dieu, on est certain qu'il pourvoira à tous nos besoins. Alors à quoi bon se charger ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Le sac est un mystère.<br>
+                                          Quel rapport entre le sac du départ et celui de l’arrivée, à supposer qu'on arrive ?<br>
+                                          Comment s'est-il transformé en chemin ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>Et ces gens qui arrivent ici, sans aucun doute, ils avaient plus d'un tour dans leur sac, non ?</p>
+                                        <p>&nbsp;</p>
+                                        <p>*Juliette Garcia est bibliothécaire à la médiathèque Anatole France de Trappes<br>
+                                        </p>
+                                </div>
+                        </div>
+                         <div id="image1">
+                                    <img class="zoomTarget" data-closeclick="true" src="img/revue/theme2/0.jpg" width="140" height="110">
+                         </div>
+			<div id="image2">
+                                    <img class="zoomTarget" data-closeclick="true" src="img/revue/theme2/0.jpg" width="130" height="100">
+                         </div>
+			<div id="image3">
+                                    <img class="zoomTarget" data-closeclick="true" src="img/revue/theme2/0.jpg" width="130" height="100">
+                         </div>
+			<div id="image4">
+                                    <img class="zoomTarget" data-closeclick="true" src="img/revue/theme2/0.jpg" width="80" height="60">
+                         </div>
+			<iframe class="player" id="player1" width="300" height="60" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F89723173&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+			<iframe class="player" id="player2" width="300" height="60" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F89723173&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+			<iframe class="player" id="player3" width="300" height="60" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F89723173&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+			<iframe class="player" id="player4" width="300" height="60" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F89723173&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+			<iframe class="player" id="player5" width="300" height="60" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F89723173&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+		</div>
+		</div>
+		<script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-40455655-1']);
+                _gaq.push(['_trackPageview']);
+                (function() {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+                </script>
+	</body>
+</html>
