@@ -1,0 +1,855 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Théâtre Suivant</title>
+		<meta name="viewport" content="width=1280"  />
+		<title>Théâtre Suivant</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">
+		<link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/style.theme3.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/box.css" type="text/css" media="screen" />
+	 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />	
+		<link rel="stylesheet" type="text/css" href="css/scrollbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css" />	
+	
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+        	<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/facescroll.js"></script>
+		<script type="text/javascript" src="js/lightbox.js"></script>
+        	<script type="text/javascript" src="js/jquery.zoomooz.js"></script>
+
+		<script type="text/javascript">
+		        jQuery.fx.interval = 42;
+		jQuery(function(){
+                                $('#article1-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                                $('#article2-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                                $('#article3-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                                $('#article4-content').alternateScroll({ 'vertical-bar-class': 'styled-v-bar', 'hide-bars': false });
+                        })	
+			$(document).ready(function(){
+			
+
+			function displayPage() {
+				$("#top").fadeOut(2000);
+			}
+
+			window.addEventListener("load", displayPage, false);
+			window.addEventListener("unload", displayPage, false);
+
+		    	$("a.transition").click(function(event){
+      				event.preventDefault();
+       				linkLocation = this.href;
+       				$("#top").fadeIn(2000, redirectPage);     
+			});
+         
+			 function redirectPage() {
+       				window.location = linkLocation;
+			  }
+			
+                        	$(".infos_link").click(function(evt) {
+                                	$("#shadowing").css("height", $("#global").height() + "px");
+                                	$("#shadowing").css("display", "block");
+                                	$("#shadowing").animate( {"opacity": "0.8"}, 1500,'swing');
+                        	});
+
+                        	$(".infos_link_close").click(function(evt) {
+                                	$("#shadowing").css("display", "none");
+                                	$("#shadowing").css("opacity", "0.1");
+                                	$(".box").css("opacity", "0.1");
+                        	});
+
+				$('#infos_link1').click(function(evt) {
+    					$("#box1").css("display", "block");
+					$("#box1").animate( {"opacity": "1"}, 500, 'swing');
+				});
+				$('#infos_link2').click(function(evt) {
+                                        $("#box2").css("display", "block");
+                                        $("#box2").animate( {"opacity": "1"}, 500, 'swing');
+                                });
+				$('#infos_link3').click(function(evt) {
+                                        $("#box3").css("display", "block");
+                                        $("#box3").animate( {"opacity": "1"}, 500, 'swing');
+                                });
+				$('#infos_link4').click(function(evt) {
+                                        $("#box4").css("display", "block");
+                                        $("#box4").animate( {"opacity": "1"}, 500, 'swing');
+                                });
+
+                	});
+		</script>
+</head>
+	<body>
+		<div id="top"></div>
+		<div id="global">
+		<div id="menu">
+		<a href="index.html" class="transition" title="Accueil"><img src="img/logo.jpg" width="184"></a>
+		<ul>
+  			<li><a href="theme1.html" title="">REGARDS</a></li>
+  			<li><a href="theme2.html" title="">DITES-NOUS</a></li>
+  			<li><a href="theme3.html" title="">REPÈRES</a></li>
+  			<li><a href="theme4.html" title="">ÉCRITS</a></li>
+  			<li><a href="theme5.html" title="">RÉFÉRENCES</a></li>
+		</ul>
+		</div>
+		<div id="content">
+ 			<div id="infos">
+			<a class="infos_link" id="infos_link1" href="javascript:void(0);">CONTACTS</a> |
+			<a class="infos_link" id="infos_link2" href="javascript:void(0);">PARTENAIRES</a> |
+			<a class="infos_link" id="infos_link3" href="javascript:void(0);">CRÉDITS</a> |
+			<a class="infos_link" id="infos_link4" href="javascript:void(0);">LIENS</a>
+			</div>
+
+			<div id="shadowing"></div>
+			<div class="box" id="box1">
+      				  <div id="boxheader">
+					<h2>CONTACTS</h2>
+   					<span class="infos_link_close" id="boxclose" onClick="document.getElementById('box1').style.display='none';"> </span>
+        			</div>
+        	      		<div id="boxcontent">
+        	     			<p>
+Direction artistique artistique@theatresuivant.fr <br/>
+Administration administration@theatresuivant.fr <br/>
+<br/>
+Tél. 01 30 96 96 23<br/>
+Fax. 01 30 96 96 30<br/>
+<br/>
+Siège social<br/>
+Théâtre Suivant<br/>
+Mairie - 19, place Saint-Christophe<br/>
+78117 Châteaufort<br/>
+<br/>
+Adresse postale / locaux de la compagnie temporairement installés à<br/>
+Médiathèque du Canal<br/>
+Bruissements - la Revue<br/>
+Quai François Truffaut - BP 607<br/>
+78056 Saint-Quentin-en-Yvelines cedex<br/>
+<br/>
+Théâtre Suivant est une association loi 1901<br/>
+Siret 384 851 093 00045<br/>
+Licences 2-1047059 3-1060835</p> 
+				</div>
+			</div>	
+			<div class="box" id="box2">
+                                  <div id="boxheader">
+					<h2>PARTENAIRES</h2>
+                                        <span class="infos_link_close" id="boxclose" onClick="document.getElementById('box2').style.display='none';"></span>
+                                </div>
+                                <div id="boxcontent">
+                                <p>
+                               Les Bruissements<br/>
+<br/>
+2011/12<br/>
+<br/>
+Communauté d'agglomération de Saint-Quentin-en-Yvelines, réseau des médiathèques de Saint-Quentin-en-Yvelines, la Ferme de Bel Ebat / théâtre de Guyancourt, rectorat de Versailles, Centre National du Théâtre, Maison Antoine Vitez / centre international de la traduction théâtrale, la Maison d'Europe et d'Orient, ville de Guyancourt
+<br/><br/>
+Résidence d’écrivain 2010 / Dorcy Rugamba
+<br/><br/>
+Conseil régional d'Ile-de-France, ville de Trappes, médiathèque Anatole France / Trappes, Maison de la Poésie à Saint-Quentin-en-Yvelines, Service Pénitentiaire d’Insertion et de Probation des Yvelines (SPIP) / Maison d’arrêt de Bois d’Arcy 
+<br/><br/>
+Les Ateliers Urbains
+<br/><br/>
+La ville de Montigny-le-Bretonneux, maison de quartier André Malraux / Montigny-le-Bretonneux<br/>
+
+                                </p>
+                                </div>
+                        </div>
+			<div class="box" id="box3">
+                                  <div id="boxheader">
+					<h2>CRÉDITS</h2>
+                                        <span class="infos_link_close" id="boxclose" onClick="document.getElementById('box3').style.display='none';"></span>
+                                </div>
+                                <div id="boxcontent">
+                                <p>
+                                Webdesign et développement : Minyin Tu, Meddy Messaoudi, Mélanie Even<br/>
+Affiches Grand bruit 2010, 2011, 2012 et 2013 Mélanie Even<br/>
+Affiche Grand bruit 2009 Pierre Antoine Thierry<br/>
+<br/>
+Photo Grand bruit 2012 Homme-bulle, 2006 © Emilio López-Menchero, avec l’aimable autorisation de la galerie Nadja Vilenne, Liège<br/>
+<br/>
+Les bruissements de la langue est une formule empruntée à Roland Barthes in Le bruissement de la langue - Editions Points.  <br/>
+                                </p>
+                                </div>
+                        </div>
+			<div class="box" id="box4">
+                                  <div id="boxheader">
+					<h2>LIENS</h2>
+                                        <span class="infos_link_close" id="boxclose" onClick="document.getElementById('box4').style.display='none';"></span>
+                                </div>
+                                <div id="boxcontent">
+                                <p>
+<ul>
+<li><a href="http://www.cnt.asso.fr">Centre National du Théâtre - www.cnt.asso.fr</a></li>
+<li><a href="http://www.mediatheques.agglo-sqy.fr/">Réseau des médiathèques de Saint-Quentin-en-Yvelines - www.mediatheques.agglo-sqy.fr</a></li>
+<li><a href="http://www.maisonantoinevitez.com/">Maison Antoine Vitez / Centre international de la traduction théâtrale - www.maisonantoinevitez.com</a></li>
+<li><a href="http://www.collectif-inoui.org/">Collectif Inouï - www.collectif-inoui.org</a></li>
+<li><a href="http://www.lafermedebelebat.fr/">La Ferme de Bel Ebat / théâtre de Guyancourt - www.lafermedebelebat.fr</a></li>
+<li><a href="http://www.editionstheatrales.fr/">Editions Théâtrales - www.editionstheatrales.fr</a></li>
+<li><a href="http://nicolasguadagno.com/bienvenue.html">Nicolas Guadagno - http://nicolasguadagno.com</a></li>
+<li><a href="http://www.myspace.com/archipass">ArchiPass - http://www.myspace.com/archipass </a></li>
+<li><a href="http://www.amin-theatre.fr/fr/">La Friche des Lacs de l'Essonne - http://www.amin-theatre.fr/fr/</a></li>
+</ul>
+ </p>
+                                </div>
+                        </div>
+		 <h1 id="sommaire">REPÈRES : Chiffres & réalités</h1>
+		<h1 id="bruissements">BRUISSEMENTS</h1>	
+		<div id="article1" class="zoomTarget bloc" class="scroll-pane" data-debug="false" data-closeclick="true">
+                            <h3>CHIFFRES, DATES, LEXIQUE</h3>
+                                       <div id="article1-content" style="width:420px; height:290px; overflow:scroll">
+
+                                        <p>Par Thibault Lambert*</p>
+                                        <p>&nbsp; </p>
+                                        <p>72,4 millions de personnes dans le monde sont des migrants forcés, soit plus d'un habitant sur 100. <br>
+                                        </p>
+                                        <p>Qu’est ce qu’un « migrant forcé » : une personne déplacée par un conflit armé, une crise politique, la violence ou une catastrophe, mais aussi par les changements climatiques et les projets de développement. </p>
+                                        <p>&nbsp;</p>
+                                        <p>98,5 le pourcentage des demandeurs d’asile LGBTI (Lesbiennes, Gays, Bisexuels, Transgenres et Intersexués) déboutés en première instance au Royaume-Uni. Ce chiffre s’élève à 76% pour l’ensemble des demandeurs d’asile. </p>
+                                        <p><br>
+                                        </p>
+                                        <p>Source : Rapport sur les catastrophes dans le monde 2012 de la Fédération internationale des sociétés de la Croix-Rouge </p>
+                                        <p>&nbsp;</p>
+                                        <p>88 millions d’euros le budget 2011 de Frontex (chastement appelée Agence européenne pour la gestion de la coopération opérationnelle aux frontières extérieures de l'UE). Il était de 6 millions d’euros en 2005, soit une multiplication par 15 en 6 ans. </p>
+                                        <p>&nbsp;</p>
+                                        <p>Pour nuancer – un peu – l’agence Frontex s’émancipe progressivement du prêt de matériel et de la mise à disposition des moyens humains que lui accordaient jusqu’ici les pays membres de l’Union. Elle devra par exemple à l’avenir acheter puis entretenir ses matériels et salarier ses personnels. Ceci explique en partie cela. </p>
+                                        <p><br>
+                                        </p>
+                                        <p>On peut toutefois s’inquiéter de son autonomisation financière, avec comme seule garde-fou un parlement européen qui veille (distraitement ?) au grain, définissant ses missions, son budget mais bien peu regardant sur une sous-traitance massive et la privatisation rampante d’une compétence autrefois dévolue aux États. <br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>Source : Parlement Européen</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>3141 km la distance de la frontière entre les États-Unis et le Mexique. Vous partirez de Tijuana à l’Ouest pour arriver à Matamoros (!) en bordure du Golfe du Mexique. <br>
+                                        </p>
+                                        <p>Hypothèse n°1 : vous n’avez pas les papiers nécessaires pour passer la frontière avec les USA. Vous mettrez 1 jour 8 heures et 56 minutes pour rallier les deux villes, parcourrez 2 555 km dont 404 sur voies rapides, le tout avec une voiture de taille moyenne. </p>
+                                        <p><br>
+                                        </p>
+                                        <p>Hypothèse n°2 : vous avez des papiers pour passer la frontière avec les USA (et revenir au Mexique). Vous mettrez 1 jour et 34 minutes, parcourrez 2511 km dont 2325 sur voies rapides, avec la même voiture que dans l’hypothèse 1. <br>
+                                        </p>
+                                        <p>Pour la même destination vous passerez – si vous êtes en règle – 8h de moins sur la route en passant par les USA (-25% de temps de trajet). <br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>Ce n’est pas pour emprunter les autoroutes et arriver plus tôt sur la façade atlantique que les mexicains – ou plus généralement les sud-américains – traversent illégalement la frontière avec les États-Unis. Et la densité des infrastructures routières est un indice de développement discutable. Mais vous pouvez légitimement estimer que vous êtes du mauvais côté de la barrière quand les comparaisons avec votre voisin se multiplient et qu’elles aboutissent invariablement à la même conclusion. <br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>Source : Mappy - 24 novembre 2012</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>98 le numéro de l’article de la convention des Nations Unies sur le droit de la mer (http://www.un.org/Depts/los/convention_agreements/texts/unclos/unclos_f.pdf)titré Obligation de prêter assistance qui dispose :<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>1 - Tout État exige du capitaine d'un navire battant son pavillon que, pour autant que cela lui soit possible sans faire courir de risques graves au navire, à l'équipage ou aux passagers :<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>a) il prête assistance à quiconque est trouvé en péril en mer ;<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>b) il se porte aussi vite que possible au secours des personnes en détresse s'il est informé qu'elles ont besoin d'assistance, dans la mesure où l'on peut raisonnablement s'attendre qu'il agisse de la sorte ;<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>c) en cas d'abordage, il prête assistance à l'autre navire, à son équipage et à ses passagers, et, dans la mesure du possible, indique à l'autre navire le nom et le port d'enregistrement de son propre navire et le port le plus proche qu'il touchera.<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>2. Tous les États côtiers facilitent la création et le fonctionnement d'un service permanent de recherche et de sauvetage adéquat et efficace pour assurer la sécurité maritime et aérienne et, s'il y a lieu, collaborent à cette fin avec leurs voisins dans le cadre d'arrangements régionaux.<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>En droit comme ailleurs chaque mot pèse lourd. Il y a bien une obligation de prêter assistance mais elle est truffée d'issues pour les États défaillants ou les administrations délinquantes : les États côtiers facilitent création d'un service de secours, il n'y a aucune obligation de résultat. Qu'est ce qu'un service « adéquat et efficace » ? La coordination régionale des secours est une option (s'il y a lieu), pas une règle contraignante. Alors que cette coordination dans certaines régions du globe (et a fortiori les pays d'émigration) conditionne l'existence même de secours en mer. <br>
+                                        </p>
+                                        <p> Pour en savoir plus Migrations : le sauvetage maritime en perdition</p>
+                                        <p>&nbsp;</p>
+                                        <p>20 décembre 2011la date de l'agression de cinq clandestins aux Bäisses, petit hameau dans les environs de Salon-de-Provence (Bouches-du-Rhône). Surpris en pleine nuit dans un cabanon agricole par des hommes âgés de 18 à 28 ans et armés, deux d'entre eux parviendront à fuir, les trois autres seront frappés à coup de pied, de poing, de crosse et blessés par des tirs de balles en caoutchouc. </p>
+                                        <p><br>
+                                        </p>
+                                        <p>Le parquet d'Aix n'a pas retenu les motivations racistes comme circonstances aggravantes (&quot;violences commises en réunion avec l'usage ou la menace d'une arme&quot;). La procédure est en cours et la requalification des faits pourrait intervenir à la prochaine audience fixée le 18 mars 2013. La justice dispose de &quot;On a préparé des cartouches de gros sel, on va faire la battue aux clandos&quot;, &quot;tu viens o arabes se soir ?&quot;, &quot;se soir ratonnade o baisses&quot; (sic)… À la lecture de ces SMS et témoignages, difficile d'imaginer le parquet passer à côté, ne pas retenir le racisme comme circonstance aggravante et laisser le tribunal trancher durant le procès. Et pourtant Dominique Moyal, procureure de la République à Aix, s'est bernée à l'époque. On lui souhaite à l'avenir de revoir ses standards pénaux à l'aune du bon sens. </p>
+                                        <p><br>
+                                        </p>
+                                        <p>EURODAC le nom du fichier crée en 2003 contenant les données biométriques des demandeurs d'asile et des ressortissants étrangers « illégaux » interpellés en Europe. L'empreinte des dix doigts et de la paume sont donc relevées puis entrées dans cette base. Et en vertu des accords de réadmission, une personne arrêtée en Belgique mais dont les empreintes ont été relevées pour la première fois en Grèce y sera expulsée. </p>
+                                        <p><br>
+                                        </p>
+                                        <p>Voici comment les migrants en viennent à s'automutiler, abrasant le bout de leurs doigts au fer rouge ou au papier de verre. Échapper au fichage, « s'anonymer » et, quoi qu'il en coûte, ne pas figurer dans EURODAC. <br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>Au cas par cas méthode retenue en matière de droit au séjour et ayant l'unique mérite de faire croire aux demandeurs que l'individualisation est un espoir de régularisation. Ben oui, chaque &quot;cas&quot; est par essence unique. Et partant, chaque préfet l'est aussi, chaque greffier, employé de préfecture, agent de la PAF ou juge. Et puis le juge est de mauvaise humeur, l'employé de préfecture fatigué, le greffe surmené. Ou a contrario bienveillant, patient et jovial. Ce qui précipite une partie des demandeurs dans un immense casino, une loterie. La tombola du titre de séjour. Pour celles et ceux qui ne peuvent faire valoir de régularisation de droit, le cas par cas est brutalement passé de l'examen (individualisation) à la décision (quasi arbitraire). <br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>En France, singulièrement depuis 2006 et la circulaire du 13 juin qui introduit &quot;l'immigration choisie&quot; puis l'ajout de l'article L313-14 du Code de l'Entrée et du Séjour des Étrangers et du Droit d'Asile (CESEDA) qui prévoit &quot;l'admission exceptionnelle&quot; avec une commission nationale ad hoc, règne une furieuse ambiance d'aléatoire et d'inégalité devant la loi. Le pouvoir discrétionnaire des préfectures est paradoxalement (à dessein ?) maintenu par une loi sensée l'encadrer. <br>
+                                        </p>
+                                        <p>Mais des critères sont annoncés...</p>
+                                        <p>&nbsp;</p>
+                                        <p>Immigré selon la définition adoptée par le Haut Conseil à l'Intégration, un immigré est une personne née étrangère à l'étranger et résidant en France. Les personnes nées françaises à l'étranger et vivant en France ne sont donc pas comptabilisées. À l'inverse, certains immigrés ont pu devenir français, les autres restants étrangers. Les populations étrangère et immigrée ne se confondent pas totalement : un immigré n'est pas nécessairement étranger et réciproquement, certains étrangers sont nés en France (essentiellement des mineurs). La qualité d'immigré est permanente : un individu continue à appartenir à la population immigrée même s'il devient français par acquisition. C'est le pays de naissance, et non la nationalité à la naissance, qui définit l'origine géographique d'un immigré.<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>Source : Insee<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>Étranger personne qui réside en Franceet ne possède pas la nationalitéfrançaise, soit qu'elle possède une autre nationalité (à titre exclusif), soit qu'elle n'en ait aucune (c'est le cas des personnes apatrides). Les personnes de nationalité française possédant une autre nationalité (ou plusieurs) sont considérées en France comme françaises. Un étranger n'est pas forcément immigré, il peut être né en France (les mineurs notamment).<br>
+                                        </p>
+                                        <p>À la différence de celle d'immigré(voir plus haut), la qualité d'étranger ne perdure pas toujours tout au long de la vie : on peut, sous réserve que la législation en vigueur le permette, devenir français par acquisition.<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>Source : Insee</p>
+                                        <p><br>
+                                        </p>
+          </div>
+          </div>
+		<div id="article2" class="zoomTarget bloc" class="scroll-pane" data-debug="false" data-closeclick="true">
+                            <h3>LE CAS DES MINEURS ISOLES</h3>
+                                       <div id="article2-content" style="width:360px; height:120px; overflow:scroll">
+
+                                        <p>Par Murièle Champy*</p>
+                                        <p>&nbsp; </p>
+                                        <p>La Convention Internationale des Droits de l'Enfant, que la France a ratifiée en 1990, garantit aux enfants le droit à la sécurité, la santé, l'éducation... et impose aux États de prendre soin des mineurs en danger. En France, c'est la loi du 7 mars 2005 qui réglemente la protection de l'enfance et en remet la mise en œuvre à l'Aide Sociale à l'Enfance (ASE) financée par les Conseils Généraux. Les mineurs isolés étrangers (MIE) relèvent du droit commun. Pourtant, pour les MIE arrivés en France, les obstacles ne disparaissent pas lorsqu'ils ont franchi la frontière.</p>
+                                        <p><br>
+                                        </p>
+                                        <p>Certains sont refoulés à l'aéroport. Pour les autres, une période d'errance s'installe avant qu'ils ne  soient repérés et hébergés dans des structures d'accueil provisoire, ce qui les pousse souvent à poursuivre leur voyage.<br>
+                                         </p>
+                                        <p>&nbsp;</p>
+                                        <p>Puis vient la procédure de prise en charge par l'ASE. Certains départements débordés par l'afflux important de jeunes (Nord, Seine St-Denis, Paris) refusent l'admission sous les prétextes les plus divers. Ils ont recours à un examen médical (radiographie du poignet pour déterminer le développement osseux) dont tous les experts s'accordent pourtant à contester la fiabilité avec une  marge d'erreur de dix-huit mois.<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>Lorsque les jeunes sont admis, démarre une course contre la montre pour mettre toutes les chances de leur côté, afin d’obtenir un titre de séjour à leur majorité. Pour satisfaire à la procédure de régularisation, les MIE sont incités à élaborer dans l'urgence un projet de vie, choisir une formation, de préférence dans un métier “en tension” (BTP, restauration...) au mépris des épreuves traversées qui nécessiteraient un temps de reconstruction et de toute aspiration personnelle. Ils sont sommés de prouver leur volonté d'intégration et leur capacité d'adaptation.<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>Le  contrat jeune majeur est demandé par le jeune à l'approche de sa majorité, Il est accordé ou non par le Conseil Général après délibération d'une commission. Il ouvre droit à la prolongation de la prise en charge par l'ASE et à la mise en place de mesures d'accompagnement adaptées à sa situation pour une durée déterminée et au maximum jusqu'aux 21 ans de la personne.<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>À dix-huit ans, on ne devient pas adulte du jour au lendemain. Alors qu'ils ne sont pas autonomes, qu'ils ne bénéficient pas de relations pouvant leur apporter un soutien ou un réseau, l'attribution d'un contrat jeune majeur n'est pas assurée, elle se fait même de plus en plus rare. Lorsque le contrat est refusé, ce sont des mois ou des années d'effort des jeunes et des travailleurs sociaux qui sont anéantis, ainsi que les dépenses jusque-là consenties par l'État qui le sont en pure perte.<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>Sources<br>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>http://infomie.net/<br>
+                                        </p>
+                                        <p>http://www.mipes.org/Jeunes-refugies-en-quete-d-avenir.html</p>
+                                        <p>&nbsp;</p>
+                                        <p>*Murièle Champy est une habitante de Saint-Quentin-en-Yvelines</p>
+                                        <p><br>
+                                        </p>
+          </div>
+	</div>
+			<div id="article3" class="zoomTarget bloc" class="scroll-pane" data-debug="false" data-closeclick="true">
+                            <h3>CEUX QUI PASSENT</h3>
+<div id="article3-content" style="width:260px; height:200px; overflow:scroll">
+
+                                        <p>Par Haydée Sabéran*</p>
+  <p>&nbsp; </p>
+                                        <p>On entend parler d’eux quand ils coulent dans une barque au large de Lampedusa ou quand on les retrouve, gelés, dans le train d’atterrissage d’un avion à Roissy. Un peuple de clandestins, un phénomène mondial qui effraie l’Europe. Pourtant, pour une poignée de gens du nord de la France, ces migrants qui, toutes les nuits, cherchent à grimper dans un camion vers l’Angleterre, ont un visage, une histoire, un prénom. Ici, dans les forêts, les chemins creux des villages, parfois sur les plages, on croise des hommes, quelquefois des femmes, qui ont vu leur voisin de traversée mourir de soif dans le désert, qui brûlent leurs empreintes digitales sur des clous chauffés à blanc, ne dorment plus jamais dans des draps; des enfants qui ont parcouru la moitié du monde pour arriver là et qui pleurent en cachette. Vu de loin, ce sont des ombres; de près, ce sont des héros. On croise aussi, dans ce coin de France modeste, des supporters de foot qui emmènent les migrants au stade voir un match, des grands-mères qui rechargent des portables, des paysans qui laissent traîner des bouteilles de lait dans leur grange pour les voyageurs de passage…</p>
+                                        <p>Haydée Sabéran nous raconte ces existences, celles des migrants et des habitants, qui se mêlent et souvent se réchauffent l’une l’autre. Des histoires où circulent la méfiance et la tendresse, le désir et le désarroi. Elle livre un récit poignant qui donne à réfléchir sur la vie − la leur et la nôtre −, sur ses ressorts, insoupçonnés parfois, sur ce qui nous motive et nous porte.</p>
+                                        <p> <br>
+                                          &quot;Ceux qui passent&quot; a obtenu le Prix spécial du jury du Club de la Presse Nord-Pas-de-Calais 2012.</p>
+                                        <p><br>
+                                        </p>
+    </div>
+</div>
+			<div id="article4" class="zoomTarget bloc" class="scroll-pane" data-closeclick="true">
+                            <h3>CONVENTION INTERNATIONALE</h3>
+                                       <div id="article4-content" style="font-size:6px; width:240px; height:340px; overflow:scroll">
+
+                                        <p><br>
+                                        </p>
+                                        <p>Convention internationale sur la protection des droits de tous les travailleurs migrants et des membres de leur famille<br>
+                                          Adoptée par l'Assemblée générale dans sa résolution 45/158  du 18 décembre 1990</p>
+                                        <p>Préambule<br>
+                                          Les Etats parties à la présente Convention,</p>
+                                        <p>Tenant compte des principes consacrés par les instruments de base des Nations Unies relatifs aux droits de l'homme, en particulier la Déclaration universelle des droits de l'homme, le Pacte international relatif aux droits économiques, sociaux et culturels, le Pacte international relatif aux droits civils et politiques, la Convention internationale sur l'élimination de toutes les formes de discrimination raciale, la Convention sur l'élimination de toutes les formes de discrimination à l'égard des femmes et la Convention relative aux droits de l'enfant,<br>
+                                          Tenant compte également des principes et normes reconnus dans les instruments pertinents élaborés sous les auspices de l'Organisation internationale du Travail, et particulièrement la Convention concernant les travailleurs migrants (N 97), la Convention concernant les migrations dans des conditions abusives et la promotion de l'égalité de chances et de traitement des travailleurs migrants (N 143), les Recommandations concernant les travailleurs migrants (N 86 et N 151), ainsi que la Convention concernant le travail forcé ou obligatoire (N 29) et la Convention concernant l'abolition du travail forcé (N 105),<br>
+                                          Réaffirmant l'importance des principes énoncés dans la Convention concernant la lutte contre la discrimination dans le domaine de l'enseignement, de l'Organisation des Nations Unies pour l'éducation, la science et la culture,<br>
+                                          Rappelant la Convention contre la torture et autres peines ou traitements cruels, inhumains ou dégradants, la Déclaration du quatrième Congrès des Nations Unies pour la prévention du crime et le traitement des délinquants, le Code de conduite pour les responsables de l'application des lois et les Conventions relatives à l'esclavage,<br>
+                                          Rappelant que l'un des objectifs de l'Organisation internationale du Travail, tel que le prévoit sa constitution, est la protection des intérêts des travailleurs lorsqu'ils sont employés dans un pays autre que le leur, et ayant à l'esprit les connaissances spécialisées et l'expérience de ladite organisation pour les questions concernant les travailleurs migrants et les membres de leur famille,<br>
+                                          Reconnaissant l'importance des travaux réalisés au sujet des travailleurs migrants et des membres de leur famille par divers organes de l'Organisation des Nations Unies, particulièrement la Commission des droits de l'homme et la Commission du développement social, ainsi que par l'Organisation des Nations Unies pour l'alimentation et l'agriculture, l'Organisation des Nations Unies pour l'éducation, la science et la culture et l'Organisation mondiale de la santé et d'autres organisations internationales,<br>
+                                          Reconnaissant également les progrès accomplis par certains Etats sur une base régionale ou bilatérale en vue de la protection des droits des travailleurs migrants et des membres de leur famille, ainsi que l'importance et l'utilité des accords bilatéraux et multilatéraux dans ce domaine,<br>
+                                          Conscients de l'importance et de l'ampleur du phénomène migratoire, qui met en cause des millions de personnes et affecte un grand nombre de pays de la communauté internationale,<br>
+                                          Conscients de l'effet des migrations de travailleurs sur les Etats et les populations en cause et désireux de fixer des normes permettant aux Etats d'harmoniser leurs attitudes moyennant acceptation de certains principes fondamentaux pour ce qui est du traitement des travailleurs migrants et des membres de leur famille,<br>
+                                          Considérant la situation de vulnérabilité dans laquelle se trouvent fréquemment les travailleurs migrants et les membres de leur famille du fait, entre autres, de leur éloignement de l'Etat d'origine et d'éventuelles difficultés tenant à leur présence dans l'Etat d'emploi,<br>
+                                          Convaincus que, partout, les droits des travailleurs migrants et des membres de leur famille n'ont pas été suffisamment reconnus et qu'ils doivent donc bénéficier d'une protection internationale appropriée,<br>
+                                          Tenant compte du fait que, dans de nombreux cas, les migrations sont la source de graves problèmes pour les membres de la famille des travailleurs migrants ainsi que pour les travailleurs migrants eux-mêmes, en particulier du fait de la dispersion de la famille,<br>
+                                          Considérant que les problèmes humains que comportent les migrations sont encore plus graves dans le cas des migrations irrégulières et convaincus par conséquent qu'il convient d'encourager des mesures appropriées en vue de prévenir et d'éliminer les mouvements clandestins ainsi que le trafic de travailleurs migrants, tout en assurant en même temps la protection des droits fondamentaux de ceux-ci,<br>
+                                          Considérant que les travailleurs dépourvus de documents ou en situation irrégulière sont fréquemment employés dans des conditions moins favorables que d'autres travailleurs et que certains employeurs sont ainsi amenés à rechercher une telle main-d'oeuvre en vue de tirer un bénéfice d'une concurrence déloyale,<br>
+                                          Considérant également que l'emploi de travailleurs migrants en situation irrégulière se trouvera découragé si les droits fondamentaux de tous les travailleurs migrants sont plus largement reconnus et, de surcroît, que l'octroi de certains droits supplémentaires aux travailleurs migrants et aux membres de leur famille en situation régulière encouragera tous les migrants et tous les employeurs à respecter les lois et procédures de l'Etat intéressé et à s'y conformer,<br>
+                                          Convaincus pour cette raison de la nécessité d'instituer la protection internationale des droits de tous les travailleurs migrants et des membres de leur famille en réaffirmant et en établissant des normes de base dans le cadre d'une convention générale susceptible d'être universellement appliquée,<br>
+                                          Sont convenus de ce qui suit:<br>
+                                          Première Partie<br>
+                                          Champ d'application et définitions<br>
+                                          Article premier<br>
+                                          1. A moins qu'elle n'en dispose autrement, la présente Convention s'applique à tous les travailleurs migrants et aux membres de leur famille sans distinction aucune, notamment de sexe, de race, de couleur, de langue, de religion ou de conviction, d'opinion politique ou de toute autre opinion, d'origine nationale, ethnique ou sociale, de nationalité, d'âge, de situation économique, de fortune, de situation matrimoniale, de naissance, ou d'autre situation.<br>
+                                          2. La présente Convention s'applique à tout le processus de migration des travailleurs migrants et des membres de leur famille, qui comprend les préparatifs de la migration, le départ, le transit et toute la durée du séjour, l'activité rémunérée dans l'Etat d'emploi, ainsi que le retour dans l'Etat d'origine ou dans l'Etat de résidence habituelle.<br>
+                                          Article 2<br>
+                                          Aux fins de la présente Convention:<br>
+                                          1. L'expression &quot;travailleurs migrants&quot; désigne les personnes qui vont exercer, exercent ou ont exercé une activité rémunérée dans un Etat dont elles ne sont pas ressortissantes;<br>
+                                          2.a) L'expression &quot;travailleurs frontaliers&quot; désigne les travailleurs migrants qui maintiennent leur résidence habituelle dans un Etat voisin auquel ils reviennent en principe chaque jour ou au moins une fois par semaine;<br>
+                                          b) L'expression &quot;travailleurs saisonniers&quot; désigne les travailleurs migrants dont l'activité, de par sa nature, dépend des conditions saisonnières et ne peut être exercée que pendant une partie de l'année;<br>
+                                          c) L'expression &quot;gens de mer&quot;, qui comprend les pêcheurs, désigne les travailleurs migrants employés à bord d'un navire immatriculé dans un Etat dont ils ne sont pas ressortissants;<br>
+                                          d) L'expression &quot;travailleurs d'une installation en mer&quot; désigne les travailleurs migrants employés sur une installation en mer qui relève de la juridiction d'un Etat dont ils ne sont pas ressortissants;<br>
+                                          e) L'expression &quot;travailleurs itinérants&quot; désigne les travailleurs migrants qui, ayant leur résidence habituelle dans un Etat, doivent, de par la nature de leur activité, se rendre dans d'autres Etats pour de courtes périodes;<br>
+                                          f) L'expression &quot;travailleurs employés au titre de projets&quot; désigne les travailleurs migrants qui ont été admis dans un Etat d'emploi pour un temps déterminé pour travailler uniquement à un projet spécifique exécuté dans cet Etat par leur employeur;<br>
+                                          g) L'expression &quot;travailleurs admis pour un emploi spécifique&quot; désigne les travailleurs migrants:<br>
+                                          i) Qui ont été envoyés par leur employeur pour un temps limité et déterminé dans un Etat d'emploi pour accomplir une mission ou une tâche spécifique; ou<br>
+                                          ii) Qui entreprennent pour un temps limité et déterminé un travail exigeant des compétences professionnelles, commerciales, techniques ou autres hautement spécialisées; ou<br>
+                                          iii) Qui, à la demande de leur employeur dans l'Etat d'emploi, entreprennent pour un temps limité et déterminé un travail de caractère provisoire ou de courte durée;<br>
+                                          et qui sont tenus de quitter l'Etat d'emploi soit à l'expiration de leur temps de séjour autorisé, soit plus tôt s'ils n'accomplissent plus la mission ou la tâche spécifique, ou s'ils n'exécutent plus le travail initial;<br>
+                                          h) L'expression &quot;travailleurs indépendants&quot; désigne les travailleurs migrants qui exercent une activité rémunérée autrement que dans le cadre d'un contrat de travail et qui tirent normalement leur subsistance de cette activité en travaillant seuls ou avec les membres de leur famille, et tous autres travailleurs migrants reconnus comme travailleurs indépendants par la législation applicable de l'Etat d'emploi ou par des accords bilatéraux ou multilatéraux.<br>
+                                          Article 3<br>
+                                          La présente Convention ne s'applique pas:<br>
+                                          a) Aux personnes envoyées ou employées par des organisations et des organismes internationaux ni aux personnes envoyées ou employées par un Etat en dehors de son territoire pour exercer des fonctions officielles, dont l'admission et le statut sont régis par le droit international général ou par des accords internationaux ou des conventions internationales spécifiques;<br>
+                                          b) Aux personnes envoyées ou employées par un Etat ou pour le compte de cet Etat en dehors de son territoire qui participent à des programmes de développement et à d'autres programmes de coopération, dont l'admission et le statut sont régis par un accord spécifique conclu avec l'Etat d'emploi et qui, conformément à cet accord, ne sont pas considérées comme des travailleurs migrants;<br>
+                                          c) Aux personnes qui deviennent résidentes d'un Etat autre que leur Etat d'origine en qualité d'investisseurs;<br>
+                                          d) Aux réfugiés et aux apatrides, sauf disposition contraire de la législation nationale pertinente de l'Etat partie intéressé ou des instruments internationaux en vigueur pour cet Etat;<br>
+                                          e) Aux étudiants et aux stagiaires;<br>
+                                          f) Aux gens de mer et travailleurs des installations en mer qui n'ont pas été autorisés à résider ou à exercer une activité rémunérée dans l'Etat d'emploi.<br>
+                                          Article 4<br>
+                                          Aux fins de la présente Convention, l'expression &quot;membres de la famille&quot; désigne les personnes mariées aux travailleurs migrants ou ayant avec ceux-ci des relations qui, en vertu de la loi applicable, produisent des effets équivalant au mariage, ainsi que leurs enfants à charge et autres personnes à charge qui sont reconnues comme membres de la famille en vertu de la législation applicable ou d'accords bilatéraux ou multilatéraux applicables entre les Etats intéressés.<br>
+                                          Article 5<br>
+                                          Aux fins de la présente Convention, les travailleurs migrants et les membres de leur famille:<br>
+                                          a) Sont considérés comme pourvus de documents ou en situation régulière s'ils sont autorisés à entrer, séjourner et exercer une activité rémunérée dans l'Etat d'emploi conformément à la législation dudit Etat et aux accords internationaux auxquels cet Etat est partie;<br>
+                                          b) Sont considérés comme dépourvus de documents ou en situation irrégulière s'ils ne remplissent pas les conditions prévues à l'alinéa a du présent article.<br>
+                                          Article 6<br>
+                                          Aux fins de la présente Convention:<br>
+                                          a) L'expression &quot;Etat d'origine&quot; s'entend de l'Etat dont la personne intéressée est ressortissante;<br>
+                                          b) L'expression &quot;Etat d'emploi&quot; s'entend de l'Etat où le travailleur migrant va exercer, exerce ou a exercé une activité rémunérée, selon le cas;<br>
+                                          c) L'expression &quot;Etat de transit&quot; s'entend de tout Etat par lequel la personne intéressée passe pour se rendre dans l'Etat d'emploi ou de l'Etat d'emploi à l'Etat d'origine ou à l'Etat de résidence habituelle.<br>
+                                          Deuxième Partie<br>
+                                          Non-discrimination en matière de droits<br>
+                                          Article 7<br>
+                                          Les Etats parties s'engagent, conformément aux dispositions des instruments internationaux relatifs aux droits de l'homme, à respecter et à garantir à tous les travailleurs migrants et aux membres de leur famille se trouvant sur leur territoire et relevant de leur juridiction les droits reconnus dans la présente Convention sans distinction aucune, notamment de sexe, de race, de couleur, de langue, de religion ou de conviction, d'opinion politique ou de toute autre opinion, d'origine nationale, ethnique ou sociale, de nationalité, d'âge, de situation économique, de fortune, de situation matrimoniale, de naissance ou de toute autre situation.</p>
+                                        <p>Troisième Partie<br>
+                                          Droits de l'homme de tous les travailleurs migrants et des membres de leur famille<br>
+                                          Article 8<br>
+                                          1. Les travailleurs migrants et les membres de leur famille sont libres de quitter tout Etat, y compris leur Etat d'origine. Ce droit ne peut faire l'objet que de restrictions prévues par la loi, nécessaires à la protection de la sécurité nationale, de l'ordre public, de la santé ou de la moralité publiques, ou des droits et libertés d'autrui, et compatibles avec les autres droits reconnus par la présente partie de la Convention.<br>
+                                          2. Les travailleurs migrants et les membres de leur famille ont le droit à tout moment de rentrer et de demeurer dans leur Etat d'origine.</p>
+                                        <p>Article 9<br>
+                                          Le droit à la vie des travailleurs migrants et des membres de leur famille est protégé par la loi.</p>
+                                        <p>Article 10<br>
+                                          Nul travailleur migrant ou membre de sa famille ne peut être soumis à la torture ni à des peines ou traitements cruels, inhumains ou dégradants.</p>
+                                        <p>Article 11<br>
+                                          1. Nul travailleur migrant ou membre de sa famille ne peut être tenu en esclavage ou en servitude.<br>
+                                          2. Nul travailleur migrant ou membre de sa famille ne peut être astreint à accomplir un travail forcé ou obligatoire.<br>
+                                          3. Le paragraphe 2 du présent article ne saurait être interprété comme interdisant, dans les Etats où certains crimes peuvent être punis de détention accompagnée de travaux forcés, l'accomplissement d'une peine de travaux forcés infligée par un tribunal compétent.<br>
+                                          4. N'est pas considéré comme &quot;travail forcé ou obligatoire&quot; au sens du présent article:<br>
+                                          a) Tout travail ou service, non visé au paragraphe 3 du présent article, normalement requis d'un individu qui est détenu en vertu d'une décision de justice régulière ou qui, ayant fait l'objet d'une telle décision, est libéré conditionnellement;<br>
+                                          b) Tout service exigé dans les cas de force majeure ou de sinistres qui menacent la vie ou le bien-être de la communauté;<br>
+                                          c) Tout travail ou tout service formant partie des obligations civiques normales dans la mesure où il est également imposé aux nationaux de l'Etat considéré. <br>
+                                          Article 12<br>
+                                          1. Les travailleurs migrants et les membres de leur famille ont droit à la liberté de pensée, de conscience et de religion. Ce droit implique la liberté d'avoir ou d'adopter une religion ou une conviction de leur choix, ainsi que la liberté de manifester leur religion ou leur conviction, individuellement ou en commun, tant en public qu'en privé, par le culte et l'accomplissement des rites, les pratiques et l'enseignement.<br>
+                                          2. Les travailleurs migrants et les membres de leur famille ne peuvent subir aucune contrainte pouvant porter atteinte à leur liberté d'avoir ou d'adopter une religion ou une conviction de leur choix.<br>
+                                          3. La liberté de manifester sa religion ou ses convictions ne peut faire l'objet que des seules restrictions prévues par la loi et qui sont nécessaires à la protection de la sécurité, de l'ordre, de la santé ou de la moralité publics ou des libertés et droits fondamentaux d'autrui.<br>
+                                          4. Les Etats parties à la présente Convention s'engagent à respecter la liberté des parents, dont l'un au moins est un travailleur migrant, et, le cas échéant, des tuteurs légaux de faire assurer l'éducation religieuse et morale de leurs enfants conformément à leurs propres convictions.</p>
+                                        <p>Article 13<br>
+                                          1. Les travailleurs migrants et les membres de leur famille ne peuvent être inquiétés pour leurs opinions.<br>
+                                          2. Les travailleurs migrants et les membres de leur famille ont droit à la liberté d'expression; ce droit comprend la liberté de rechercher, de recevoir et de répandre des informations et des idées de toute espèce, sans considérations de frontières, sous une forme orale, écrite, imprimée ou artistique, ou par tout autre moyen de leur choix.<br>
+                                          3. L'exercice du droit prévu au paragraphe 2 du présent article comporte des devoirs spéciaux et des responsabilités spéciales. Il peut en conséquence être soumis à certaines restrictions qui doivent toutefois être expressément fixées par la loi et qui sont nécessaires:<br>
+                                          a) Au respect des droits et de la réputation d'autrui;<br>
+                                          b) A la sauvegarde de la sécurité nationale des Etats concernés, de l'ordre public, de la santé ou de la moralité publiques;<br>
+                                          c) Afin d'empêcher toute propagande en faveur de la guerre;<br>
+                                          d) Afin d'empêcher tout appel à la haine nationale, raciale ou religieuse, qui constitue une incitation à la discrimination, à l'hostilité ou à la violence.</p>
+                                        <p>Article 14<br>
+                                          Nul travailleur migrant ou membre de sa famille n'est l'objet d'immixtions arbitraires ou illégales dans sa vie privée, sa famille, son domicile, sa correspondance ou ses autres modes de communication, ni d'atteintes illégales à son honneur et à sa réputation. Chaque travailleur migrant et membre de sa famille a droit à la protection de la loi contre de telles immixtions ou de telles atteintes. </p>
+                                        <p>Article 15<br>
+                                          Nul travailleur migrant ou membre de sa famille ne peut être privé arbitrairement de ses biens, qu'il en soit propriétaire à titre individuel ou en association avec d'autres personnes. Quand, en vertu de la législation en vigueur dans l'Etat d'emploi, les biens d'un travailleur migrant ou d'un membre de sa famille font l'objet d'une expropriation totale ou partielle, l'intéressé a droit à une indemnité équitable et adéquate. </p>
+                                        <p>Article 16<br>
+                                          1. Les travailleurs migrants et les membres de leur famille ont droit à la liberté et à la sécurité de leur personne.<br>
+                                          2. Les travailleurs migrants et les membres de leur famille ont droit à la protection effective de l'Etat contre la violence, les dommages corporels, les menaces et intimidations, que ce soit de la part de fonctionnaires ou de particuliers, de groupes ou d'institutions.<br>
+                                          3. Toute vérification de l'identité des travailleurs migrants et des membres de leur famille par les agents de police est effectuée conformément à la procédure prévue par la loi.<br>
+                                          4. Les travailleurs migrants et les membres de leur famille ne peuvent faire l'objet, individuellement ou collectivement, d'une arrestation ou d'une détention arbitraire; ils ne peuvent être privés de leur liberté, si ce n'est pour des motifs et conformément à la procédure prévus par la loi.<br>
+                                          5. Les travailleurs migrants et les membres de leur famille qui sont arrêtés sont informés, au moment de leur arrestation, si possible dans une langue qu'ils comprennent, des raisons de cette arrestation et ils sont informés sans tarder, dans une langue qu'ils comprennent, de toute accusation portée contre eux.<br>
+                                          6. Les travailleurs migrants et les membres de leur famille qui sont arrêtés ou détenus du chef d'une infraction pénale doivent être traduits dans le plus court délai devant un juge ou une autre autorité habilitée par la loi à exercer des fonctions judiciaires et doivent être jugés dans un délai raisonnable ou libérés. Leur détention en attendant de passer en jugement ne doit pas être de règle, mais leur mise en liberté peut être subordonnée à des garanties assurant leur comparution à l'audience, à tous les autres actes de la procédure et, le cas échéant, pour l'exécution du jugement.<br>
+                                          7. Si des travailleurs migrants ou des membres de leur famille sont arrêtés ou sont emprisonnés ou placés en garde à vue en attendant de passer en jugement ou sont détenus de toute autre manière:<br>
+                                          a) Les autorités consulaires ou diplomatiques de leur Etat d'origine ou d'un Etat représentant les intérêts de cet Etat sont informées sans délai, à leur demande, de leur arrestation ou de leur détention et des motifs invoqués;<br>
+                                          b) Les intéressés ont le droit de communiquer avec lesdites autorités. Toute communication adressée auxdites autorités par les intéressés leur est transmise sans délai et ils ont aussi le droit de recevoir sans délai des communications desdites autorités;<br>
+                                          c) Les intéressés sont informés sans délai de ce droit et des droits dérivant des traités pertinents liant, le cas échéant, les Etats concernés, de correspondre et de s'entretenir avec des représentants desdites autorités et de prendre avec eux des dispositions en vue de leur représentation légale.<br>
+                                          8. Les travailleurs migrants et les membres de leur famille qui se trouvent privés de leur liberté par arrestation ou détention ont le droit d'introduire un recours devant un tribunal afin que celui-ci statue sans délai sur la légalité de leur détention et ordonne leur libération si la détention est illégale. Lorsqu'ils assistent aux audiences, les intéressés bénéficient gratuitement, en cas de besoin, de l'assistance d'un interprète s'ils ne comprennent pas ou ne parlent pas la langue utilisée.<br>
+                                          9. Les travailleurs migrants et les membres de leur famille victimes d'arrestation ou de détention illégale ont droit à réparation.</p>
+                                        <p>Article 17<br>
+                                          1. Les travailleurs migrants et les membres de leur famille qui sont privés de leur liberté sont traités avec humanité et avec le respect de la dignité inhérente à la personne humaine et de leur identité culturelle.<br>
+                                          2. Les travailleurs migrants et les membres de leur famille prévenus sont, sauf dans des circonstances exceptionnelles, séparés des condamnés et soumis à un régime distinct, approprié à leur condition de personnes non condamnées. Les jeunes prévenus sont séparés des adultes et il est décidé de leur cas aussi rapidement que possible.<br>
+                                          3. Les travailleurs migrants ou les membres de leur famille qui sont détenus dans un Etat de transit ou un Etat d'emploi du chef d'une infraction aux dispositions relatives aux migrations doivent être séparés, dans la mesure du possible, des condamnés ou des prévenus.<br>
+                                          4. Durant toute période où des travailleurs migrants ou des membres de leur famille sont emprisonnés en vertu d'une sentence prononcée par un tribunal, le régime pénitentiaire comporte un traitement dont le but essentiel est leur amendement et leur reclassement social. Les jeunes délinquants sont séparés des adultes et soumis à un régime approprié à leur âge et à leur statut légal.<br>
+                                          5. Durant leur détention ou leur emprisonnement, les travailleurs migrants et les membres de leur famille jouissent des mêmes droits de visite de membres de leur famille que les nationaux.<br>
+                                          6. Chaque fois que des travailleurs migrants sont privés de leur liberté, les autorités compétentes de l'Etat intéressé accordent une attention particulière aux problèmes qui pourraient se poser à leur famille, notamment au conjoint et aux enfants mineurs.<br>
+                                          7. Les travailleurs migrants et les membres de leur famille qui sont soumis à une forme quelconque de détention ou d'emprisonnement en vertu des lois de l'Etat d'emploi ou de l'Etat de transit jouissent des mêmes droits que les ressortissants de cet Etat qui se trouvent dans la même situation.<br>
+                                          8. Si des travailleurs migrants ou des membres de leur famille sont détenus dans le but de vérifier s'il y a eu une infraction aux dispositions relatives aux migrations, aucun des frais qui en résultent n'est à leur charge.</p>
+                                        <p>Article 18<br>
+                                          1. Les travailleurs migrants et les membres de leur famille ont les mêmes droits devant les tribunaux que les ressortissants de l'Etat considéré. Ils ont droit à ce que leur cause soit entendue équitablement et publiquement par un tribunal compétent, indépendant et impartial, établi par la loi, qui décidera soit du bien-fondé de toute accusation en matière pénale dirigée contre eux, soit des contestations sur leurs droits et obligations de caractère civil.<br>
+                                          2. Les travailleurs migrants et les membres de leur famille accusés d'une infraction pénale sont présumés innocents jusqu'à ce que leur culpabilité ait été légalement établie.<br>
+                                          3. Les travailleurs migrants et les membres de leur famille accusés d'une infraction pénale ont droit au moins aux garanties suivantes:<br>
+                                          a) Etre informés, dans le plus court délai, dans une langue qu'ils comprennent et de façon détaillée, de la nature et des motifs de l'accusation portée contre eux;<br>
+                                          b) Disposer du temps et des facilités nécessaires à la préparation de leur défense et communiquer avec le conseil de leur choix;<br>
+                                          c) Etre jugés sans retard excessif;<br>
+                                          d) Etre présents au procès et se défendre eux-mêmes ou avoir l'assistance d'un défenseur de leur choix; s'ils n'ont pas de défenseur, être informés de leur droit d'en avoir un et, chaque fois que l'intérêt de la justice l'exige, se voir attribuer d'office un défenseur, sans frais, s'ils n'ont pas les moyens de le rémunérer;<br>
+                                          e) Interroger ou faire interroger les témoins à charge et obtenir la comparution et l'interrogatoire des témoins à décharge dans les mêmes conditions que les témoins à charge;<br>
+                                          f) Se faire assister gratuitement d'un interprète s'ils ne comprennent pas ou ne parlent pas la langue employée à l'audience;<br>
+                                          g) Ne pas être forcés de témoigner contre eux-mêmes ou de s'avouer coupables.<br>
+                                          4. La procédure applicable aux mineurs tiendra compte de leur âge et de l'intérêt que présente leur rééducation.<br>
+                                          5. Les travailleurs migrants et les membres de leur famille déclarés coupables d'une infraction ont le droit de faire examiner par une juridiction supérieure la déclaration de culpabilité et la condamnation, conformément à la loi.<br>
+                                          6. Lorsqu'une condamnation pénale définitive est ultérieurement annulée ou lorsque la grâce est accordée parce qu'un fait nouveau ou nouvellement révélé prouve qu'il s'est produit une erreur judiciaire, les travailleurs migrants ou les membres de leur famille qui ont subi une peine à raison de cette condamnation sont indemnisés, conformément à la loi, à moins qu'il ne soit prouvé que la non-révélation en temps utile du fait inconnu leur est imputable en tout ou en partie.<br>
+                                          7. Nul travailleur migrant ou membre de sa famille ne peut être poursuivi ou puni en raison d'une infraction pour laquelle il a déjà été acquitté ou condamné par un jugement définitif, conformément à la loi et à la procédure pénale de l'Etat concerné.</p>
+                                        <p>Article 19<br>
+                                          1. Nul travailleur migrant ou membre de sa famille ne doit être reconnu coupable d'un acte délictueux pour une action ou une omission qui ne constituait pas un acte délictueux d'après le droit national ou international au moment où elle a été commise; de même, il ne sera infligé aucune peine plus forte que celle qui était applicable au moment où l'infraction a été commise. Si, postérieurement à cette infraction, la loi prévoit l'application d'une peine plus légère, l'intéressé doit en bénéficier.<br>
+                                          2. Lors de la détermination d'une peine pour une infraction commise par un travailleur migrant ou un membre de sa famille, il devrait être tenu compte de considérations humanitaires liées à la condition du travailleur migrant, notamment en ce qui concerne son permis de séjour ou son permis de travail.</p>
+                                        <p>Article 20<br>
+                                          1. Nul travailleur migrant ou membre de sa famille ne peut être emprisonné pour la seule raison qu'il n'a pas exécuté une obligation contractuelle.<br>
+                                          2. Nul travailleur migrant ou membre de sa famille ne peut être privé de son autorisation de résidence ou de son permis de travail ni être expulsé pour la seule raison qu'il n'a pas exécuté une obligation résultant d'un contrat de travail, à moins que l'exécution de cette obligation ne constitue une condition de l'octroi de cette autorisation ou de ce permis.</p>
+                                        <p>Article 21<br>
+                                          Nul, si ce n'est un fonctionnaire dûment autorisé par la loi à cet effet, n'a le droit de confisquer, de détruire ou de tenter de détruire des documents d'identité, des documents autorisant l'entrée, le séjour, la résidence ou l'établissement sur le territoire national, ou des permis de travail. Lorsqu'elle est autorisée, la confiscation de ces documents doit donner lieu à la délivrance d'un reçu détaillé. Il n'est permis en aucun cas de détruire les passeports ou documents équivalents des travailleurs migrants ou des membres de leur famille. </p>
+                                        <p>Article 22<br>
+                                          1. Les travailleurs migrants et les membres de leur famille ne peuvent faire l'objet de mesures d'expulsion collective. Chaque cas d'expulsion doit être examiné et tranché sur une base individuelle.<br>
+                                          2. Les travailleurs migrants et les membres de leur famille ne peuvent être expulsés du territoire d'un Etat partie qu'en application d'une décision prise par l'autorité compétente conformément à la loi.<br>
+                                          3. La décision doit être notifiée aux intéressés dans une langue qu'ils comprennent. Sur leur demande, lorsque ce n'est pas obligatoire, la décision leur est notifiée par écrit et, sauf circonstances exceptionnelles justifiées par la sécurité nationale, elle est également dûment motivée. Les intéressés sont informés de ces droits avant que la décision soit prise, ou au plus tard au moment où elle est prise.<br>
+                                          4. En dehors des cas où la décision finale est prononcée par une autorité judiciaire, les intéressés ont le droit de faire valoir les raisons de ne pas les expulser et de faire examiner leur cas par l'autorité compétente, à moins que des raisons impératives de sécurité nationale n'exigent qu'il n'en soit autrement. En attendant cet examen, les intéressés ont le droit de demander la suspension de la décision d'expulsion.<br>
+                                          5. Si une décision d'expulsion déjà exécutée est par la suite annulée, les intéressés ont le droit de demander des réparations conformément à la loi et la décision antérieure n'est pas invoquée pour les empêcher de revenir dans l'Etat concerné.<br>
+                                          6. En cas d'expulsion, les intéressés doivent avoir une possibilité raisonnable, avant ou après leur départ, de se faire verser tous salaires ou autres prestations qui leur sont éventuellement dus et de régler toute obligation en suspens.<br>
+                                          7. Sans préjudice de l'exécution d'une décision d'expulsion, les travailleurs migrants ou les membres de leur famille qui font l'objet d'une telle décision peuvent demander à être admis dans un Etat autre que leur Etat d'origine.<br>
+                                          8. En cas d'expulsion de travailleurs migrants ou de membres de leur famille, les frais d'expulsion ne sont pas à leur charge. Les intéressés peuvent être astreints à payer leurs frais de voyage.<br>
+                                          9. En elle-même, l'expulsion de l'Etat d'emploi ne porte atteinte à aucun des droits acquis, conformément à la législation de cet Etat, par les travailleurs migrants ou les membres de leur famille, y compris le droit de percevoir les salaires et autres prestations qui leur sont dus.</p>
+                                        <p>Article 23<br>
+                                          Les travailleurs migrants et les membres de leur famille ont le droit d'avoir recours à la protection et à l'assistance des autorités consulaires ou diplomatiques de leur Etat d'origine ou de l'Etat représentant les intérêts de cet Etat en cas d'atteinte aux droits reconnus par la présente Convention. En particulier, en cas d'expulsion, l'intéressé est informé promptement de ce droit et les autorités de l'Etat qui l'expulse en facilitent l'exercice. </p>
+                                        <p>Article 24<br>
+                                          Tout travailleur migrant et tout membre de sa famille a droit à la reconnaissance en tous lieux de leur personnalité juridique. </p>
+                                        <p>Article 25<br>
+                                          1. Les travailleurs migrants doivent bénéficier d'un traitement non moins favorable que celui dont bénéficient les nationaux de l'Etat d'emploi en matière de rémunération et:<br>
+                                          a) D'autres conditions de travail, c'est-à-dire heures supplémentaires, horaires de travail, repos hebdomadaire, congés payés, sécurité, santé, cessation d'emploi et toutes autres conditions de travail qui, selon la législation et la pratique nationales, sont couvertes par ce terme;<br>
+                                          b) D'autres conditions d'emploi, c'est-à-dire l'âge minimum d'emploi, les restrictions au travail à domicile et toutes autres questions qui, selon la législation et les usages nationaux, sont considérées comme une condition d'emploi.<br>
+                                          2. Il ne peut être dérogé légalement, dans les contrats de travail privés, au principe de l'égalité de traitement auquel se réfère le paragraphe 1 du présent article.<br>
+                                          3. Les Etats parties adoptent toutes les mesures appropriées afin de faire en sorte que les travailleurs migrants ne soient pas privés des droits qui dérivent de ce principe en raison de l'irrégularité de leur situation en matière de séjour ou d'emploi. Une telle irrégularité ne doit notamment pas avoir pour effet de dispenser l'employeur de ses obligations légales ou contractuelles ou de restreindre d'une manière quelconque la portée de ses obligations.</p>
+                                        <p>Article 26<br>
+                                          1. Les Etats parties reconnaissent à tous les travailleurs migrants et à tous les membres de leur famille le droit:<br>
+                                          a) De participer aux réunions et activités de syndicats et de toutes autres associations créées conformément à la loi, en vue de protéger leurs intérêts économiques, sociaux, culturels et autres, sous la seule réserve des règles fixées par les organisations intéressées;<br>
+                                          b) D'adhérer librement à tous les syndicats et associations susmentionnées, sous la seule réserve des règles fixées par les organisations intéressées;<br>
+                                          c) De demander aide et assistance à tous les syndicats et associations susmentionnées.<br>
+                                          2. L'exercice de ces droits ne peut faire l'objet que des seules restrictions prévues par la loi et qui constituent des mesures nécessaires, dans une société démocratique, dans l'intérêt de la sécurité nationale ou de l'ordre public ou pour protéger les droits et libertés d'autrui.</p>
+                                        <p>Article 27<br>
+                                          1. En matière de sécurité sociale, les travailleurs migrants et les membres de leur famille bénéficient, dans l'Etat d'emploi, de l'égalité de traitement avec les nationaux dans la mesure où ils remplissent les conditions requises par la législation applicable dans cet Etat et les traités bilatéraux ou multilatéraux applicables. Les autorités compétentes de l'Etat d'origine et de l'Etat d'emploi peuvent à tout moment prendre les dispositions nécessaires pour déterminer les modalités d'application de cette norme.<br>
+                                          2. Lorsque la législation applicable prive les travailleurs migrants et les membres de leur famille d'une prestation, les Etats concernés examinent la possibilité de rembourser aux intéressés les montants des cotisations qu'ils ont versées au titre de cette prestation, sur la base du traitement qui est accordé aux nationaux qui se trouvent dans une situation similaire.</p>
+                                        <p>Article 28<br>
+                                          Les travailleurs migrants et les membres de leur famille ont le droit de recevoir tous les soins médicaux qui sont nécessaires d'urgence pour préserver leur vie ou éviter un dommage irréparable à leur santé, sur la base de l'égalité de traitement avec les ressortissants de l'Etat en cause. De tels soins médicaux d'urgence ne leur sont pas refusés en raison d'une quelconque irrégularité en matière de séjour ou d'emploi. </p>
+                                        <p>Article 29<br>
+                                          Tout enfant d'un travailleur migrant a droit à un nom, à l'enregistrement de sa naissance et à une nationalité.</p>
+                                        <p>Article 30<br>
+                                          Tout enfant d'un travailleur migrant a le droit fondamental d'accès à l'éducation sur la base de l'égalité de traitement avec les ressortissants de l'Etat en cause. L'accès aux établissements préscolaires ou scolaires publics ne doit pas être refusé ou limité en raison de la situation irrégulière quant au séjour ou à l'emploi de l'un ou l'autre de ses parents ou quant à l'irrégularité du séjour de l'enfant dans l'Etat d'emploi.</p>
+                                        <p>Article 31<br>
+                                          1. Les Etats parties assurent le respect de l'identité culturelle des travailleurs migrants et des membres de leur famille et ne les empêchent pas de maintenir leurs liens culturels avec leur Etat d'origine.<br>
+                                          2. Les Etats parties peuvent prendre des mesures appropriées pour soutenir et encourager les efforts à cet égard.</p>
+                                        <p>Article 32<br>
+                                          A l'expiration de leur séjour dans l'Etat d'emploi, les travailleurs migrants et les membres de leur famille ont le droit de transférer leurs gains et leurs économies et, conformément à la législation applicable des Etats concernés, leurs effets personnels et les objets en leur possession. </p>
+                                        <p>Article 33<br>
+                                          1. Les travailleurs migrants et les membres de leur famille ont le droit d'être informés par l'Etat d'origine, l'Etat d'emploi ou l'Etat de transit, selon le cas, en ce qui concerne:<br>
+                                          a) Les droits que leur confère la présent Convention;<br>
+                                          b) Les conditions d'admission, leurs droits et obligations en vertu de la législation et des usages de l'Etat concerné et toute autre question qui leur permette de se conformer aux formalités administratives ou autres dans cet Etat.<br>
+                                          2. Les Etats parties prennent toutes les mesures qu'ils jugent appropriées pour diffuser lesdites informations ou pour veiller à ce qu'elles soient fournies par les employeurs, les syndicats ou autres organismes ou institutions appropriés. Selon que de besoin, ils coopèrent à cette fin avec les autres Etats concernés.<br>
+                                          3. Les informations adéquates sont fournies, sur demande, aux travailleurs migrants et aux membres de leur famille, gratuitement et, dans la mesure du possible, dans une langue qu'ils comprennent.</p>
+                                        <p>Article 34<br>
+                                          Aucune disposition de la présente partie de la Convention n'a pour effet de dispenser les travailleurs migrants et les membres de leur famille de l'obligation de se conformer aux lois et règlements de tout Etat de transit et de l'Etat d'emploi, ni de l'obligation de respecter l'identité culturelle des habitants de ces Etats. </p>
+                                        <p>Article 35<br>
+                                          Aucune disposition de la présente partie de la Convention ne peut être interprétée comme impliquant la régularisation de la situation des travailleurs migrants ou des membres de leur famille dépourvus de documents ou en situation irrégulière, ni un droit quelconque à cette régularisation de leur situation, ni comme affectant les mesures visant à assurer des conditions saines et équitables pour les migrations internationales, prévues dans la sixième partie de la présente Convention.<br>
+                                          Quatrième Partie<br>
+                                          Autres droits des travailleurs migrants et des membres de leur famille qui sont pourvus de documents ou en situation régulière<br>
+                                          Article 36<br>
+                                          Les travailleurs migrants et les membres de leur famille qui sont pourvus de documents ou en situation régulière dans l'Etat d'emploi bénéficient des droits prévus dans la présente partie de la Convention, en sus de ceux énoncés dans la troisième Partie.<br>
+                                          Article 37<br>
+                                          Avant leur départ, ou au plus tard au moment de leur admission dans l'Etat d'emploi, les travailleurs migrants et les membres de leur famille ont le droit d'être pleinement informés par l'Etat d'origine ou l'Etat d'emploi, selon le cas, de toutes les conditions posées à leur admission et spécialement de celles concernant leur séjour et les activités rémunérées auxquelles ils peuvent se livrer ainsi que des exigences auxquelles ils doivent se conformer dans l'Etat d'emploi et des autorités auxquelles ils doivent s'adresser pour demander que ces conditions soient modifiées.<br>
+                                          Article 38<br>
+                                          1. Les Etats d'emploi font tous les efforts possibles pour autoriser les travailleurs migrants et les membres de leur famille à s'absenter temporairement sans que cela n'affecte leur autorisation de séjour ou de travail, selon le cas. Ce faisant, les Etats d'emploi tiennent compte des obligations et des besoins particuliers des travailleurs migrants et des membres de leur famille, notamment dans leur Etat d'origine.<br>
+                                          2. Les travailleurs migrants et les membres de leur famille ont le droit d'être pleinement informés des conditions dans lesquelles de telles absences temporaires sont autorisées.<br>
+                                          Article 39<br>
+                                          1. Les travailleurs migrants et les membres de leur famille ont le droit de circuler librement sur le territoire de l'Etat d'emploi et d'y choisir librement leur résidence.<br>
+                                          2. Les droits mentionnés au paragraphe 1 du présent article ne peuvent faire l'objet de restrictions que si celles-ci sont prévues par la loi, nécessaires pour protéger la sécurité nationale, l'ordre public, la santé ou la moralité publiques, ou les droits et libertés d'autrui, et compatibles avec les autres droits reconnus par la présente Convention.<br>
+                                          Article 40<br>
+                                          1. Les travailleurs migrants et les membres de leur famille ont le droit de former avec d'autres des associations et des syndicats dans l'Etat d'emploi en vue de favoriser et de protéger leurs intérêts économiques, sociaux, culturels et autres.<br>
+                                          2. L'exercice de ce droit ne peut faire l'objet que des seules restrictions prévues par la loi et qui constituent des mesures nécessaires dans une société démocratique, dans l'intérêt de la sécurité nationale, de l'ordre public, ou pour protéger les droits et les libertés d'autrui.<br>
+                                          Article 41<br>
+                                          1. Les travailleurs migrants et les membres de leur famille ont le droit de prendre part aux affaires publiques de leur Etat d'origine, de voter et d'être élus au cours d'élections organisées par cet Etat, conformément à sa législation.<br>
+                                          2. Les Etats intéressés doivent, en tant que de besoin et conformément à leur législation, faciliter l'exercice de ces droits.<br>
+                                          Article 42<br>
+                                          1. Les Etats parties envisagent l'établissement de procédures ou d'institutions destinées à permettre de tenir compte, tant dans les Etats d'origine que dans les Etats d'emploi, des besoins, aspirations et obligations particuliers des travailleurs migrants et des membres de leur famille, et, le cas échéant, la possibilité pour les travailleurs migrants et les membres de leur famille d'avoir leurs représentants librement choisis dans ces institutions.<br>
+                                          2. Les Etats d'emploi facilitent, conformément à leur législation nationale, la consultation ou la participation des travailleurs migrants et des membres de leur famille aux décisions concernant la vie et l'administration des communautés locales.<br>
+                                          3. Les travailleurs migrants peuvent jouir de droits politiques dans l'Etat d'emploi, si cet Etat, dans l'exercice de sa souveraineté, leur accorde de tels droits.<br>
+                                          Article 43<br>
+                                          1. Les travailleurs migrants bénéficient de l'égalité de traitement avec les ressortissants de l'Etat d'emploi, en ce qui concerne:<br>
+                                          a) L'accès aux institutions et aux services d'éducation, sous réserve des conditions d'admission et autres prescriptions fixées par les institutions et services concernés;<br>
+                                          b) L'accès aux services d'orientation professionnelle et de placement;<br>
+                                          c) L'accès aux facilités et institutions de formation professionnelle et de recyclage;<br>
+                                          d) L'accès au logement, y compris les programmes de logements sociaux, et la protection contre l'exploitation en matière de loyers;<br>
+                                          e) L'accès aux services sociaux et sanitaires, sous réserve que les conditions requises pour avoir le droit de bénéficier des divers programmes soient remplies;<br>
+                                          f) L'accès aux coopératives et aux entreprises autogérées, sans que leur statut de migrants s'en trouve modifié et sous réserve des règles et règlements des organes concernés;<br>
+                                          g) L'accès et la participation à la vie culturelle.<br>
+                                          2. Les Etats parties s'efforcent de créer les conditions permettant d'assurer l'égalité effective du traitement des travailleurs migrants en vue de leur permettre de jouir des droits mentionnés au paragraphe 1 du présent article, chaque fois que les conditions mises à leur autorisation de séjour par l'Etat d'emploi répondent aux prescriptions pertinentes.<br>
+                                          3. Les Etats d'emploi n'empêchent pas les employeurs de travailleurs migrants de créer des logements ou des services sociaux ou culturels à leur intention. Sous réserve de l'article 70 de la présente Convention, un Etat d'emploi peut subordonner la mise en place desdits services aux conditions généralement appliquées en la matière dans ledit Etat.<br>
+                                          Article 44<br>
+                                          1. Les Etats parties, reconnaissant que la famille est l'élément naturel et fondamental de la société et qu'elle a droit à la protection de la société et de l'Etat, prennent les mesures appropriées pour assurer la protection de l'unité de la famille du travailleur migrant.<br>
+                                          2. Les Etats parties prennent les mesures qu'ils jugent appropriées et qui relèvent de leur compétence pour faciliter la réunion des travailleurs migrants avec leur conjoint ou avec les personnes ayant avec eux des relations qui, en vertu de la loi applicable, produisent des effets équivalant au mariage, ainsi qu'avec leurs enfants à charge mineurs et célibataires.<br>
+                                          3. Pour des raisons humanitaires, les Etats d'emploi envisagent favorablement d'accorder l'égalité de traitement, aux conditions prévues au paragraphe 2 du présent article, aux autres membres de la famille du travailleur migrant.<br>
+                                          Article 45<br>
+                                          1. Les membres de la famille des travailleurs migrants bénéficient, dans l'Etat d'emploi, de l'égalité de traitement avec les nationaux de cet Etat en ce qui concerne:<br>
+                                          a) L'accès aux institutions et aux services d'éducation, sous réserve des conditions d'admission et autres prescriptions fixées par les institutions et services concernés;<br>
+                                          b) L'accès aux institutions et services d'orientation et de formation professionnelles, sous réserve que les conditions pour y participer soient remplies;<br>
+                                          c) L'accès aux services sociaux et sanitaires, sous réserve que les conditions requises pour bénéficier des divers programmes soient remplies;<br>
+                                          d) L'accès et la participation à la vie culturelle.<br>
+                                          2. Les Etats d'emploi mènent, le cas échéant en collaboration avec les pays d'origine, une politique visant à faciliter l'intégration des enfants des travailleurs migrants dans le système d'éducation local, notamment pour ce qui est de l'enseignement de la langue locale.<br>
+                                          3. Les Etats d'emploi s'efforcent de faciliter l'enseignement aux enfants des travailleurs migrants de leur langue maternelle et de leur culture et, à cet égard, les Etats d'origine collaborent chaque fois selon que de besoin.<br>
+                                          4. Les Etats d'emploi peuvent assurer des programmes spéciaux d'enseignement dans la langue maternelle des enfants des travailleurs migrants, au besoin en collaboration avec les Etats d'origine.<br>
+                                          Article 46<br>
+                                          Les travailleurs migrants et les membres de leur famille, sous réserve de la législation applicable dans les Etats intéressés, ainsi que des accords internationaux pertinents et des obligations incombant aux Etats intéressés du fait de leur appartenance à des unions douanières, bénéficient d'une exemption des droits et taxes d'importation et d'exportation pour leurs biens personnels et ménagers ainsi que le matériel nécessaire à l'exercice de l'activité rémunérée motivant leur admission dans l'Etat d'emploi:<br>
+                                          a) Au moment du départ de l'Etat d'origine ou de l'Etat de résidence habituelle;<br>
+                                          b) Au moment de l'admission initiale dans l'Etat d'emploi;<br>
+                                          c) Au moment du départ définitif de l'Etat d'emploi;<br>
+                                          d) Au moment du retour définitif dans l'Etat d'origine ou dans l'Etat de résidence habituelle.<br>
+                                          Article 47<br>
+                                          1. Les travailleurs migrants ont le droit de transférer leurs gains et économies, en particulier les fonds nécessaires à l'entretien de leur famille, de l'Etat d'emploi à leur Etat d'origine ou à tout autre Etat. Ces transferts s'opèrent conformément aux procédures établies par la législation applicable de l'Etat concerné et conformément aux accords internationaux applicables.<br>
+                                          2. Les Etats concernés prennent les mesures appropriées pour faciliter ces transferts.<br>
+                                          Article 48<br>
+                                          1. Sans préjudice des accords applicables concernant la double imposition, pour ce qui est des revenus dans l'Etat d'emploi, les travailleurs migrants et les membres de leur famille:<br>
+                                          a) Ne sont pas assujettis à des impôts, droits ou taxes, quels qu'ils soient, plus élevés ou plus onéreux que ceux qui sont exigés des nationaux dans une situation analogue;<br>
+                                          b) Bénéficient des réductions ou exemptions d'impôts quels qu'ils soient et de tous dégrèvements fiscaux accordés aux nationaux dans une situation analogue, y compris les déductions pour charges de famille.<br>
+                                          2. Les Etats parties s'efforcent d'adopter des mesures appropriées visant à éviter la double imposition des revenus et économies des travailleurs migrants et des membres de leur famille.<br>
+                                          Article 49<br>
+                                          1. Quand des permis de séjour et de travail distincts sont requis par la législation nationale, l'Etat d'emploi délivre au travailleur migrant une autorisation de séjour pour une durée au moins égale à celle de son permis de travail.<br>
+                                          2. Les travailleurs migrants qui, dans l'Etat d'emploi, sont autorisés à choisir librement leur activité rémunérée ne sont pas considérés comme étant en situation irrégulière et ne perdent pas leur permis de séjour du seul fait que leur activité rémunérée cesse avant l'expiration de leur permis de travail ou autorisation analogue.<br>
+                                          3. Dans le souci de laisser aux travailleurs migrants visés au paragraphe 2 du présent article suffisamment de temps pour trouver une autre activité rémunérée, le permis de séjour ne leur est pas retiré, au moins pour la période pendant laquelle ils peuvent avoir droit à des prestations de chômage.<br>
+                                          Article 50<br>
+                                          1. En cas de décès d'un travailleur migrant ou de dissolution de son mariage, l'Etat d'emploi envisage favorablement d'accorder aux membres de la famille dudit travailleur migrant qui résident dans cet Etat dans le cadre du regroupement familial l'autorisation d'y demeurer; l'Etat d'emploi prend en compte la durée de leur résidence dans cet Etat.<br>
+                                          2. Les membres de la famille auxquels cette autorisation n'est pas accordée disposeront avant leur départ d'un délai raisonnable pour leur permettre de régler leurs affaires dans l'Etat d'emploi.<br>
+                                          3. Les dispositions des paragraphes 1 et 2 du présent article ne seront pas interprétées comme portant atteinte aux droits au séjour et au travail qui sont autrement accordés auxdits membres de la famille par la législation de l'Etat d'emploi ou par les traités bilatéraux ou multilatéraux applicables à cet Etat.<br>
+                                          Article 51<br>
+                                          Les travailleurs migrants qui, dans l'Etat d'emploi, ne sont pas autorisés à choisir librement leur activité rémunérée ne sont pas considérés comme étant en situation irrégulière ni ne perdent leur permis de séjour du simple fait que leur activité rémunérée prend fin avant l'expiration de leur permis de travail, sauf dans les cas où le permis de séjour est expressément subordonné à l'activité rémunérée spécifique pour laquelle le travailleur a été admis dans l'Etat d'emploi. Ces travailleurs migrants ont le droit de chercher un autre emploi, de participer à des programmes d'intérêt public et de suivre des stages de reconversion pendant la période de validité restant à courir de leur permis de travail, sous réserve des conditions et restrictions spécifiées dans le permis de travail.<br>
+                                          Article 52<br>
+                                          1. Les travailleurs migrants jouissent dans l'Etat d'emploi du droit de choisir librement leur activité rémunérée, sous réserve des restrictions ou conditions suivantes.<br>
+                                          2. Pour tout travailleur migrant, l'Etat d'emploi peut:<br>
+                                          a) Restreindre l'accès à des catégories limitées d'emplois, fonctions, services ou activités, lorsque l'intérêt de l'Etat l'exige et que la législation nationale le prévoit;<br>
+                                          b) Restreindre le libre choix de l'activité rémunérée conformément à sa législation relative à la reconnaissance des qualifications professionnelles acquises en dehors de son territoire. Les Etats parties concernés s'efforcent toutefois d'assurer la reconnaissance de ces qualifications.<br>
+                                          3. Dans le cas des travailleurs migrants titulaires d'un permis de travail de durée limitée, l'Etat d'emploi peut également:<br>
+                                          a) Subordonner l'exercice du droit au libre choix de l'activité rémunérée à la condition que le travailleur migrant ait résidé légalement sur son territoire en vue d'y exercer une activité rémunérée pendant la période prescrite par sa législation nationale, cette période ne devant pas excéder deux ans;<br>
+                                          b) Limiter l'accès d'un travailleur migrant à une activité rémunérée au titre d'une politique consistant à donner la priorité aux nationaux ou aux personnes qui leur sont assimilées à cet effet en vertu de la législation ou d'accords bilatéraux ou multilatéraux. Une telle limitation cesse d'être applicable à une travailleur migrant qui a résidé légalement sur son territoire en vue d'y exercer une activité rémunérée pendant la période prescrite par sa législation nationale, cette période ne devant pas excéder cinq ans.<br>
+                                          4. Les Etats d'emploi prescrivent les conditions dans lesquelles les travailleurs migrants qui ont été admis dans le pays pour y prendre un emploi peuvent être autorisés à travailler à leur propre compte. Il est tenu compte de la période durant laquelle les travailleurs ont déjà séjourné légalement dans l'Etat d'emploi.<br>
+                                          Article 53<br>
+                                          1. Les membres de la famille d'un travailleur migrant qui ont eux-mêmes une autorisation de séjour ou d'admission qui est sans limitation de durée ou est automatiquement renouvelable sont autorisés à choisir librement une activité rémunérée dans les conditions qui sont applicables audit travailleur en vertu des dispositions de l'article 52 de la présente Convention.<br>
+                                          2. Dans le cas des membres de la famille d'un travailleur migrant qui ne sont pas autorisés à choisir librement une activité rémunérée, les Etats parties étudient favorablement la possibilité de leur accorder l'autorisation d'exercer une activité rémunérée en priorité sur les autres travailleurs qui demandent à être admis sur le territoire de l'Etat d'emploi, sous réserve des accords bilatéraux et multilatéraux applicables.<br>
+                                          Article 54<br>
+                                          1. Sans préjudice des conditions de leur autorisation de séjour ou de leur permis de travail et des droits prévus aux articles 25 et 27 de la présente Convention, les travailleurs migrants bénéficient de l'égalité de traitement avec les ressortissants de l'Etat d'emploi en ce qui concerne:<br>
+                                          a) La protection contre le licenciement;<br>
+                                          b) Les prestations de chômage;<br>
+                                          c) L'accès à des programmes d'intérêt public destinés à combattre le chômage;<br>
+                                          d) L'accès à un autre emploi en cas de perte d'emploi ou de cessation d'une autre activité rémunérée, sous réserve de l'article 52 de la présente Convention.<br>
+                                          2. Si un travailleur migrant estime que les termes de son contrat de travail ont été violés par son employeur, il a le droit de porter son cas devant les autorités compétentes de l'Etat d'emploi, aux conditions prévues au paragraphe 1 de l'article 18 de la présente Convention.<br>
+                                          Article 55<br>
+                                          Les travailleurs migrants qui ont reçu l'autorisation d'exercer une activité rémunérée, sous réserve des conditions spécifiées lors de l'octroi de ladite autorisation, bénéficient de l'égalité de traitement avec les nationaux de l'Etat d'emploi dans l'exercice de cette activité rémunérée.<br>
+                                          Article 56<br>
+                                          1. Les travailleurs migrants et les membres de leur famille visés dans la présente partie de la Convention ne peuvent être expulsés de l'Etat d'emploi que pour des raisons définies dans la législation nationale dudit Etat, et sous réserve des garanties prévues dans la troisième partie.<br>
+                                          2. L'expulsion ne doit pas être utilisée dans le but de priver les travailleurs migrants ou des membres de leur famille des droits découlant de l'autorisation de séjour et du permis de travail.<br>
+                                          3. Lorsqu'on envisage d'expulser un travailleur migrant ou un membre de sa famille, il faudrait tenir compte de considérations humanitaires et du temps pendant lequel l'intéressé a déjà séjourné dans l'Etat d'emploi.<br>
+                                          Cinquième Partie<br>
+                                          Dispositions applicables à des catégories particulières de travailleurs migrants et aux membres de leur famille<br>
+                                          Article 57<br>
+                                          Les catégories particulières de travailleurs migrants spécifiées dans la présente partie de la Convention et les membres de leur famille, qui sont pourvus de documents ou en situation régulière, jouissent des droits énoncés dans la troisième partie et, sous réserve des modifications indiquées ci-après, de ceux énoncés dans la quatrième partie.</p>
+                                        <p>Article 58<br>
+                                          1. Les travailleurs frontaliers, tels qu'ils sont définis à l'alinéa a du paragraphe 2 de l'article 2 de la présente Convention, bénéficient des droits prévus dans la quatrième partie qui leur sont applicables en raison de leur présence et de leur travail sur le territoire de l'Etat d'emploi, compte tenu de ce qu'ils n'ont pas leur résidence habituelle dans cet Etat.<br>
+                                          2. Les Etats d'emploi envisagent favorablement de donner aux travailleurs frontaliers le droit de choisir librement leur activité rémunérée après un laps de temps donné. L'octroi de ce droit ne modifie pas leur statut de travailleurs frontaliers.</p>
+                                        <p>Article 59<br>
+                                          1. Les travailleurs saisonniers, tels qu'ils sont définis à l'alinéa b du paragraphe 2 de l'article 2 de la présente Convention, bénéficient des droits prévus dans la quatrième partie qui leur sont applicables en raison de leur présence et de leur travail sur le territoire de l'Etat d'emploi et qui sont compatibles avec leur statut de travailleurs saisonniers, compte tenu de ce qu'ils ne sont présents dans ledit Etat que pendant une partie de l'année.<br>
+                                          2. L'Etat d'emploi envisage, sous réserve des dispositions du paragraphe 1 du présent article, d'octroyer aux travailleurs saisonniers qui ont été employés sur son territoire pendant une période appréciable la possibilité de se livrer à d'autres activités rémunérées et de leur donner la priorité sur d'autres travailleurs qui demandent à être admis dans ledit Etat, sous réserve des accords bilatéraux et multilatéraux applicables.</p>
+                                        <p>Article 60<br>
+                                          Les travailleurs itinérants, tels qu'ils sont définis à l'alinéa e du paragraphe 2 de l'article 2 de la présente Convention, bénéficient des droits prévus dans la quatrième partie qui peuvent leur être accordés en raison de leur présence et de leur travail sur le territoire de l'Etat d'emploi et qui sont compatibles avec leur statut de travailleurs itinérants dans cet Etat. </p>
+                                        <p>Article 61<br>
+                                          1. Les travailleurs employés au titre de projets, tels qu'ils sont définis à l'alinéa f du paragraphe 2 de l'article 2 de la présente Convention, et les membres de leur famille bénéficient des droits prévus à la quatrième partie, exception faite des dispositions des alinéas b et c du paragraphe 1 de l'article 43, de l'alinéa d du paragraphe 1 de l'article 43, pour ce qui est des programmes de logements sociaux, de l'alinéa b du paragraphe 1 de l'article 45 et des articles 52 à 55.<br>
+                                          2. Si un travailleur employé au titre d'un projet estime que les termes de son contrat de travail ont été violés par son employeur, il a le droit de porter son cas devant les autorités compétentes de l'Etat dont cet employeur relève, aux conditions prévues au paragraphe 1 de l'article 18 de la présente Convention.<br>
+                                          3. Sous réserve des accords bilatéraux ou multilatéraux en vigueur qui leur sont applicables, les Etats parties intéressés s'efforcent de faire en sorte que les travailleurs engagés au titre de projets restent dûment protégés par les régimes de sécurité sociale de leur Etat d'origine ou de résidence habituelle durant leur emploi au titre du projet. Les Etats parties intéressés prennent à cet égard les mesures appropriées pour éviter que ces travailleurs ne soient privés de leurs droits ou ne soient assujettis à une double cotisation.<br>
+                                          4. Sans préjudice des dispositions de l'article 47 de la présente Convention et des accords bilatéraux ou multilatéraux pertinents, les Etats parties intéressés autorisent le transfert des gains des travailleurs employés au titre de projets dans l'Etat d'origine ou de résidence habituelle.</p>
+                                        <p>Article 62<br>
+                                          1. Les travailleurs admis pour un emploi spécifique, tels qu'ils sont définis à l'alinéa g du paragraphe 2 de l'article 2 de la présente Convention, bénéficient de tous les droits figurant dans la quatrième partie, exception faite des dispositions des alinéas b et c du paragraphe 1 de l'article 43; de l'alinéa d du paragraphe 1 de l'article 43, pour ce qui est des programmes de logements sociaux; de l'article 52 et de l'alinéa d du paragraphe 1 de l'article 54.<br>
+                                          2. Les membres de la famille des travailleurs admis pour un emploi spécifique bénéficient des droits relatifs aux membres de la famille des travailleurs migrants, énoncés dans la quatrième partie de la présente Convention, exception faite des dispositions de l'article 53.</p>
+                                        <p>Article 63<br>
+                                          1. Les travailleurs indépendants, tels qu'ils sont définis à l'alinéa h du paragraphe 2 de l'article 2 de la présente Convention, bénéficient de tous les droits prévus dans la quatrième partie, à l'exception des droits exclusivement applicables aux travailleurs ayant un contrat de travail.<br>
+                                          2. Sans préjudice des articles 52 et 79 de la présente Convention, la cessation de l'activité économique des travailleurs indépendants n'implique pas en soi le retrait de l'autorisation qui leur est accordée ainsi qu'aux membres de leur famille de rester dans l'Etat d'emploi ou d'y exercer une activité rémunérée, sauf si l'autorisation de résidence dépend expressément de l'activité rémunérée particulière pour laquelle ils ont été admis. <br>
+                                          Sixième Partie<br>
+                                          Promotion de conditions saines, équitables, dignes et légales en ce qui concerne les migrations internationales des travailleurs migrants et des membres de leur famille<br>
+                                          Article 64<br>
+                                          1. Sans préjudice des dispositions de l'article 79 de la présente Convention, les Etats parties intéressés procèdent si besoin est à des consultations et coopèrent en vue de promouvoir des conditions saines, équitables et dignes en ce qui concerne les migrations internationales des travailleurs et des membres de leur famille.<br>
+                                          2. A cet égard, il doit être dûment tenu compte non seulement des besoins et des ressources en main-d'oeuvre active, mais également des besoins sociaux, économiques, culturels et autres des travailleurs migrants et des membres de leur famille ainsi que des conséquences de ces migrations pour les communautés concernées.</p>
+                                        <p>Article 65<br>
+                                          1. Les Etats parties maintiennent des services appropriés pour s'occuper des questions relatives à la migration internationale des travailleurs et des membres de leur famille. Ils ont notamment pour fonctions:<br>
+                                          a) De formuler et de mettre en oeuvre des politiques concernant ces migrations;<br>
+                                          b) D'échanger des informations, de procéder à des consultations et de coopérer avec les autorités compétentes d'autres Etats concernés par ces migrations;<br>
+                                          c) De fournir des renseignements appropriés, en particulier aux employeurs, aux travailleurs et à leurs organisations, sur les politiques, lois et règlements relatifs aux migrations et à l'emploi, sur les accords relatifs aux migrations conclus avec d'autres Etats et sur d'autres questions pertinentes;<br>
+                                          d) De fournir des renseignements et une aide appropriés aux travailleurs migrants et aux membres de leur famille pour ce qui est des autorisations, des formalités requises et des démarches nécessaires pour leur départ, leur voyage, leur arrivée, leur séjour, leurs activités rémunérées, leur sortie et leur retour, et en ce qui concerne les conditions de travail et de vie dans l'Etat d'emploi ainsi que les lois et règlements en matière douanière, monétaire, fiscale et autres.<br>
+                                          2. Les Etats parties facilitent, en tant que de besoin, la mise en place des services consulaires adéquats et autres services nécessaires pour répondre aux besoins sociaux, culturels et autres des travailleurs migrants et des membres de leur famille.</p>
+                                        <p>Article 66<br>
+                                          1. Sous réserve des dispositions du paragraphe 2 du présent article, sont seuls autorisés à effectuer des opérations en vue du recrutement de travailleurs pour un emploi dans un autre pays:<br>
+                                          a) Les services ou organismes officiels de l'Etat où ces opérations ont lieu;<br>
+                                          b) Les services ou organismes officiels de l'Etat d'emploi sur la base d'un accord entre les Etats intéressés;<br>
+                                          c) Tout organisme institué au titre d'un accord bilatéral ou multilatéral.<br>
+                                          2. Sous réserve de l'autorisation, de l'approbation et du contrôle des organes officiels des Etats parties intéressés établis conformément à la législation et à la pratique desdits Etats, des bureaux, des employeurs potentiels ou des personnes agissant en leur nom peuvent également être admis à effectuer de telles opérations.</p>
+                                        <p>Article 67<br>
+                                          1. Les Etats parties intéressés coopèrent en tant que de besoin en vue d'adopter des mesures relatives à la bonne organisation du retour des travailleurs migrants et des membres de leur famille dans l'Etat d'origine, lorsqu'ils décident d'y retourner ou que leur permis de séjour ou d'emploi vient à expiration ou lorsqu'ils se trouvent en situation irrégulière dans l'Etat d'emploi.<br>
+                                          2. En ce qui concerne les travailleurs migrants et les membres de leur famille en situation régulière, les Etats parties intéressés coopèrent, en tant que de besoin, selon des modalités convenues par ces Etats, en vue de promouvoir des conditions économiques adéquates pour leur réinstallation et de faciliter leur réintégration sociale et culturelle durable dans l'Etat d'origine.</p>
+                                        <p>Article 68<br>
+                                          1. Les Etats parties, y compris les Etats de transit, coopèrent afin de prévenir et d'éliminer les mouvements et l'emploi illégaux ou clandestins de travailleurs migrants en situation irrégulière. Les mesures à prendre à cet effet par chaque Etat intéressé dans les limites de sa compétence sont notamment les suivantes:<br>
+                                          a) Des mesures appropriées contre la diffusion d'informations trompeuses concernant l'émigration et l'immigration;<br>
+                                          b) Des mesures visant à détecter et éliminer les mouvements illégaux ou clandestins de travailleurs migrants et de membres de leur famille et à infliger des sanctions efficaces aux personnes et aux groupes ou entités qui les organisent, les assurent ou aident à les organiser ou à les assurer;<br>
+                                          c) Des mesures visant à infliger des sanctions efficaces aux personnes, groupes ou entités qui ont recours à la violence, à la menace ou à l'intimidation contre des travailleurs migrants ou des membres de leur famille en situation irrégulière.<br>
+                                          2. Les Etats d'emploi prennent toutes mesures adéquates et efficaces pour éliminer l'emploi sur leur territoire de travailleurs migrants en situation irrégulière, en infligeant notamment, le cas échéant, des sanctions à leurs employeurs. Ces mesures ne portent pas atteinte aux droits qu'ont les travailleurs migrants vis-à-vis de leur employeur du fait de leur emploi.</p>
+                                        <p>Article 69<br>
+                                          1. Lorsque des travailleurs migrants et des membres de leur famille en situation irrégulière se trouvent sur leur territoire, les Etats parties prennent des mesures appropriées pour que cette situation ne se prolonge pas.<br>
+                                          2. Chaque fois que les Etats parties intéressés envisagent la possibilité de régulariser la situation de ces personnes conformément aux dispositions de la législation nationale et aux accords bilatéraux ou multilatéraux applicables, ils tiennent dûment compte des circonstances de leur entrée, de la durée de leur séjour dans l'Etat d'emploi ainsi que d'autres considérations pertinentes, en particulier celles qui ont trait à leur situation familiale.</p>
+                                        <p>Article 70<br>
+                                          Les Etats parties prennent des mesures non moins favorables que celles qu'ils appliquent à leur ressortissants pour faire en sorte que les conditions de travail et de vie des travailleurs migrants et des membres de leur famille en situation régulière soient conformes aux normes de santé, de sécurité et d'hygiène et aux principes inhérents à la dignité humaine. </p>
+                                        <p>Article 71<br>
+                                          1. Les Etats parties facilitent, si besoin est, le rapatriement dans l'Etat d'origine des corps des travailleurs migrants ou des membres de leur famille décédés.<br>
+                                          2. En ce qui concerne les questions de dédommagement relatives au décès d'un travailleur migrant ou d'un membre de sa famille, les Etats parties prêtent assistance, selon qu'il convient, aux personnes concernées en vue d'assurer le prompt règlement de ces questions. Le règlement de ces questions s'effectue sur la base de la législation nationale applicable conformément aux dispositions de la présente Convention, et de tous accords bilatéraux ou multilatéraux pertinents.<br>
+                                          Septième Partie<br>
+                                          Application de la Convention<br>
+                                          Article 72<br>
+                                          1.<br>
+                                          a) Aux fins d'examiner l'application de la présente Convention, il est constitué un Comité pour la protection des droits de tous les travailleurs migrants et des membres de leur famille (ci- après dénommé &quot;le Comité&quot;);<br>
+                                          b) Le Comité est composé, au moment de l'entrée en vigueur de la présente Convention, de dix experts et, après l'entrée en vigueur de la Convention pour le quarante et unième Etat partie, de quatorze experts d'une haute intégrité, impartiaux et dont les compétences sont reconnues dans le domaine couvert par la Convention.<br>
+                                          2.<br>
+                                          a) Les membres du Comité sont élus au scrutin secret par les Etats parties sur une liste de candidats désignés par les Etats parties, compte tenu du principe d'une répartition géographique équitable, en ce qui concerne tant les Etats d'origine que les Etats d'emploi, ainsi que de la représentation des principaux systèmes juridiques. Chaque Etat partie peut désigner un candidat parmi ses propres ressortissants;<br>
+                                          b) Les membres sont élus et siègent à titre individuel.<br>
+                                          3. La première élection a lieu au plus tard six mois après la date d'entrée en vigueur de la présente Convention et les élections suivantes ont lieu tous les deux ans. Quatre mois au moins avant la date de chaque élection, le Secrétaire général de l'Organisation des Nations Unies adresse une lettre aux Etats parties pour les inviter à soumettre le nom de leur candidat dans un délai de deux mois. Le Secrétaire général dresse une liste alphabétique de tous les candidats, en indiquant par quel Etat partie ils ont été désignés, et communique cette liste aux Etats parties au plus tard un mois avant la date de chaque élection, avec le curriculum vitae des intéressés.<br>
+                                          4. L'élection des membres du Comité a lieu au cours d'une réunion des Etats parties convoquée par le Secrétaire général au Siège de l'Organisation des Nations Unies. A cette réunion, où le quorum est constitué par les deux tiers des Etats parties, sont élus membres du Comité les candidats ayant obtenu le plus grand nombre de voix et la majorité absolue des voix des représentants des Etats parties présents et votants.<br>
+                                          5.<br>
+                                          a) Les membres du Comité ont un mandat de quatre ans. Toutefois, le mandat de cinq des membres élus lors de la première élection prend fin au bout de deux ans; immédiatement après la première élection, le nom de ces cinq membres est tiré au sort par le Président de la réunion des Etats parties;<br>
+                                          b) L'élection des quatre membres supplémentaires du Comité a lieu conformément aux dispositions des paragraphes 2, 3 et 4 du présent article, après l'entrée en vigueur de la Convention pour le quarante et unième Etat partie. Le mandat de deux des membres supplémentaires élus à cette occasion expire au bout de deux ans; le nom de ces membres est tiré au sort par le Président de la réunion des Etats parties;<br>
+                                          c) Les membres du Comité sont rééligibles si leur candidature est présentée à nouveau.<br>
+                                          6. Si un membre du Comité meurt ou renonce à exercer ses fonctions ou se déclare pour une cause quelconque dans l'impossibilité de les remplir avant l'expiration de son mandat, l'Etat partie qui a présenté sa candidature nomme un autre expert parmi ses propres ressortissants pour la durée du mandat restant à courir. La nouvelle nomination est soumise à l'approbation du Comité.<br>
+                                          7. Le Secrétaire général de l'Organisation des Nations Unies met à la disposition du Comité le personnel et les moyens matériels qui lui sont nécessaires pour s'acquitter efficacement de ses fonctions.<br>
+                                          8. Les membres du Comité reçoivent des émoluments prélevés sur les ressources de l'Organisation des Nations Unies, selon les modalités qui peuvent être arrêtées par l'Assemblée générale.<br>
+                                          9. Les membres du Comité bénéficient des facilités, privilèges et immunités accordés aux experts en mission pour l'Organisation des Nations Unies, tels qu'ils sont prévus dans les sections pertinentes de la Convention sur les privilèges et les immunités des Nations Unies.<br>
+                                          Article 73<br>
+                                          1. Les Etats parties s'engagent à soumettre au Secrétaire général de l'Organisation des Nations Unies pour examen par le Comité un rapport sur les mesures législatives, judiciaires, administratives et autres qu'ils ont prises pour donner effet aux dispositions de la présente Convention:<br>
+                                          a) Dans un délai d'un an à compter de l'entrée en vigueur de la Convention pour l'Etat intéressé;<br>
+                                          b) Par la suite, tous les cinq ans et chaque fois que le Comité en fait la demande.<br>
+                                          2. Les rapports présentés en vertu du présent article devront aussi indiquer les facteurs et les difficultés qui affectent, le cas échéant, la mise en oeuvre des dispositions de la Convention et fournir des renseignements sur les caractéristiques des mouvements migratoires concernant l'Etat partie intéressé.<br>
+                                          3. Le Comité décide de toutes nouvelles directives concernant le contenu des rapports.<br>
+                                          4. Les Etats parties mettent largement leurs rapports à la disposition du public dans leur propre pays.<br>
+                                          Article 74<br>
+                                          1. Le Comité examine les rapports présentés par chaque Etat partie et transmet à l'Etat partie intéressé les commentaires qu'il peut juger appropriés. Cet Etat partie peut soumettre au Comité des observations sur tout commentaire fait par le Comité conformément aux dispositions du présent article. Le Comité, lorsqu'il examine ces rapports, peut demander des renseignements supplémentaires aux Etats parties.<br>
+                                          2. En temps opportun avant l'ouverture de chaque session ordinaire du Comité, le Secrétaire général de l'Organisation des Nations Unies transmet au Directeur général du Bureau international du Travail des copies des rapports présentés par les Etats parties intéressés et des informations utiles pour l'examen de ces rapports, afin de permettre au Bureau d'aider le Comité au moyen des connaissances spécialisées qu'il peut fournir en ce qui concerne les questions traitées dans la présente Convention qui entrent dans le domaine de compétence de l'Organisation internationale du Travail. Le Comité tiendra compte, dans ses délibérations, de tous commentaires et documents qui pourront être fournis par le Bureau.<br>
+                                          3. Le Secrétaire général de l'Organisation des Nations Unies peut également, après consultation avec le Comité, transmettre à d'autres institutions spécialisées ainsi qu'aux organisations intergouvernementales des copies des parties de ces rapports qui entrent dans leur domaine de compétence.<br>
+                                          4. Le Comité peut inviter les institutions spécialisées et des organes de l'Organisation des Nations Unies, ainsi que des organisations intergouvernementales et d'autres organismes intéressés, à soumettre par écrit, pour examen par le Comité, des informations sur les questions traitées dans la présente Convention qui entrent dans leur champ d'activité.<br>
+                                          5. Le Bureau international du Travail est invité par le Comité à désigner des représentants pour qu'ils participent, à titre consultatif, aux réunions du Comité.<br>
+                                          6. Le Comité peut inviter des représentants d'autres institutions spécialisées et des organes de l'Organisation des Nations Unies, ainsi que d'organisations intergouvernementales, à assister et à être entendus à ses réunions lorsqu'il examine des questions qui entrent dans leur domaine de compétence.<br>
+                                          7. Le Comité présente un rapport annuel à l'Assemblée générale des Nations Unies sur l'application de la présente Convention, contenant ses propres observations et recommandations fondées, en particulier, sur l'examen des rapports et sur toutes les observations présentées par des Etats parties.<br>
+                                          8. Le Secrétaire général de l'Organisation des Nations Unies transmet les rapports annuels du Comité aux Etats parties à la présente Convention, au Conseil économique et social, à la Commission des droits de l'homme de l'Organisation des Nations Unies, au Directeur général du Bureau international du Travail et aux autres organisations pertinentes.<br>
+                                          Article 75<br>
+                                          1. Le Comité adopte son propre règlement intérieur.<br>
+                                          2. Le Comité élit son bureau pour une période de deux ans.<br>
+                                          3. Le Comité se réunit normalement une fois par an.<br>
+                                          4. Les réunions du Comité ont normalement lieu au Siège de l'Organisation des Nations Unies.<br>
+                                          Article 76<br>
+                                          1. Tout Etat partie à la présente Convention peut, en vertu du présent article, déclarer à tout moment qu'il reconnaît la compétence du Comité pour recevoir et examiner des communications dans lesquelles un Etat partie prétend qu'un autre Etat partie ne s'acquitte pas de ses obligations au titre de la présente Convention. Les communications présentées en vertu du présent article ne peuvent être reçues et examinées que si elles émanent d'un Etat partie qui a fait une déclaration reconnaissant, en ce qui le concerne, la compétente du Comité. Le Comité ne reçoit aucune communication intéressant un Etat partie qui n'a pas fait une telle déclaration. La procédure ci- après s'applique à l'égard des communications reçues conformément au présent article:<br>
+                                          a) Si un Etat partie à la présente Convention estime qu'un autre Etat partie ne s'acquitte pas de ses obligations au titre de la présente Convention, il peut appeler, par communication écrite, l'attention de cet Etat sur la question. L'Etat partie peut aussi informer le Comité de la question. Dans un délai de trois mois à compter de la réception de la communication, l'Etat destinataire fera tenir à l'Etat qui a adressé la communication des explications ou toutes autres déclarations écrites élucidant la question, qui devront comprendre, dans toute la mesure possible et utile, des indications sur ses règles de procédure et sur les moyens de recours, soit déjà utilisés, soit en instance, soit encore ouverts;<br>
+                                          b) Si, dans un délai de six mois à compter de la date de réception de la communication originale par l'Etat destinataire, la question n'est pas réglée à la satisfaction des deux Etats parties intéressés, l'un comme l'autre auront le droit de la soumettre au Comité, en adressant une notification au Comité ainsi qu'à l'autre Etat intéressé;<br>
+                                          c) Le Comité ne peut connaître d'une affaire qui lui est soumise qu'après s'être assuré que tous les recours internes disponibles ont été utilisés et épuisés, conformément aux principes de droit international généralement reconnus. Cette règle ne s'applique pas dans les cas où, de l'avis du Comité, les procédures de recours excèdent les délais raisonnables;<br>
+                                          d) Sous réserve des dispositions de l'alinéa c du présent paragraphe, le Comité met ses bons offices à la disposition des Etats parties intéressés, afin de parvenir à une solution amiable de la question fondée sur le respect des obligations énoncées dans la présente Convention;<br>
+                                          e) Le Comité tient ses séances à huis clos lorsqu'il examine les communications prévues au présent article;<br>
+                                          f) Dans toute affaire qui lui est soumise conformément à l'alinéa b du présent paragraphe, le Comité peut demander aux Etats parties intéressés visés à l'alinéa b de lui fournir tout renseignement pertinent;<br>
+                                          g) Les Etats parties intéressés visés à l'alinéa b du présent paragraphe ont le droit de se faire représenter lors de l'examen de l'affaire par le Comité et de présenter des observations oralement ou par écrit, ou sous l'une et l'autre forme;<br>
+                                          h) Le Comité doit présenter un rapport dans un délai de douze mois à compter du jour où il a reçu la notification visée à l'alinéa b du présent paragraphe:<br>
+                                          i) Si une solution a pu être trouvée conformément aux dispositions de l'alinéa d du présent paragraphe, le Comité se borne, dans son rapport, à un bref exposé des faits et de la solution intervenue;<br>
+                                          ii) Si une solution n'a pu être trouvée conformément aux dispositions de l'alinéa d du présent paragraphe, le Comité expose, dans son rapport, les faits pertinents concernant l'objet du différend entre les Etats parties intéressés. Le texte des observations écrites et le procès-verbal des observations orales présentées par les Etats parties intéressés sont joints au rapport. Le Comité peut également communiquer aux Etats parties intéressés seulement toute vue qu'il peut considérer pertinente en la matière.<br>
+                                          Pour chaque affaire, le rapport est communiqué aux Etats parties intéressés.<br>
+                                          2. Les dispositions du présent article entreront en vigueur lorsque dix Etats parties à la présente Convention auront fait la déclaration prévue au paragraphe 1 du présent article. Ladite déclaration est déposée par l'Etat partie auprès du Secrétaire général de l'Organisation des Nations Unies, qui en communique copie aux autres Etats parties. Une déclaration peut être retirée à tout moment au moyen d'une notification adressée au Secrétaire général. Ce retrait est sans préjudice de l'examen de toute question qui fait l'objet d'une communication déjà transmise en vertu du présent article; aucune autre communication d'un Etat partie ne sera reçue en vertu du présent article après que le Secrétaire général aura reçu notification du retrait de la déclaration, à moins que l'Etat partie intéressé n'ait fait une nouvelle déclaration.<br>
+                                          Article 77<br>
+                                          1. Tout Etat partie à la présente Convention peut, en vertu du présent article, déclarer à tout moment qu'il reconnaît la compétence du Comité pour recevoir et examiner des communications présentées par ou pour le compte de particuliers relevant de sa juridiction qui prétendent que leurs droits individuels établis par la présente Convention ont été violés par cet Etat partie. Le Comité ne reçoit aucune communication intéressant un Etat partie qui n'a pas fait une telle déclaration.<br>
+                                          2. Le Comité déclare irrecevable toute communication soumise en vertu du présent article qui est anonyme ou qu'il considère être un abus du droit de soumettre de telles communications, ou être incompatible avec les dispositions de la présente Convention.<br>
+                                          3. Le Comité n'examine aucune communication d'un particulier conformément au présent article sans s'être assuré que:<br>
+                                          a) La même question n'a pas été et n'est pas en cours d'examen devant une autre instance internationale d'enquête ou de règlement;<br>
+                                          b) Le particulier a épuisé tous les recours internes disponibles; cette règle ne s'applique pas si, de l'avis du Comité, les procédures de recours excèdent des délais raisonnables, ou s'il est peu probable que les voies de recours donneraient une satisfaction effective à ce particulier.<br>
+                                          4. Sous réserve des dispositions du paragraphe 2 du présent article, le Comité porte toute communication qui lui est soumise en vertu du présent article à l'attention de l'Etat partie à la présente Convention qui a fait une déclaration en vertu du paragraphe 1 et a prétendument violé l'une quelconque des dispositions de la Convention. Dans les six mois qui suivent, ledit Etat soumet par écrit au Comité des explications ou déclarations éclaircissant la question et indiquant, le cas échéant, les mesures qu'il peut avoir prises pour remédier à la situation.<br>
+                                          5. Le Comité examine les communications reçues en vertu du présent article en tenant compte de toutes les informations qui lui sont soumises par ou pour le compte du particulier et par l'Etat partie intéressé.<br>
+                                          6. Le Comité tient ses séances à huis clos lorsqu'il examine les communications prévues dans le présent article.<br>
+                                          7. Le Comité fait part de ses constatations à l'Etat partie intéressé et au particulier.<br>
+                                          8. Les dispositions du présent article entreront en vigueur lorsque dix Etats parties à la présente Convention auront fait la déclaration prévue au paragraphe 1 du présent article. Ladite déclaration est déposée par l'Etat partie auprès du Secrétaire général de l'Organisation des Nations Unies, qui en communique copie aux autres Etats parties. Une déclaration peut être retirée à tout moment au moyen d'une notification adressée au Secrétaire général. Ce retrait est sans préjudice de l'examen de toute question qui fait l'objet d'une communication déjà transmise en vertu du présent article; aucune autre communication soumise par ou pour le compte d'un particulier ne sera reçue en vertu du présent article après que le Secrétaire général aura reçu notification du retrait de la déclaration, à moins que l'Etat partie intéressé n'ait fait une nouvelle déclaration.<br>
+                                          Article 78<br>
+                                          Les dispositions de l'article 76 de la présente Convention s'appliquent sans préjudice de toute procédure de règlement des différends ou des plaintes dans le domaine couvert par la présente Convention prévue par les instruments constitutifs et les conventions de l'Organisation des Nations Unies et des institutions spécialisées, et n'empêchent pas les Etats parties de recourir à l'une quelconque des autres procédures pour le règlement d'un différend conformément aux accords internationaux qui les lient.<br>
+                                          Huitième Partie<br>
+                                          Dispositions générales<br>
+                                          Article 79<br>
+                                          Aucune disposition de la présente Convention ne porte atteinte au droit de chaque Etat partie de fixer les critères régissant l'admission des travailleurs migrants et des membres de leur famille. En ce qui concerne les autres questions relatives au statut juridique et au traitement des travailleurs migrants et des membres de leur famille, les Etats parties sont liés par les limitations imposées par la présente Convention.<br>
+                                          Article 80<br>
+                                          Aucune disposition de la présente Convention ne doit être interprétée comme portant atteinte aux dispositions de la Charte des Nations Unies et des actes constitutifs des institutions spécialisées qui définissent les responsabilités respectives des divers organes de l'Organisation des Nations Unies et des institutions spécialisées en ce qui concerne les questions traitées dans la présente Convention.<br>
+                                          Article 81<br>
+                                          1. Aucune disposition de la présente Convention ne porte atteinte aux droits et libertés plus favorables accordés aux travailleurs migrants et aux membres de leur famille en vertu:<br>
+                                          a) Du droit ou de la pratique d'un Etat partie; ou<br>
+                                          b) De tout traité bilatéral ou multilatéral liant l'Etat partie considéré.<br>
+                                          2. Aucune disposition de la présente Convention ne doit être interprétée comme impliquant, pour un Etat, un groupe ou une personne, un droit quelconque de se livrer à toute activité ou d'accomplir tout acte portant atteinte à l'un des droits ou à l'une des libertés énoncés dans la présente Convention.<br>
+                                          Article 82<br>
+                                          Il ne peut être renoncé aux droits des travailleurs migrants et des membres de leur famille prévus dans la présente Convention. Il n'est pas permis d'exercer une forme quelconque de pression sur les travailleurs migrants et les membres de leur famille pour qu'ils renoncent à l'un quelconque de ces droits ou s'abstiennent de l'exercer. Il n'est pas possible de déroger par contrat aux droits reconnus dans la présente Convention. Les Etats parties prennent des mesures appropriées pour assurer que ces principes soient respectés.<br>
+                                          Article 83<br>
+                                          Chaque Etat partie à la présente Convention s'engage:<br>
+                                          a) A garantir que toute personne dont les droits et libertés reconnus dans la présente Convention ont été violés dispose d'un recours utile même si la violation a été commise par des personnes agissant dans l'exercice de leurs fonctions officielles;<br>
+                                          b) A garantir que toute personne exerçant un tel recours obtienne que sa plainte soit examinée et qu'il soit statué sur elle par l'autorité judiciaire, administrative ou législative compétente ou par toute autre autorité compétente prévue dans le système juridique de l'Etat, et à développer les possibilités de recours juridictionnels;<br>
+                                          c) A garantir que les autorités compétentes donnent suite à tout recours qui aura été reconnu justifié.<br>
+                                          Article 84<br>
+                                          Chaque Etat partie s'engage à prendre toutes les mesures législatives et autres nécessaires à l'application des dispositions de la présente Convention.<br>
+                                          Neuvième Partie<br>
+                                          Dispositions finales<br>
+                                          Article 85<br>
+                                          Le Secrétaire général de l'Organisation des Nations Unies est désigné comme dépositaire de la présente Convention. </p>
+                                        <p>Article 86<br>
+                                          1. La présente Convention est ouverte à la signature de tous les Etats. Elle est sujette à ratification.<br>
+                                          2. La présente Convention sera ouverte à l'adhésion de tout Etat.<br>
+                                          3. Les instruments de ratification ou d'adhésion seront déposés auprès du Secrétaire général de l'Organisation des Nations Unies.</p>
+                                        <p>Article 87<br>
+                                          1. La présente Convention entrera en vigueur le premier jour du mois suivant une période de trois mois après la date de dépôt du vingtième instrument de ratification ou d'adhésion.<br>
+                                          2. Pour chaque Etat ratifiant la présente Convention après son entrée en vigueur ou y adhérant, elle entrera en vigueur le premier jour du mois suivant une période de trois mois après la date de dépôt par cet Etat de son instrument de ratification ou d'adhésion.</p>
+                                        <p>Article 88<br>
+                                          Un Etat qui ratifie la présente Convention ou y adhère ne peut exclure l'application d'une partie quelconque de celle-ci ou, sans préjudice de l'article 3, exclure une catégorie quelconque de travailleurs migrants de son application. </p>
+                                        <p>Article 89<br>
+                                          1. Tout Etat partie pourra dénoncer la présente Convention, après qu'un délai d'au moins cinq ans se sera écoulé depuis son entrée en vigueur à l'égard dudit Etat, par voie de notification écrite adressée au Secrétaire général de l'Organisation des Nations Unies.<br>
+                                          2. La dénonciation prendra effet le premier jour du mois suivant l'expiration d'une période de douze mois après la date de réception de la notification par le Secrétaire général de l'Organisation des Nations Unies.<br>
+                                          3. Une telle dénonciation ne libérera pas l'Etat partie des obligations qui lui incombent en vertu de la présente Convention en ce qui concerne tout acte ou toute omission commis avant la date à laquelle la dénonciation prendra effet; elle ne fera nullement obstacle à la poursuite de l'examen de toute question dont le Comité était déjà saisi à la date à laquelle la dénonciation a pris effet.<br>
+                                          4. Après la date à laquelle la dénonciation par un Etat partie prend effet, le Comité n'entreprend l'examen d'aucune question nouvelle concernant cet Etat.</p>
+                                        <p>Article 90<br>
+                                          1. Au bout de cinq ans à compter de la date d'entrée en vigueur de la présente Convention, chacun des Etats parties pourra formuler à tout moment une demande de révision de la présente Convention par voie de notification écrite adressée au Secrétaire général de l'Organisation des Nations Unies. Le Secrétaire général communiquera alors tout amendement proposé aux Etats parties à la présente Convention, en leur demandant de lui faire savoir s'ils sont en faveur de la convocation d'une conférence des Etats parties aux fins d'étudier les propositions et de voter à leur sujet. Au cas où, dans les quatre mois suivant la date de cette communication, au moins un tiers des Etats parties se prononcerait en faveur de la convocation d'une telle conférence, le Secrétaire général convoquera la conférence sous les auspices de l'Organisation des Nations Unies. Tout amendement adopté par une majorité des Etats parties présents et votants sera présenté à l'Assemblée générale pour approbation.<br>
+                                          2. Les amendements entreront en vigueur lorsqu'ils auront été approuvés par l'Assemblée générale de Nations Unies et acceptés par une majorité des deux tiers des Etats parties, conformément à leurs règles constitutionnelles respectives.<br>
+                                          3. Lorsque ces amendements entreront en vigueur, ils seront obligatoires pour les Etats parties qui les auront acceptés, les autres Etats parties restant liés par les dispositions de la présente Convention et par tout amendement antérieur qu'ils auront accepté.</p>
+                                        <p>Article 91<br>
+                                          1. Le Secrétaire général de l'Organisation des Nations Unies recevra et communiquera à tous les Etats le texte des réserves qui auront été faites par des Etats parties au moment de la signature, de la ratification ou de l'adhésion.<br>
+                                          2. Aucune réserve incompatible avec l'objet et le but de la présente Convention ne sera autorisée.<br>
+                                          3. Les réserves peuvent être retirées à tout moment par voie de notification adressée au Secrétaire général de l'Organisation des Nations Unies, lequel informe tous les Etats. La notification prendra effet à la date de réception.</p>
+                                        <p>Article 92<br>
+                                          1. Tout différend entre deux ou plusieurs Etats parties concernant l'interprétation ou l'application de la présente Convention qui n'est pas réglé par voie de négociation sera soumis à l'arbitrage, à la demande de l'un d'entre eux. Si, dans les six mois qui suivent la date de la demande d'arbitrage, les parties ne parviennent pas à se mettre d'accord sur l'organisation de l'arbitrage, l'une quelconque d'entre elles pourra soumettre le différend à la Cour internationale de Justice, en déposant une requête conformément au Statut de la Cour.<br>
+                                          2. Tout Etat partie pourra, au moment où il signera la présente Convention, la ratifiera ou y adhérera, déclarer qu'il ne se considère pas lié par les dispositions du paragraphe 1 du présent article. Les autres Etats parties ne seront pas liés par lesdites dispositions envers un Etat partie qui aura formulé une telle déclaration.<br>
+                                          3. Tout Etat partie qui aura formulé une déclaration conformément aux dispositions du paragraphe 2 du présent article pourra à tout moment retirer cette déclaration par voie de notification adressée au Secrétaire général de l'Organisation des Nations Unies.</p>
+                                        <p>Article 93<br>
+                                          1. La présente Convention, dont les textes anglais, arabe, chinois, espagnol, français et russe font également foi, sera déposée auprès du Secrétaire général de l'Organisation des Nations Unies.<br>
+                                          2. Le Secrétaire général de l'Organisation des Nations Unies transmettra une copie certifiée conforme de la présente Convention à tous les Etats.<br>
+                                          En foi de quoi les plénipotentiaires soussignés, dûment habilités par leurs gouvernements respectifs, ont signé la présente Convention.</p>
+                                        <p> </p>
+                                        <p>&nbsp;</p>
+                                        <p>© HCDH 1996-2007Plan du site  Contactez-nous </p>
+                                        <p><br>
+                                        </p>
+    				</div>
+			 </div>
+                         <div id="image1">
+                                    <img class="zoomTarget" data-closeclick="true" src="img/revue/theme3/1.jpg" width="200" height="280">
+                         </div>
+			<div id="image2">
+                                    <img class="zoomTarget" data-closeclick="true" src="img/revue/theme3/2.jpg" width="80" height="60">
+                         </div>
+			<iframe class="player" id="player1" width="300" height="60" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F88678783&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+			<iframe class="player" id="player2" width="300" height="60" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F88678678&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
+
+
+		</div>
+		</div>
+		<script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-40455655-1']);
+                _gaq.push(['_trackPageview']);
+                (function() {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+                </script>
+	</body>
+</html>
