@@ -13,6 +13,15 @@
 
 */
 
+#cache{
+	position: fixed;
+	height: 100vh;
+	width: 10px;
+	background: linear-gradient(270deg, rgba(255,255,255,0.8), rgba(255,0,0,0) 100%); 
+	top: 0px;
+	right: 0px;
+	z-index: 5600;
+}
 
 @font-face {
     font-family: 'resistanceregular';
@@ -38,7 +47,9 @@ a{
 	color: black;
 }
 
+body{
 
+}
 #bodyindex{
 	/*background-color: #fafafa;*/
 	background-color: white;
@@ -58,47 +69,34 @@ a{
 */
 
 #about{
-	z-index: 2;
+	z-index: 5500;
 	position: absolute;
 	top: 30px;
 	right: 60px;
-	width: 90px;
+	width: 100px;
 	height: 20px;
 	font-family: 'Cabin Sketch', arial;
 	text-transform: uppercase;
 	font-size: 0.8em;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.2em;
 	text-align: center;
 
 }
 
 
-#haut{
-	z-index: 3;	
-	position: absolute;
-	top: 101vh;
-	text-align: right;
-	right: 60px;	
-	width: 110px;
-	height: 20px;
-	font-family: 'Cabin Sketch', arial;
-	text-transform: uppercase;
-	font-size: 0.8em;
-	letter-spacing: 0.3em;	
-	display: block;
-}
 
 header{
+	background-color: white;
+
 	height: 75px;
-	position: absolute;
-	z-index: 5;
+	z-index: 5000;
 	overflow: none;
 	top: 0;
 	left: 0;
 	/*background-color: white;	*/
 	/*background-color: #fcffd9;*/
 	/*border: 1px solid black;*/
-	width: 45vw;
+	width: 100vw;
 
 
 }
@@ -129,7 +127,6 @@ h1{
 	margin-top: 2px;
 	margin-left: 80px;
 	height: auto;
-	width: calc(45vw - 120px);
 	display: inline-block;	
 	vertical-align: top;
 
@@ -151,7 +148,7 @@ h1 a {
 
 #logohaut{
 	display: inline-block;
-	position: fixed;
+	position: absolute;
 	z-index: 1;
 	vertical-align: top;
 	margin-top: 12px;
@@ -177,12 +174,14 @@ h1 a {
                                    
 */
 
-
+#footerindex{
+	position: fixed;
+}
 
 footer{
 	height: 50px;
 	z-index: 5;	
-	position: fixed;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	width: 100vw;
@@ -239,16 +238,23 @@ h2{
 }
 
 
-nav{
+#footerindex nav{
 	vertical-align: middle;	
-	width: 500px;
-	margin-right: 20px;
+	width: 80vw;
+	margin: auto;
 	/*background-color: rgba(255,255,255,1);*/
 
 }
 
+nav{
+	vertical-align: middle;	
+	width: 40vw;
+	margin: auto;
+	/*background-color: rgba(255,255,255,1);*/
 
-ul{
+}
+
+footer ul{
 	display: flex;
 	width: 100%;
 	align-items: center;	
@@ -257,7 +263,7 @@ ul{
 
 }
 
-li a{
+footer li a{
 	display: flex;
 	align-items: center;
 	font-family: 'etc-trispace','Overpass Mono', monospace;
@@ -308,8 +314,175 @@ h5:hover{
 
 
 #navmobile{
-	display: none;
+
+	width: 75vw;
+	margin: 50px auto;
+/*	border: 1px solid green;*/
+	justify-content: space-between;	
 }
+
+
+#navmobile figure{
+	width: 100%;
+	height: 10px;
+	background-color: white;
+	overflow: hidden;
+}
+
+#navmobile figure img{
+display: block;
+opacity: 0.2;
+position: relative;
+
+
+}
+
+section a{
+	position: relative;
+
+}
+
+#navmobile #ens{
+	padding: 20px;
+	display: inline-block;
+	height: 20px;
+	width: 45%;
+	transition: .3s ease all;
+}
+
+
+#navmobile #ens:hover{
+}
+
+
+
+#navmobile #ens:hover .filtre{
+	opacity: 1;
+}
+
+
+#navmobile #free{
+	height: 20px;
+	padding: 20px;
+	display: inline-block;
+	width: 40%;
+	transition: .3s ease all;
+}
+
+
+#navmobile #free:hover{
+}
+
+
+
+#navmobile #free:hover .filtre{
+	opacity: 1;
+}
+
+
+.filtre{/*ici c'est les ul*/
+	width: 100%;
+	opacity: 0;
+	margin-top: 10px;
+	transition: .3s ease all;
+
+	/*border: 1px solid red;*/
+
+}
+
+.filtrecours{/*ici c'est les li*/
+
+	font-family: 'etc-trispace';	
+	font-variation-settings: "wght" 100, "wdth" 90;
+	text-transform: initial;	
+	margin-bottom: 10px;
+	margin-left: 20px;
+	font-size: 0.9em;
+	line-height: 1em;
+}
+
+.filtre a{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+#navmobile aside{
+	display: flex;
+	height: auto;
+
+}
+
+aside .checkon{
+	position: relative;
+	width: 10px;
+	height: 10px;	
+	top:1px;
+	left: -21px;	
+ 	opacity: 0;
+ 	transition: all 0.3s ease-out;
+	
+}
+
+aside:hover .checkon{
+	opacity: 1;
+	left: -11px;
+}
+
+aside:hover .checkoff{
+ 	opacity: 0;
+ 	left: 10px;	
+}
+
+aside .checkoff{
+	position: relative;
+	width: 10px;
+	height: 10px;	
+	top:1px;
+ 	opacity:1;
+ 	left: 0px;	
+ 	top: -2px;
+ 	transition: all 0.3s ease-out;
+	
+}
+
+
+.checkon .checkoff{
+	margin-right: 5px;
+}
+
+
+h3{
+	font-family: 'etc-trispace';
+	text-transform: initial;
+	font-variation-settings: "wght" 290 , "wdth" 80 ;		
+	height: auto;
+	font-size: 0.9em;
+	color: black;
+
+}
+
+
+
+.reference{
+	color:#FF783A;
+}
+
+.technique{
+	color:#03CEA4;
+}
+
+.cours{
+	color:#ff2c5e;
+}
+
+
+
 
 
 
@@ -388,48 +561,18 @@ h5:hover{
 
 
 
-.containeriframe{
-	display: inline-block;
-	overflow: hidden;
-/*	overflow: scroll;
-	-webkit-overflow-scrolling: touch;	*/	
-
-/*	border: 1px solid red;*/
-	width: 31vw;	
-	margin:0px 1vw 95px 1vw;	
-	height: calc(100vh - 120px);
-	 -webkit-height: calc(100vh - 135px);
-	 -moz-height: calc(100vh - 135px);		
-
-}
-
-
-.colonne{
-	/*background-color: #fafafa;*/
-	width: 100%;
-	height: 100%;
-	display: inline-block;	
-	vertical-align: top;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;		
-	/* -webkit-height: calc(100vh - 95px);
-	 -moz-height: calc(100vh - 95px);*/
-	/*border: 1px solid #fafafa;*/	
-	box-shadow: 0px 0px 5px #f2f2f2;
-
-}
-
-#free{
-	width: 40vw;
-	margin-bottom: 0px;	
-
-}
 
 #prez{
-	width: 50vw;
-	margin-bottom: 0px;
-	background-color: white;
-
+	width: 105vw;
+	height: 100vh;
+	/*padding: 5px 5px 0px 5px;*/	
+	overflow: scroll;
+	position: fixed;
+	left: -5vw;
+	top: 0px;
+	z-index: 6000;
+	display: none;	
+	background-color: rgba(0,0,0,0.3);
 }
 
 
@@ -438,19 +581,22 @@ h5:hover{
 }
 
 
-
 #prez p{
-
+/*	width: 80vw;
+*/	
+	width: 40vw;
+	height: auto;
+	margin:100px auto;
+	overflow: scroll;
 	font-size: 0.9em;
 	line-height: 1.6em;
 	font-family: 'Overpass', sans-serif;
 	color: black;
 	font-weight: 400;
-	padding: 1em 5em 20px 3em;
-	display: inline-block;	
+	padding: 30px 2em 20px 2em;
 	vertical-align: top;
-	text-align: justify;
-	margin-top: 9px;
+	text-align: left;
+	background-color: white;
 
 
 }
@@ -509,7 +655,17 @@ iframe{
 ██╔══██║██╔══██╗   ██║   ██║██║     ██║     ██╔══╝  ╚════██║
 ██║  ██║██║  ██║   ██║   ██║╚██████╗███████╗███████╗███████║
 ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝╚══════╝╚══════╝╚══════╝
-                                                            
+
+	color:#FF783A; orange
+
+
+	color:#03CEA4; vert
+
+
+
+	color:#ff2c5e; rose
+
+                                                          
 
 */
 
@@ -517,13 +673,42 @@ iframe{
 	margin-top: 25px;
 }
 
+.conteneurcours{
+	height: 350px;
+	width: 100vw;
+	margin-top: 50px;
+	display: flex;
+	overflow: scroll;
+	align-items: stretch;
+/*	box-shadow: 1px 1px 10px #03CEA4;
+*/
+/*	border: 1px solid green;
+*/}
+
+.conteneurcours::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+
+}
+
+.conteneurcours::-webkit-scrollbar-thumb {
+ height: 3px;
+/*	background-color: rgba(255,120,58,0.3);
+	background-color: #FFF1FA ;*/
+	background: linear-gradient(0.25turn, #ffffff, #F0F0EF, #ffffff);
+}
+
+
+
+
 article{
-	width: 90%;
-	height: auto;
-	/*border: 1px solid green;*/
-	box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+	width: 320px;
+	height: 320px;
+/*	border: 1px solid green;
+*/	box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
 /*	margin:0px 20px 110px 20px;*/
-	margin: 10px auto 65px;
+	margin-right: 2rem;
+	margin-left: 1rem;	
 	transition: all ease 0.4s;
 
 }
@@ -545,15 +730,30 @@ article:hover .plus{
 
 }
 
-article:hover img{
-	transform: scale(1.2, 1.2);
+
+
+article img{
+	transform: scale(1, 1);
 	transition: 1s all ease;		
 }
+article:hover img{
+	transform: scale(1.2, 1.2);
+}
 
-aside{
-	width: 	90%;
-	height: 20px;
-	margin:0px auto 30px;
+
+.espace{
+	height: 90px;
+}
+
+.titreaside{
+writing-mode: vertical-lr;
+text-orientation: mixed;
+transform: rotate(180deg);
+	width: 300px;
+	height: 300px;
+	margin-right: 25px;
+		margin-left: 40px;
+
 /*	border: 1px solid green;*/
 }
 
@@ -566,6 +766,34 @@ h3{
 	color: black;
 
 }
+
+
+
+
+.titre{
+	width: 100%;
+	height: 50px;
+	font-size: 1em;
+	margin-left: 0px;
+	padding-bottom: 0px;
+	margin-top: -2px;
+	margin-bottom: 10px;
+	line-height: 1.4em;
+	font-family: 'Overpass', sans-serif;	
+	font-weight: 600;
+	/*font-family: 'etc-trispace','Overpass Mono', monospace;
+	font-variation-settings: "wght" 500, "wdth" 80;	*/	
+
+}
+
+#suivi{
+	height: 370px;
+}
+
+#suivi .titre{
+		height:90px;
+}
+
 
 .light{
 		font-variation-settings: "wght" 90, "wdth" 140;		
@@ -586,121 +814,6 @@ h3{
 
 
 
-.filtre{
-	width: 100%;
-	margin-bottom: 20px;
-	height: 40px;
-	/*border: 1px solid red;*/
-
-}
-
-.listefiltre{
-	width: 90%;
-	margin:auto;
-
-}
-
-
-.titreliste{
-	font-family: 'etc-trispace','Overpass Mono', monospace;
-	font-size: 0.6em;
-	height: 10px;
-	margin-bottom: -10px;
-	font-variation-settings: "wght" 90, "wdth" 80;		
-}
-
-
-
-.filtre a{
-	text-decoration: none;
-}
-
-
-.listefiltre{
-	display: flex;
-	justify-content: space-between;	
-	margin-top: 15px;
-}
-
-
-.titrefiltre{
-	margin-left: -8px;
-	font-variation-settings: "wght" 90, "wdth" 80;		
-
-}
-
-.filtrecours, .filtretechnique, .filtreref, .filtreall{
-	display: flex;
-	justify-content: space-between;
-}
-
-
-.checkon, .checkoff{
-	width: 10px;
-	height: 10px;
-	margin-right: 2px;
-	transition: all 0.3s ease-out;
-}
-
-.checkon{
-	position: relative;
-	left: -22px;
-	top: -1px;	
-
-}
-
-.checkoff{
-	position: relative;
-	top: -2px;
-	left: -2px;
-}
-
-.filtrecours, .filtretechnique, .filtreref, .filtreall{
-	display: flex;
-}
-
-.filtrecours .checkon, .filtretechnique .checkon, .filtreref .checkon, .filtreall .checkon{
- 	opacity: 0;
-}
-
-.filtrecours:hover .checkon, .filtretechnique:hover .checkon, .filtreref:hover .checkon, .filtreall:hover .checkon{
-	opacity: 1;
-	left: -17px;
-}
-
-.filtrecours:hover .checkoff, .filtretechnique:hover .checkoff, .filtreref:hover .checkoff, .filtreall:hover .checkoff{
- 	opacity: 0;
- 	left: 10px;	
-}
-
-/*
-
-.headerarticletheorie .boiteimage{
-	box-shadow:  0px 0px 5px rgba(255,44,94,0.0);
-	transition: all 0.5s linear;
-
-}
-
-.headerarticletheorie .boiteimage:hover{
-
-	box-shadow:  0px 0px 5px rgba(255,44,94,0.4);
-
-}
-
-.headerarticletechnique .boiteimage{
-	box-shadow: 0px 0px 5px rgba(3,206,164,0.0);
-	transition: all 0.5s linear;
-
-}
-
-.headerarticletechnique .boiteimage:hover{
-
-	box-shadow: 0px 0px 5px rgba(3,206,164,0.4);
-
-}
-*/
-
-
 .contour{
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.1);	
 	/*border: 1px solid darkgrey ;*/
@@ -710,28 +823,11 @@ h3{
 
 .boitelegendearticle{
 	width: 100%;
-	align-items: top;
-	justify-content: space-between;
 	margin-top: 10px;
 
 }
 
 
-.titre{
-	width: 100%;
-	height: auto;
-	font-size: 1em;
-	margin-left: 0px;
-	padding-bottom: 0px;
-	margin-top: -2px;
-	margin-bottom: 10px;
-	line-height: 1.4em;
-	font-family: 'Overpass', sans-serif;	
-	font-weight: 600;
-	/*font-family: 'etc-trispace','Overpass Mono', monospace;
-	font-variation-settings: "wght" 500, "wdth" 80;	*/	
-
-}
 
 .italic{
 	font-style: italic;
@@ -974,6 +1070,19 @@ h3{
 
 
 
+.conteneurfree{
+	display: grid;
+	width: 90vw;
+	margin: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+
+
+
+
 
 .headerarticleportfolio{
 	width: 100%;
@@ -1009,7 +1118,7 @@ h3{
 */
 
 .conteneurarticle{
-	width: 90%;
+	width: 40vw;
 	margin:0px auto 50px;
 
 }
@@ -1017,7 +1126,7 @@ h3{
 
 
 .retour{
-	margin-top: 30px;
+	margin-top: 10px;
 	font-size: 0.7em;
 	width: 100%;
 	height: auto;
