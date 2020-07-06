@@ -620,7 +620,12 @@ h3{
 .boiteimage{
 	display: flex;
 
-
+}
+.boiteimage img{
+	display: block;
+	width: 100%;
+	top: -20px;
+	position: relative;
 }
 
 .boiteintrohtml{
