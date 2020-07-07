@@ -62,7 +62,7 @@ body{
 #about:before{
 	content: "☞";
 	font-family: 'Cabin Sketch', arial;
-	
+
 }
 
 
@@ -337,12 +337,12 @@ h5:hover{
 
 
 #prez{
-	width: 105vw;
+	width: 100vw;
 	height: 100vh;
 	/*padding: 5px 5px 0px 5px;*/	
 	overflow: scroll;
 	position: fixed;
-	left: -5vw;
+	left: 0vw;
 	top: 0px;
 	z-index: 6000;
 	display: none;	
@@ -358,9 +358,9 @@ h5:hover{
 #prez p{
 /*	width: 80vw;
 */	
-	width: 60vw;
-	height: auto;
-	margin:100px auto;
+	width:80vw;
+	height: 70vh;
+	margin:10vh auto;
 	overflow: scroll;
 	font-size: 0.9em;
 	line-height: 1.6em;
