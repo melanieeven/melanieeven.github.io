@@ -62,7 +62,7 @@ body{
 #about{
 	z-index: 5500;
 	position: absolute;
-	top: 15px;
+	top: 55px;
 	right: 10px;
 	width: 55px;
 	font-family: 'Cabin Sketch', arial;
@@ -83,7 +83,7 @@ header{
 	z-index: 5000;
 	overflow: none;
 	margin-top: 0px;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	left: 0;
 	/*background-color: white;	*/
 	/*background-color: #fcffd9;*/
