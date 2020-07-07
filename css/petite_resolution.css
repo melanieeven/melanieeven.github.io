@@ -350,6 +350,25 @@ h5:hover{
 }
 
 
+
+#prez p::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+
+
+}
+
+#prez p::-webkit-scrollbar-thumb {
+ height: 3px;
+  width: 5px;
+
+/*	background-color: rgba(255,120,58,0.3);*/
+	background-color:#ff2c5e;  
+/*	background: linear-gradient(0.25turn, #ffffff, #F0F0EF, #ffffff);*/
+}
+
+
+
 .important{
 		font-weight: 700;
 }
