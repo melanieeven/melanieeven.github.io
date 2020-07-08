@@ -1155,10 +1155,6 @@ p a {
 }
 
 
-.navsec{
-display: flex;
-justify-content: space-between;
-}
 
 .precedent, .suivant{
 	margin-top: 30px;
@@ -1286,9 +1282,22 @@ margin: auto;
 
 }
 
+.navsec{
+justify-content: space-between;
+align-items:baseline;
+position: fixed;
+left: 78vw;
+bottom: 10px;
+width: 20vw;
+}
+
 
 
 .lien {
+	width: 20vw;
+	position: fixed;
+	top: 100px;
+	left: 45vw;
 	font-size: 0.7em;
 	line-height: 1.4em;
 	text-decoration: none;
