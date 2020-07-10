@@ -83,16 +83,13 @@ body{
 
 }
 
-
-
 header{
 	background-color: white;
-	height: 75px;
+	display: flex;
+	height: 95px;
 	z-index: 5000;
 	overflow: none;
-	margin-top: 0px;
-	margin-bottom: 40px;
-	left: 0;
+
 	/*background-color: white;	*/
 	/*background-color: #fcffd9;*/
 	/*border: 1px solid black;*/
@@ -101,28 +98,44 @@ header{
 
 }
 
+
+/*
+header:hover{
+	transition: height 1s ease;
+
+	height: 100vh;
+	width: 45vw;
+	box-shadow: 5px 0px 50px rgba(0,0,0,0.2);	
+	background-color: white;	
+}
+
+header:active{
+	height: 100vh;	
+}*/
+
 h1{
-	font-size: 1em;
+	font-size: 0.9em;
 	line-height: 1.3em;
-	font-family: 'etc-trispace','Ubuntu Mono', monospace;
-	font-variation-settings: "wght" 200, "wdth" 80;	
+	font-family: 'Overpass', sans-serif;
 	overflow: hidden;
 	color: black;
-	padding: 10px;
-	margin-top: 2px;
-	margin-left: 70px;
+	margin-top: 20px;
+	margin-left: 28px;
 	height: auto;
 	display: inline-block;	
 	vertical-align: top;
 
 
 
-
 }
 
+
 h1 strong{
-	text-transform: initial;
-	font-variation-settings: "wght" 500, "wdth" 80;	
+		letter-spacing: 0.1em;
+	/*	display: inline-block;
+		padding-bottom: 0.4em;*/
+	text-transform: uppercase;
+	font-weight:bold; 
 }
 
 
@@ -135,15 +148,15 @@ h1 a {
 
 #logohaut{
 	display: inline-block;
-	position: absolute;
+	position: relative;
 	z-index: 1;
 	vertical-align: top;
-	margin-top: 18px;
-	width: 40px;
+	margin-top: 15px;
+	width: 30px;
 }
 #logohaut img{
 	transform: rotate(-0.02turn);
-	margin-left: 25px;
+	margin-left: 15px;
 	width: 30px;
 }
 
