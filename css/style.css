@@ -149,15 +149,15 @@ h1 a {
 
 #logohaut{
 	display: inline-block;
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	vertical-align: top;
 	margin-top: 13px;
 	width: 60px;
 }
 #logohaut img{
-	transform: rotate(-0.02turn);
-	margin-left: 15px;
+/*	transform: rotate(-0.02turn);
+*/	margin-left: 15px;
 	width: 45px;
 }
 
