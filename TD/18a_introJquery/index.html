@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>horloge</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">	
+		<link rel="stylesheet" href="style/webfonts/font.css">
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+	</head>
+	<body>
+
+		<div id="heure">
+			
+		</div>
+
+
+
+
+		<script>
+		    $( function() {
+		      
+		    	timerIni = 0;
+		    	setInterval(Horloge, 1000);
+
+		    	function Horloge() {
+		    		timerIni++;
+		    		$("#heure").text(timerIni);
+		    	}
+
+		      
+
+		    } );
+    </script>
+	</body>
+</html>

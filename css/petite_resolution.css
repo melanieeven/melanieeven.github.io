@@ -68,18 +68,36 @@ body{
 
 
 #about{
-	z-index: 5500;
+	z-index: 5700;
 	position: absolute;
-	top: 80px;
+	top: 60px;
 	right: 10px;
 	width: 105px;
 	font-family: 'Cabin Sketch', arial;
 	text-transform: uppercase;
 	font-size: 0.7em;
 	letter-spacing: 0.1em;
-	text-align: center;
+	text-align: right;
 
 	border-bottom: 0px solid black;
+
+}
+
+
+#TD{
+	z-index: 5701;
+	position: absolute;
+	top: 20px;
+	display: none;
+	right: 10px;
+	width: 100px;
+	height: 20px;
+	font-family: 'Overpass', sans-serif;	
+	text-transform: uppercase;
+	font-size: 0.8em;
+	letter-spacing: 0.2em;
+	text-align: right;
+/*	background-color: blue;	*/
 
 }
 
@@ -474,6 +492,101 @@ iframe{
                                                           
 
 */
+
+
+
+.conteneurTD{
+	display: block;
+	width: 90vw;
+	margin-left: 40px ;
+
+
+}
+
+.conteneurTD ul{
+	margin-top: 20px;
+	width: 70%;
+	overflow: scroll;	
+
+}
+
+.conteneurTD ul::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+
+}
+
+.conteneurTD ul::-webkit-scrollbar-thumb {
+ height: 3px;
+/*	background-color: rgba(255,120,58,0.3);*/
+	background-color: lightgrey;
+
+}
+
+.conteneurTD ul h3{
+	margin-bottom: 10px;
+	/*color:  #ff2c5e;*/
+
+}
+#langagesweb h3, #langagesweb li, #langagesweb a{
+	color:  #ff2c5e;
+}
+
+#motion h3, #motion li, #motion a{
+	color:  #03CEA4;
+}
+
+.conteneurTD ul li{
+
+	font-family: 'etc-trispace','Overpass Mono', monospace;
+	font-variation-settings: "wght" 400, "wdth" 90;	
+	line-height: 1.8em;	
+	height: auto;
+	font-size: 0.9em;
+	color: black;
+}
+
+.conteneurTD ul li a:hover{
+	text-decoration: underline;
+
+}
+
+
+.edu{
+	margin-top: 25px;
+}
+
+.conteneurcours{
+	height: 350px;
+	width: 100vw;
+	margin-top: 20px;
+	display: flex;
+	overflow: scroll;
+	align-items: stretch;
+/*	box-shadow: 1px 1px 10px #03CEA4;
+*/
+/*	border: 1px solid green;
+*/}
+
+.conteneurcours::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+
+}
+
+.conteneurcours::-webkit-scrollbar-thumb {
+ height: 3px;
+/*	background-color: rgba(255,120,58,0.3);
+	background-color: #FFF1FA ;*/
+	background: linear-gradient(0.25turn, #ffffff, #F0F0EF, #ffffff);
+}
+
+
+
+
+
+
+
 
 .edu{
 	margin-top: 25px;

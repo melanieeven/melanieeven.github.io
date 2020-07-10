@@ -1,0 +1,105 @@
+	body{
+	background-color: #A9E5BB;
+}
+
+header{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+
+
+h1{
+	font-family: 'Space Mono', monospace;
+	font-size: 3em;
+	padding: 3px;
+	color: black;
+
+
+}
+
+h1 a, footer a{
+	color: black;
+ 	border-bottom: 2px solid currentColor;
+  	display: inline-block;
+  	line-height: 1.1;
+  	text-decoration: none;
+
+
+}
+
+footer{
+     
+     position: fixed;
+     bottom: 0px;
+     width: 100vw;
+
+}
+
+p{
+     font-family: 'Space Mono', monospace;
+     font-size: 1em;
+     padding-bottom: 10px;
+     padding-top: 5px;   
+     padding-left: 3px;       
+
+
+}
+
+hr{
+	background-color: black;
+	height: 3px;
+	border: black;
+}
+
+section{
+	height: 100vh;
+}
+
+h2{
+	text-align: left;
+	font-size: 5em;
+	font-family: 'Space Mono', monospace;
+	font-weight: bold;
+
+}
+
+
+li{
+	border: 3px solid black;
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: black;
+	display: inline-block;
+	margin: 5px;
+}
+
+ul{
+	position: fixed;
+	bottom: 105px;
+	left: 40vw;
+}
+
+#text1{
+	position: fixed;
+	top: 30vh;
+	left: 10vw;
+    transition: 0.5s all ease-out;
+}
+
+#text2{
+		color: #A9E5BB;
+	position: fixed;
+	top: 40vh;
+	left: 20vw;
+    transition: 0.5s all ease-out;
+}
+
+#text3{
+	color: #A9E5BB;
+	position: fixed;
+	top: 60vh;
+	left: 20vw;
+    transition: 0.5s all ease-out;
+}

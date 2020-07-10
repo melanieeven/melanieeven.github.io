@@ -1,0 +1,20 @@
+body{
+	background-color: #BFD7EA;
+	transition: all 1.5s ease;
+}
+
+
+
+p{
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 200px;
+	font-size: 6em;
+	color: black;
+	line-height: 1.1em;
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 700, "wdth" 200;
+	transition: all 1.5s ease;
+	z-index: 8;
+}
+ 

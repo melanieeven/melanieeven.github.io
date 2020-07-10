@@ -1,0 +1,71 @@
+
+
+body{
+	background-color: lightgrey;
+	transition: all 1.5s ease;
+}
+
+
+
+p{
+	letter-spacing: 0.5em;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 200px;
+	font-size: 12em;
+	color: #595959;
+	font-family: 'etc-trispace';
+	font-variation-settings: "wght" 900, "wdth" 200;
+	transition: font-variation-settings 1.5s ease;
+}
+ 
+
+@media screen and (max-width:1024px) {
+/* iPad portrait & landscape */
+	body{
+		background-color: grey;
+	}
+	p{
+		font-variation-settings: "wght" 700, "wdth" 150;
+		transition: font-variation-settings 1.5s ease;
+		color: darkgrey;	
+		letter-spacing: 0.3em;
+
+	}
+}
+
+@media screen and (max-width:768px) {
+/* iPad portrait */
+	body{
+		background-color: darkgrey;
+	}
+	p{
+		font-variation-settings: "wght" 300, "wdth" 90;
+		transition: font-variation-settings 1.5s ease;
+		color: grey;
+		letter-spacing: 0.1em;
+
+	}
+
+}
+
+@media screen and (max-width:667px) {
+/* Mobiles paysage */
+/* iPhone6+ paysage = 960px */
+/* iPhone6 paysage = 667px */
+/* iPhone5s paysage = 568px */
+/* iPhone4 paysage = 468 px */
+	body{
+		background-color: #595959;
+		transition: font-variation-settings 1.5s ease;
+	}
+
+	p{
+		font-variation-settings: "wght" 100, "wdth" 50;
+		transition: font-variation-settings 1.5s ease;
+		color: darkgrey;
+
+	}
+
+}
+

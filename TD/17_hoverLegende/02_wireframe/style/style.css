@@ -1,0 +1,83 @@
+*{
+	transition: all 0.5s ease-out;
+}
+
+body{
+	background:url(../images/bg.jpg) repeat;
+}
+
+
+figure {
+	width: 250px;
+	height: 300px;
+	margin: 100px auto;
+	overflow: hidden;
+	background-color: white;
+	box-shadow: 0px 0px 5px #3F0D12;
+
+}
+
+figure img{
+	position: relative;
+	top: 0px;
+}
+
+figure:hover img{
+	top: -100px;
+
+}
+
+figcaption{
+	text-align: center;
+	padding-top:40px;
+	color: #255c99;
+	font-family: 'Montserrat';
+	font-weight: 900;
+	height: 50px;
+	letter-spacing: 0.3em;
+	font-size: 1em;
+	line-height: 0.9em;
+	text-transform: uppercase;
+	background-color: white;
+	border: 5px solid #255c99;
+	position: relative;
+	top: -3px;
+}
+
+figure:hover figcaption{
+	top: -103px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

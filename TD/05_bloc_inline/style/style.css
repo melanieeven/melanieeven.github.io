@@ -1,0 +1,67 @@
+h1, strong, em, p, a, ul, li, ol{
+	border: 2px solid black;
+	margin: 15px;
+	padding: 15px;
+}
+
+
+
+ul{
+	background-color: pink;
+	width: 600px;
+	display: inline-block;
+}
+
+
+ol{
+	background-color: teal;
+	width: 300px;
+	display: inline-block;	
+}
+
+
+/*
+h1{
+	background-color: teal;
+	text-transform: uppercase;
+}
+
+strong,em{
+	background-color: lightblue;
+	font-weight: 900;
+}
+
+em{
+	font-style: italic;
+}
+
+p{
+	background-color: teal;
+}
+
+a{
+	background-color: lightblue;
+}
+
+
+
+li{
+	background-color: teal;
+}
+
+ol{
+	background-color: pink;
+	width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+*/

@@ -1,0 +1,48 @@
+
+
+/****************************************début de mon code CSS************************************/
+
+body{
+  background-color: #ebeded;
+  animation: couleur 1s linear infinite alternate;
+  }
+  /* 
+  animation-name
+  animation-duration
+  animation-timing-function
+  animation-iteration-count
+  animation-direction
+  */
+
+
+
+
+
+
+@keyframes couleur {
+  0% { 	
+  	  background-color: #ebeded;
+  	}
+
+  20% { 
+  		
+  		background-color: #56CBF9;
+    }
+   40% { 
+      
+      background-color: #FF729F;
+  }
+   60% { 
+      
+      background-color: #81F4E1;
+  }
+   80% { 
+      
+      background-color:  #D3C4D1;
+  }
+   100% { 
+      
+     background-color: #FF1053;
+  }
+
+}

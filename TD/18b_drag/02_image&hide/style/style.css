@@ -1,0 +1,21 @@
+figure{
+	width: 250px;
+	margin:50px auto;
+
+}
+
+figure img{
+	width: 100%;
+}
+
+p{
+	width: 250px;
+	margin:50px auto;
+	text-align: center;
+	display: flex;
+}
+
+span{
+	margin: auto;
+	font-size: 2em;
+}

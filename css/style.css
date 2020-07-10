@@ -69,9 +69,9 @@ body{
 */
 
 #about{
-	z-index: 5500;
+	z-index: 5700;
 	position: absolute;
-	top: 30px;
+	top: 25px;
 	right: 60px;
 	width: 100px;
 	height: 20px;
@@ -79,7 +79,25 @@ body{
 	text-transform: uppercase;
 	font-size: 0.8em;
 	letter-spacing: 0.2em;
-	text-align: center;
+	text-align: right;
+/*	background-color: red;*/
+
+}
+
+#TD{
+	z-index: 2;
+	position: absolute;
+	top: 30px;
+	left: 25px;
+	
+	height: 20px;
+	font-family: 'Overpass', sans-serif;	
+	text-transform: uppercase;
+	font-size: 0.8em;
+	letter-spacing: 0.2em;
+	text-align: left;
+	border-bottom: 1px solid black;
+/*	background-color: blue;	*/
 
 }
 
@@ -93,9 +111,9 @@ header{
 	overflow: none;
 
 	/*background-color: white;	*/
-	/*background-color: #fcffd9;*/
+
 	/*border: 1px solid black;*/
-	width: 100vw;
+	width: 50vw;
 
 
 }
@@ -150,7 +168,7 @@ h1 a {
 #logohaut{
 	display: inline-block;
 	position: fixed;
-	z-index: 1;
+	z-index: 25;
 	vertical-align: top;
 	margin-top: 13px;
 	width: 60px;
@@ -661,6 +679,66 @@ iframe{
                                                           
 
 */
+
+
+
+.conteneurTD{
+	display: flex;
+	width: 100vw;
+	margin-left: 82px ;
+
+
+}
+
+.conteneurTD ul{
+	width: 35%;
+	height: calc(100vh - 115px);
+	overflow: scroll;	
+	margin-right: 2rem;
+
+}
+
+.conteneurTD ul::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+
+}
+
+.conteneurTD ul::-webkit-scrollbar-thumb {
+ height: 3px;
+/*	background-color: rgba(255,120,58,0.3);*/
+	background-color: lightgrey;
+
+}
+
+.conteneurTD ul h3{
+	margin-bottom: 10px;
+	/*color:  #ff2c5e;*/
+
+}
+#langagesweb h3, #langagesweb li, #langagesweb a{
+	color:  #ff2c5e;
+}
+
+#motion h3, #motion li, #motion a{
+	color:  #03CEA4;
+}
+
+.conteneurTD ul li{
+
+	font-family: 'etc-trispace','Overpass Mono', monospace;
+	font-variation-settings: "wght" 400, "wdth" 90;	
+	line-height: 1.8em;	
+	height: auto;
+	font-size: 0.9em;
+	color: black;
+}
+
+.conteneurTD ul li a:hover{
+	text-decoration: underline;
+
+}
+
 
 .edu{
 	margin-top: 25px;

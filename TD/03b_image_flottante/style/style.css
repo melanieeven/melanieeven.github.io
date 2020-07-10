@@ -1,0 +1,54 @@
+
+
+body{
+	background: /*url(../images/coeur.png) no-repeat fixed bottom right,*/  
+				url(../images/chat.gif);
+
+
+}
+
+
+
+p{
+	width:800px;
+	height: auto;
+	margin: 100px auto;
+	padding:10px;
+	background-color: #F87666;
+	font-family: 'VG5000';
+	font-size: 1.4em;
+	color: #BA3B46;
+	line-height: 1.2em;
+	text-align: justify;
+
+}
+
+
+p img{
+	float: left;
+	
+	margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

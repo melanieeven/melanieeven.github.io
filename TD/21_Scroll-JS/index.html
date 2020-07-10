@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style/reset.css" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/webfonts/font.css">
+
+		<title>Site Web</title>
+
+
+		<script src="js/jquery.js"></script>
+	</head>
+
+	<body>
+		<ul>
+			<a href="#part1" class="scrollTo" ><li></li></a>
+			<a href="#part2" class="scrollTo"><li></li></a>
+			<a href="#part3" class="scrollTo"><li></li></a>
+
+		</ul>
+	
+		<section id="part1">
+			<h1>Bonjour</h1>
+		</section>
+
+		<section id="part2">
+			<h1>Je m'appelle</h1>
+		</section>
+
+
+		<section id="part3">
+			<h1>Mélanie Even</h1>
+		</section>		
+
+
+
+
+	<script>
+		$(document).ready(function() {
+			$('.scrollTo').on('click', function() { // Au clic sur un élément
+				var page = $(this).attr('href'); // Page cible
+				var speed = 750; // Durée de l'animation (en ms)
+				$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+				return false;
+			});
+		});
+	</script>
+
+
+	</body>
+
+</html>

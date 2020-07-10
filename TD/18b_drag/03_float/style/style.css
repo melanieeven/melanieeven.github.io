@@ -1,0 +1,32 @@
+body{
+	    font-family: 'VG5000';
+	    background-color: #034732;
+
+}
+
+article{
+	width: 700px;
+	margin:50px auto; 
+	font-size: 1.3em;
+	line-height: 1.3em;
+	letter-spacing: 0.05em;
+	padding: 50px;
+	background-color: #B0D0D3;
+	color: #034732;	
+	box-shadow: 10px 10px 0px #F4C95D;
+}
+
+article:active{
+	box-shadow: 0px 0px 0px #F4C95D;
+
+}
+
+div{
+	width: 200px;
+	height: 200px;
+	background-color: #F4C95D;
+	float: left;
+	margin-right:20px; 
+	box-shadow: -5px -5px 5px rgba(0,0,0,0.2) inset;
+
+}

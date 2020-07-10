@@ -1,0 +1,51 @@
+
+
+/****************************************début de mon code CSS************************************/
+
+body{background-color: pink;}
+
+
+h1{ font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	font-size:0.7em;
+	margin: 20px auto;
+	width: 300px;
+}
+
+
+
+p{
+	width: 300px;
+	margin: 20px auto;
+	background-color: white;
+	border: 3px solid black;
+	font-size:1em;
+	font-family: 'Raleway', sans-serif;
+	line-height:1.3em;
+	box-shadow: 10px 10px 0px black;
+
+}
+
+
+#bloctexte1{
+	padding: 30px;
+}
+
+
+
+#bloctexte2{
+	padding: 10px;
+}
+
+
+
+#bloctexte3{
+	padding: 0px;
+}
+
+
+
+
+
+
+
