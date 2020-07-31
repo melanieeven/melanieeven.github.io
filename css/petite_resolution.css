@@ -13,7 +13,9 @@
 
 */
 
-
+i{
+	font-style: italic;
+}
 @font-face {
     font-family: 'resistanceregular';
     src: url('font/resistance_generale-webfont.eot');
@@ -149,6 +151,7 @@ h1{
 
 
 h1 strong{
+	display: block;
 		letter-spacing: 0.1em;
 	/*	display: inline-block;
 		padding-bottom: 0.4em;*/
@@ -160,9 +163,12 @@ h1 strong{
 
 h1 a {
 	font-variation-settings: "wght" 400, "wdth" 80;	
-	text-decoration: underline;
 }
 
+
+h1 #actif{
+	text-decoration: underline;
+}
 
 #logohaut{
 	display: inline-block;
@@ -578,7 +584,7 @@ iframe{
  height: 3px;
 /*	background-color: rgba(255,120,58,0.3);
 	background-color: #FFF1FA ;*/
-	background: linear-gradient(0.25turn, #ffffff, #F0F0EF, #ffffff);
+	background: linear-gradient(0.25turn, #d8d8d7, #d8d8d7, #d8d8d7);
 }
 
 

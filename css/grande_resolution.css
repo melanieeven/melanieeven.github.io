@@ -12,7 +12,9 @@
  
 
 */
-
+i{
+	font-style: italic;
+}
 #cache{
 	position: fixed;
 	height: 100vh;
@@ -155,9 +157,12 @@ h1 strong{
 
 h1 a {
 	font-variation-settings: "wght" 400, "wdth" 80;	
-	text-decoration: underline;
 }
 
+
+h1 #actif{
+	text-decoration: underline;
+}
 
 #logohaut{
 	display: inline-block;
@@ -205,6 +210,12 @@ footer{
 /*	background-color: rgba(255,255,255,1);*/
 
 
+}
+
+#footerfree{
+	position: fixed;
+	bottom: 0;
+	left: 0;	
 }
 
 #logo{
@@ -749,7 +760,8 @@ iframe{
 .conteneurcours{
 	height: 350px;
 	width: 100vw;
-	margin-top: 50px;
+	margin-top: 20px;
+	margin-bottom: 30px;	
 	display: flex;
 	overflow: scroll;
 	align-items: stretch;
@@ -1145,13 +1157,26 @@ h3{
 
 .conteneurfree{
 	display: grid;
-	width: 90vw;
-	margin: auto;
-	grid-template-columns: 1fr 1fr 1fr;
+	width: 85vw;
+	margin: 100px auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
 
 
+
+
+.conteneurfree article{
+	width: 320px;
+	height: 320px;
+/*	border: 1px solid green;
+*/	box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+/*	margin:0px 20px 110px 20px;*/
+	margin-right: 0rem;
+	margin-left: 0rem;	
+	transition: all ease 0.4s;
+
+}
 
 
 
