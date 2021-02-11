@@ -1023,16 +1023,18 @@ h3{
 
 .conteneurfree{
 	display: grid;
-	width:95vw;
-	margin: auto;
-	grid-column-gap: 10px;
+	width:var(--largeur);
+	margin-bottom: 20px;
+	margin-left: 80px;
+	grid-column-gap: 3vw;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+
 
 }
 
 
 .conteneurfree article{
-	width: 320px;
+	width: 20vw;
 	height: 320px;
 /*	border: 1px solid green;
 */	box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
