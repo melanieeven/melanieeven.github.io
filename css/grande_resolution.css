@@ -199,14 +199,14 @@ h1 #actif{
 footer{
 	height: 50px;
 	z-index: 5;	
-	position: fixed;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #fafafa;
+	/*background-color: #fafafa;*/
 /*	background-color: rgba(255,255,255,1);*/
 }
 
@@ -271,7 +271,7 @@ h2{
 nav{
 	vertical-align: middle;	
 	width: 40vw;
-	margin: auto;
+/*	margin: auto;*/
 	/*background-color: rgba(255,255,255,1);*/
 
 }
@@ -1187,7 +1187,7 @@ h3{
 
 .headerarticleportfolio .boiteimage{
 	width: 100%;	
-	height: 350px;
+	/*height: 350px;*/
 	overflow: hidden;
 	display: flex;
 }
