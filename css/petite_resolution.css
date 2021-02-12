@@ -608,8 +608,8 @@ iframe{
 article{
 	width: 90vw;
 	height: 320px;
-/*	border: 1px solid green;
-*/	box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+	border: 1px solid green;
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
 /*	margin:0px 20px 110px 20px;*/
 	margin:auto;
 	transition: all ease 0.4s;
