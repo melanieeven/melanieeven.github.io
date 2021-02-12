@@ -55,11 +55,11 @@ a{
 }
 
 body{
-background-color: white;
+	
 }
 #bodyindex{
 	/*background-color: #fafafa;*/
-	background-color: white;
+	/*background-color: white;*/
 }
 
 /*
@@ -111,7 +111,7 @@ background-color: white;
 
 
 header{
-	background-color: white;
+	/*background-color: white;*/
 	display: flex;
 	height:80px;
 	z-index: 5000;
@@ -346,7 +346,7 @@ h5:hover{
 #navmobile figure{
 	width: 100%;
 	height: 10px;
-	background-color: white;
+	/*background-color: white;*/
 	overflow: hidden;
 }
 
@@ -619,7 +619,7 @@ sup{
 	align-items: stretch;
 /*	box-shadow: 1px 1px 10px #03CEA4;*/	
 /*border-right: 1px dashed black;*/
-background-color: white;
+/*background-color: white;*/
 	/*border-left: 1px solid green;*/
 }
 
@@ -668,9 +668,9 @@ article:hover{
 
 article:hover .plus{
 	transform-origin: center;		
-	background-color: /*#ff2c5e*/ lightgrey;
+	background-color: rgba(0,0,0,0)/*lightgrey*/;
 	transform: rotate(360deg);	
-	color: white;
+	color: black;
 	padding-bottom: 1px;
 	transition: 1s all ease;	
 

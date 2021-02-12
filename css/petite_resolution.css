@@ -577,7 +577,7 @@ iframe{
 
 .conteneurcours::-webkit-scrollbar {
   width: 0px;
-  height: 1px;
+  height: 3px;
 
 }
 
