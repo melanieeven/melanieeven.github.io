@@ -140,7 +140,7 @@ h1{
 	overflow: hidden;
 	color: black;
 	margin-top: 20px;
-	margin-left: 28px;
+	margin-left: 18px;
 	height: auto;
 	display: inline-block;	
 	vertical-align: top;
@@ -177,7 +177,7 @@ h1 #actif{
 	vertical-align: top;
 	margin-top: 15px;
 	margin-left: 15px;
-	width: 30px;
+	width: 45px;
 }
 /*#logohaut img{
 	transform: rotate(-0.02turn);
