@@ -100,7 +100,8 @@ body{
   bottom: 5px;
   left: 0;
   right: 0;
-  animation-duration: 0.75s;
+
+
 
 }
 
@@ -110,9 +111,33 @@ body{
 }
 
 @keyframes linkOut {
-  from {right:0%;}
-  50% {right: 100%;}
-  100% {right: 0%;}
+  from {
+  	right:100%;
+  	left:0;
+
+  		}
+ 
+  33% {
+  	right: 0;
+  	left:0;
+
+  		}
+  
+  66% {
+  	right: 0;
+	left:100%;
+  		}
+  		
+  66.1% {
+  	right: 100%;
+	left:0;
+  		}		
+
+
+  100% {
+  	right: 0%;
+	left:0;
+  		}
 }
 
 #about:hover{
