@@ -184,12 +184,13 @@ h1 #actif{
 	z-index: 25;
 	vertical-align: top;
 	margin-top: 13px;
-	width: 60px;
+	width: 45px;
+	margin-left: 15px;
 }
 #logohaut img{
 /*	transform: rotate(-0.02turn);
-*/	margin-left: 15px;
-	width: 45px;
+	margin-left: 15px;
+	width: 45px;*/
 }
 
 

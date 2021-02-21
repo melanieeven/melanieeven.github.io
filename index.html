@@ -24,6 +24,7 @@
 		<link rel="stylesheet" media="screen and (min-width: 2000px)" href="css/grande_resolution.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1200px -->	
 		<script type="text/javascript" src="js/jquery.js"></script>
     	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    	<script src="js/lottie.js" type="text/javascript"></script>
 
 		<title>Mélanie Even | designer graphique</title>
 	</head>
@@ -45,7 +46,8 @@
 			<header>
 				
 					<div id="logohaut">
-					<img src="image/logo1.png" alt="logo Mélanie Even Enseignante Graphiste">
+						
+						<!-- <img src="image/logo1.png" alt="logo Mélanie Even Enseignante Graphiste"> -->
 					</div>
 				
 
@@ -1875,7 +1877,17 @@
 	        $("#about").click(function(){
 	          $("#prez").show();
 	        });
-    	</script>
+   
+
+			lottie.loadAnimation({
+							  container: document.getElementById('logohaut'), // the dom element that will contain the animation
+							  renderer: 'svg',
+							  loop: false,
+							  autoplay: true,
+							  path: 'image/data.json' // the path to the animation json
+			});
+		
+		</script>
 
 	</body>
 
