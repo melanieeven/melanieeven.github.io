@@ -1778,7 +1778,7 @@
 			<a href="index.html">
 				<div id="logo">
 					
-					<img src="image/logo.png" alt="logo Mélanie Even Enseignante Graphiste">
+					<!-- <img src="image/logo.png" alt="logo Mélanie Even Enseignante Graphiste"> -->
 					<!--<h2 style="margin-left: 15px;">👋</h2>-->
 					
 				</div>
@@ -1885,6 +1885,14 @@
 							  loop: false,
 							  autoplay: true,
 							  path: 'image/data.json' // the path to the animation json
+			});
+
+			lottie.loadAnimation({
+							  container: document.getElementById('logo'), // the dom element that will contain the animation
+							  renderer: 'svg',
+							  loop: true,
+							  autoplay: true,
+							  path: 'image/logobas.json' // the path to the animation json
 			});
 		
 		</script>
