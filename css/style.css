@@ -682,7 +682,7 @@ sup{
 
 .conteneurcours::-webkit-scrollbar {
   width: 0px;
-  height: 1px;
+  height: 5px;
 
 
 }
@@ -690,7 +690,7 @@ sup{
 .conteneurcours::-webkit-scrollbar-thumb {
 
 /*	background-color: rgba(255,120,58,0.3);*/
-	background:black ;
+	background:black;
 
 
 
