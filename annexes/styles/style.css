@@ -265,7 +265,7 @@ a{
 	z-index:301;
 	width: 80px;
 	height: 80px;
-	border: 1px solid red;
+
 
 }
 
@@ -293,7 +293,7 @@ https://www.topster.fr/texte-ascii/banner3.html
 	height: 85vh;
 	width: 100%;
 	background-color: black;	
-	background-image: url(../import/beaub4.png);
+	background-image: url(../import/beaub4.jpg);
 	background-size: cover;
 	border: 1px solid black;
 	position: relative;
