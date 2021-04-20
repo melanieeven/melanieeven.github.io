@@ -1515,6 +1515,13 @@ motion
 
 		<script>
 
+			lottie.loadAnimation({
+							  container: document.getElementById('logo'), // the dom element that will contain the animation
+							  renderer: 'svg',
+							  loop: false,
+							  autoplay: true,
+							  path: 'import/data.json' // the path to the animation json
+			});
 
 				$(document).ready(function() {
 					$('.premierslider').magnificPopup({
@@ -1661,13 +1668,6 @@ motion
 
 
 
-			lottie.loadAnimation({
-							  container: document.getElementById('logo'), // the dom element that will contain the animation
-							  renderer: 'svg',
-							  loop: false,
-							  autoplay: true,
-							  path: 'import/data.json' // the path to the animation json
-			});
 
 
 
