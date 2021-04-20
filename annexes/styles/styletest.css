@@ -1,0 +1,21 @@
+
+section{
+	width: 100vw;
+	height: 100vh;
+}
+
+nav{
+	width: 98vw;
+	position: fixed;
+	bottom: 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav div{
+	height: 10vh;
+	width: 200px;
+	border: 1px solid black;
+
+
+}

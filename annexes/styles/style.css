@@ -1,0 +1,1167 @@
+@font-face {
+    font-family: 'Palanquin';
+    src: url('font/Palanquin/Palanquin-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'SkolarSans-Variable';
+    src:url('font/SkolarSans-Variable-Italic.woff2') format("woff2-variations");
+    font-weight:100 900;
+    font-stretch:80 115;
+    font-style:italic;
+    } 
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('font/Palanquin/Palanquin-Bold.eot');
+
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('font/Palanquin/Palanquin-ExtraLight.eot');
+
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('font/Palanquin/Palanquin-Light.eot');
+
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('font/Palanquin/Palanquin-Thin.eot');
+
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('font/Palanquin/Palanquin-SemiBold.eot');
+
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('font/Palanquin/Palanquin-Medium.eot');
+
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+		font-family: "Handjet Variable Web";
+		src: url('font/HandjetVFWeb-All.woff2') format('woff2');
+
+}
+
+@font-face{
+    font-family: 'Source Sans 3 VF';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('font/WOFF2/VAR/SourceSans3VF-Roman.ttf.woff2') format('woff2'),
+         url('font/WOFF/VAR/SourceSans3VF-Roman.ttf.woff') format('woff'),
+         url('font/VAR/SourceSans3VF-Roman.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Source Sans 3 VF';
+    font-weight: 200 900;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('font/WOFF2/VAR/SourceSans3VF-Italic.ttf.woff2') format('woff2'),
+         url('font/WOFF/VAR/SourceSans3VF-Italic.ttf.woff') format('woff'),
+         url('font/VAR/SourceSans3VF-Italic.ttf') format('truetype');
+}
+
+
+@font-face {
+	src: url('font/Trispace[wdth,wght].woff2') format('woff2-variations'),
+			url('font/Trispace-VariableFont_wdth,wght.ttf') format('truetype');
+
+	font-family:'ETC Trispace Variable';
+    font-style: normal;
+    font-weight: 100 800;
+}
+
+
+@keyframes fond {
+  0% { 	
+	background-image: url(../import/beaub4.png);
+ 
+ 	     
+  	}
+
+  33% { 
+
+	background-image: url(../import/beaub1.png);
+  }
+
+   66% { 
+
+	background-image: url(../import/multi.png);
+  }
+
+
+   100% { 
+
+	background-image: url(../import/cours.png);
+  }
+
+}
+
+@keyframes variable {
+  0% { 	
+  	     font-weight: 600;
+ 
+ 	     
+  	}
+
+  50% { 
+
+     font-weight: 200;
+  }
+
+   100% { 
+
+     font-weight: 600;
+  }
+
+}
+
+
+/*
+                                     
+eeee e   e eeeee  eeeee eeeee eeeee  
+8  8 8   8 8   8  8   " 8  88 8   8  
+8e   8e  8 8eee8e 8eeee 8   8 8eee8e 
+88   88  8 88   8    88 8   8 88   8 
+88e8 88ee8 88   8 8ee88 8eee8 88   8
+
+*/
+
+:root {
+  --cursor-size: 80px;
+  --bg: #FAF7EE;
+}
+
+
+#cursor {
+  position: fixed;
+  top: calc(var(--cursor-size) * -0.5);
+  left:  calc(var(--cursor-size) * -0.5);
+  pointer-events: none;
+  mix-blend-mode: difference;  
+  filter: url(#goo);
+  z-index: 302;
+}
+
+.cursor-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  border-radius: var(--cursor-size);
+  background: var(--bg);
+  transform-origin: center center;
+}
+
+body {
+  overflow-x: hidden;
+   background-color: white;
+/*  cursor: none;*/
+}
+
+.goo{
+	display: none;
+}
+
+
+
+#conteneurENS, #conteneurMotion, #conteneurWeb, #conteneurFREE{
+	background-color: white;
+}
+
+
+
+
+
+/*
+                                     
+eeee e   e eeeee  eeeee eeeee eeeee  
+8  8 8   8 8   8  8   " 8  88 8   8  
+8e   8e  8 8eee8e 8eeee 8   8 8eee8e 
+88   88  8 88   8    88 8   8 88   8 
+88e8 88ee8 88   8 8ee88 8eee8 88   8
+
+*/
+
+
+
+
+
+
+
+
+/*
+html{
+	width: 100vw;
+	overflow-x: hidden;
+}
+*/
+body{
+    font-family: 'Source Sans 3 VF',Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+#header{
+	width: 100vw;
+/*	border: 1px solid black;*/
+	height: 2em;
+	line-height: 2em;	
+	background-color: white;
+}
+
+#header p{
+	padding: 0px 1em;
+	font-size: 0.7em;
+	font-family:'ETC Trispace Variable',Helvetica,Arial,sans-serif;
+  	font-variation-settings: "wght" 300, "wdth" 90;	
+
+}
+
+#logo{
+
+	position: absolute;
+	top:-70px;
+	left: -70px;
+	z-index:301;
+
+
+
+}
+
+#logo img{
+
+
+}
+
+
+/*
+#### ##    ## ######## ########   #######  
+ ##  ###   ##    ##    ##     ## ##     ## 
+ ##  ####  ##    ##    ##     ## ##     ## 
+ ##  ## ## ##    ##    ########  ##     ## 
+ ##  ##  ####    ##    ##   ##   ##     ## 
+ ##  ##   ###    ##    ##    ##  ##     ## 
+#### ##    ##    ##    ##     ##  #######  
+
+https://www.topster.fr/texte-ascii/banner3.html
+*/
+
+#intro{
+	position: relative;
+	transition: all ease;
+	height: 85vh;
+	width: 100%;
+	background-color: black;	
+	background-image: url(../import/beaub4.png);
+	background-size: cover;
+	border: 1px solid black;
+	position: relative;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+#intro p a {
+	border-bottom: 1px solid rgba(255,120,58,0.7);
+	transition: ease 0.1s all;
+
+}
+#intro p a:hover {
+	border-bottom: 1px solid rgba(3,206,164,0);	
+	background-color: rgba(255,120,58,0.7);
+
+}
+
+.vert{
+	border-bottom: 1px solid rgba(3,206,164,0.7);	
+}
+
+
+
+.rose{
+	border-bottom: 1px solid rgba(255,44,94,0.7);	
+}
+
+
+
+h1{
+    max-width: 60rem;
+	font-family:'ETC Trispace Variable',Helvetica,Arial,sans-serif;
+  	font-variation-settings: "wght" 200, "wdth" 90;	
+  	font-size: 1em;
+	margin: 1em auto;
+	font-weight: 200;
+	line-height: 2em;
+	text-align:left;
+	text-transform: uppercase;
+}
+
+h1 strong{
+  	font-variation-settings: "wght" 400, "wdth" 90;		
+	font-size: 1em;
+}
+
+
+#intro article{
+    max-width: 60rem;
+    width: 60vw;
+	margin: 4vh auto 4vh;
+	font-family: Palanquin,Helvetica,Arial,sans-serif;
+	position: relative;
+
+}
+
+#intro article h5{
+	font-size: 0.9em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+	color: white;
+	font-weight: 400;
+}
+
+#intro article p{
+	font-size: 1.8em;
+	line-height: 1.5em;
+	color: white;
+	font-weight: 200;	
+}
+
+
+
+#intro nav{
+    width: 60vw;	
+    max-width: 60rem;
+	margin: auto;
+/*	position: absolute;
+	right: 10%;
+	top: 0px;*/
+}
+
+#intro nav ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+#intro nav ul a{
+	font-size: 1em;
+	width: 40%;
+	height: 2.5em;
+	line-height: 2.5em;
+	border: 1px solid grey;
+	text-align: center;
+	font-family:'ETC Trispace Variable',Helvetica,Arial,sans-serif;
+  	font-variation-settings: "wght" 300, "wdth" 90;
+  	text-transform: uppercase;	
+  	transition: all ease 0.2s;
+}
+
+#intro nav ul a:hover{
+	background-color: rgba(255,255,255,0.2);
+	border: 1px solid rgba(255,255,255,0);	
+  	font-variation-settings: "wght" 400, "wdth" 100;	
+}
+
+
+
+
+
+
+
+#transition{
+	background-image: url(../import/beaub4.png);	
+	background-size: cover;
+	background-position: center;
+	height: 15vh;
+	width: 100%;	
+	display: flex;	
+	align-items: center;
+	justify-content: space-around;
+	font-family: Palanquin,Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    line-height: 1.3em;	
+}
+
+
+h4{
+	font-size: 1.8em;
+	line-height: 1.5em;
+	color: white;
+	font-weight: 200;	
+	text-transform: uppercase;
+
+}
+
+footer{
+	position: relative;
+	transition: all ease;
+	height: 30vh;
+	width: 100%;
+	background-color: black;	
+	background-image: url(../import/cours.png);	
+	background-size: cover;
+	background-position: center;
+	border: 1px solid black;
+	position: relative;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    font-family: 'Source Sans 3 VF',Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    line-height: 1.3em;
+}
+
+footer strong{
+	font-weight: 500;
+}
+
+footer strong a{
+	text-decoration: none;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ ######  ######## ####  ######  ##    ## ##    ## 
+##    ##    ##     ##  ##    ## ##   ##   ##  ##  
+##          ##     ##  ##       ##  ##     ####   
+ ######     ##     ##  ##       #####       ##    
+      ##    ##     ##  ##       ##  ##      ##    
+##    ##    ##     ##  ##    ## ##   ##     ##    
+ ######     ##    ####  ######  ##    ##    ##    
+
+
+*/
+
+
+/*h2:hover{
+  	animation: variable 1s ease 1 ;	
+}
+*/
+
+
+
+h2{
+	background-color: #03CEA4;
+	position: sticky;
+	position: -webkit-sticky;	
+	top: -2px;
+	z-index: 80;	
+
+	font-family: "Source Sans 3 VF",Helvetica,Arial,sans-serif;
+	font-weight: 400; 
+	text-transform: uppercase;
+	padding: 0px 20px;
+	color: black;
+/*	border: 1px solid red;*/
+
+}
+
+.titre{
+	line-height: 2em;
+	font-size: 1.2em;	
+}
+
+.titreweb{
+/*	background-color: #FF783A;*/
+	top: 1.7em;
+}
+
+
+.titredeux{
+	background-color:  white;
+	font-size: 0.8em;
+	line-height: 2em;		
+	top:2.6em;
+	padding: 0px 20px;		
+}
+
+.titretrois{
+	background-color: white;
+	top: 4.5em;
+	font-size: 0.8em;
+	line-height: 2em;		
+	padding: 0px 20px;		
+}
+
+.titrequatre{
+	background-color: white;
+	top: 6.4em;
+	font-size: 0.8em;
+	line-height: 2em;		
+	padding: 0px 20px;		
+}
+
+.intro{
+    max-width: 65rem;
+/*    width: 80vw;	*/
+    margin: 5em auto 5em;
+    background-color: white;
+/*    border: 1px solid red;*/
+
+}
+
+.citenseignement{
+    margin: 8em auto 5em;	
+}
+
+.intro p{
+	width: 68%;
+	line-height: 1.3em;
+	font-size: 1.5em;
+	padding: 0px 0px 0px;
+    font-family:'SkolarSans-Variable',Helvetica,Arial,sans-serif;
+    font-weight:200;
+    font-stretch:90;
+    font-style:italic;	
+    display: inline-block;
+    vertical-align: middle;
+/*	border: 1px solid blue;*/
+}
+
+.legendecitation{
+	border: 0px solid darkgrey;
+	box-shadow: 0px 0px 0px lightgrey;
+	font-size: 0.8em;
+	padding: 5px;
+	margin-left: 20px; 	
+	width: 24%;
+	display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2em;
+/*   	border: 1px solid blue; */
+}
+
+
+.legendecitation a{
+	text-decoration: underline;
+}
+.citweb{
+    padding-top: 60px;	
+}
+.auteur{
+	font-weight: 700;
+}
+
+.publication{
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+
+#lienenseignement { 
+
+}
+
+
+
+/*
+
+ ######  ########  ######  ######## ####  #######  ##    ## 
+##    ## ##       ##    ##    ##     ##  ##     ## ###   ## 
+##       ##       ##          ##     ##  ##     ## ####  ## 
+ ######  ######   ##          ##     ##  ##     ## ## ## ## 
+      ## ##       ##          ##     ##  ##     ## ##  #### 
+##    ## ##       ##    ##    ##     ##  ##     ## ##   ### 
+ ######  ########  ######     ##    ####  #######  ##    ## 
+
+
+*/
+
+
+
+#ensMotion,#ensWeb{
+    max-width: 80rem;
+/*    width: 80vw;*/
+	margin:0px auto 200px;
+
+}
+
+#freeCOM, #freeEdit, #freeMotion{
+	background-color: #161616;
+/*    width: 80vw;*/
+	margin:0px auto 0px;
+
+}
+
+
+#freeCOM .headerTP, #freeEdit .headerTP, #freeMotion .headerTP{
+/*	background-color: black;*/
+    max-width: 100rem;
+	margin:0px auto 100px;
+
+
+}
+
+
+
+#freeCOM h3, #freeEdit h3, #freeMotion h3{
+	color: white;
+	font-weight: 400;
+	opacity: 0.9;
+	font-size: 1.4em;
+}
+
+#freeCOM p, #freeEdit p, #freeMotion p{
+	color: white;
+	font-weight: 100;
+	opacity: 0.9;
+	font-size: 1em;
+
+}
+
+#freeCOM .asideTP p, #freeEdit .asideTP p, #freeMotion .asideTP p{
+	font-family: Palanquin,Helvetica,Arial,sans-serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+		opacity: 0.85;
+}
+
+#freeCOM .asideTP, #freeEdit .asideTP, #freeMotion .asideTP{
+		margin-top: 0px;
+}
+
+/*
+
+
+   ###    ########  ######## ####  ######  ##       ######## 
+  ## ##   ##     ##    ##     ##  ##    ## ##       ##       
+ ##   ##  ##     ##    ##     ##  ##       ##       ##       
+##     ## ########     ##     ##  ##       ##       ######   
+######### ##   ##      ##     ##  ##       ##       ##       
+##     ## ##    ##     ##     ##  ##    ## ##       ##       
+##     ## ##     ##    ##    ####  ######  ######## ########
+
+*/
+
+article{
+
+	margin-top: 3em;
+	line-height: 1.2em;
+	width: 100%;
+}
+
+
+.outils, .projets{
+	margin-top: 100px;
+}
+
+
+
+
+
+/*
+
+##     ## ########    ###    ########  ######## ########  
+##     ## ##         ## ##   ##     ## ##       ##     ## 
+##     ## ##        ##   ##  ##     ## ##       ##     ## 
+######### ######   ##     ## ##     ## ######   ########  
+##     ## ##       ######### ##     ## ##       ##   ##   
+##     ## ##       ##     ## ##     ## ##       ##    ##  
+##     ## ######## ##     ## ########  ######## ##     ## 
+
+
+*/
+
+article header ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+article header ul li{
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	width: 50%;
+	height: 2em;
+	line-height: 2em;
+	padding:0px 20px;
+
+}
+
+.actif{
+	font-family: "Source Sans 3 VF",Helvetica,Arial,sans-serif;
+	font-weight: 400; 
+	background-color: white;
+	color: black;
+	border: 1px solid #03CEA4;
+	transition: 1s ease all;
+	background-color: #03CEA4;	
+	z-index: 50;
+	text-decoration: none;
+}
+
+.actif:hover{
+
+}
+
+#methodeweb, #tdoutilsweb, #methodemotion, #tdoutilsmotion{
+
+}
+
+
+
+
+/*
+   ###     ######  #### ########  ######## 
+  ## ##   ##    ##  ##  ##     ## ##       
+ ##   ##  ##        ##  ##     ## ##       
+##     ##  ######   ##  ##     ## ######   
+#########       ##  ##  ##     ## ##       
+##     ## ##    ##  ##  ##     ## ##       
+##     ##  ######  #### ########  ######## 
+
+*/
+
+
+aside{
+/*	border: 1px solid darkgrey;
+*/	padding: 50px;
+	font-family: Palanquin,Helvetica,Arial,sans-serif;
+	color: #212121;
+	position: relative;
+	box-shadow: 0px 0px 5px lightgrey;
+}
+
+
+
+
+#freeCOM aside, #freeEdit aside, #freeMotion aside{
+		box-shadow: 0px 0px 0px lightgrey;
+}
+
+
+
+.remonte{
+	position: absolute;
+	bottom: 10px;
+	right: -80px;
+
+}
+
+#contenttdoutilsmotion{
+
+	display: none;
+}
+
+
+#contenttdoutilsweb{
+
+	display: none;
+}
+
+#contentmethodemotion{
+	display: none;
+}
+
+#contentmethodeweb{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.courspdf{
+	width: 100%;
+	margin: 20px;
+	display: inline-block;
+	vertical-align: baseline;
+
+}
+
+
+.refpdf{
+	width: 46%;
+	margin: 20px;
+	display: inline-block;
+	vertical-align: baseline;
+
+}
+
+
+.voirplus h3{
+	text-align: center;
+	margin: 2em auto;
+	width:100px;
+	font-size: 1em;
+	color: #FF783A;
+	font-weight: 400;
+	text-decoration: underline;
+	text-transform: uppercase;
+	transition: 0.3s ease all;
+}
+
+.voirplus h3:hover{
+  outline: none;
+}
+
+.voirplus h3:active{
+  outline: none;
+
+}
+
+.voirplus h3:focus{
+  outline: none;
+
+}
+.titrelivre{
+	font-style: italic;
+}
+
+.legende{
+	font-size: 1.2em;
+    line-height: 1.5em;
+    width: 65%;
+    margin-top: 3em;
+
+}
+
+.lienminisite{
+	font-weight: 400;
+	text-decoration: underline;
+	text-align: center;
+	line-height: 2em;
+	display: block;
+	font-size: 1.3em;
+}
+
+.boiteiframe{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-rows: 18rem 18rem 18rem;
+	grid-gap: 1em;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-bottom: 8rem;
+}
+
+.boiteiframesolo{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 40rem;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-bottom: 8rem;
+}
+
+.boiteiframe2lignes{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-rows: 18rem 18rem;
+	grid-gap: 1em;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-bottom: 8rem;
+}
+
+
+
+.boiteiframeProjets{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows:45rem 45rem 45rem 45rem 45rem 45rem;
+	grid-gap: 8rem;
+	justify-content: space-between;
+	margin-top: 50px;
+	margin-bottom: 8rem;
+}
+
+.boiteiframe iframe{
+	background-color: black;
+
+}
+
+
+.boiteiframeTP{
+		grid-template-columns: 1fr ;
+}
+
+.boiteiframe p{
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	font-family:'ETC Trispace Variable',Helvetica,Arial,sans-serif;
+  	font-variation-settings: "wght" 300, "wdth" 90;
+  	font-size:0.7em;	
+}
+
+
+
+
+
+
+.sliderimages{
+	width: 70vw;
+	margin: 0px auto 10em;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows:1fr 1fr 1fr 1fr ;
+	height: 100vh;	
+	grid-gap: 20px;
+	background-color: #161616;
+}
+
+
+
+
+.sliderimagesedi{
+	width: 85%;
+	margin: 0px auto 10rem;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows:1fr 1fr 1fr ;
+	height: 110vh;	
+	grid-gap: 20px;
+	background-color: #161616;
+}
+
+
+.sliderimagesedi figure{
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+
+}
+
+
+.sliderimagesedi figure img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+.sliderimages figure{
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+
+}
+
+
+.sliderimages figure img{
+	width: 100%;
+}
+
+#infographiefh{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end:5; 
+}
+
+#epi{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end:3; 
+}
+
+
+#infoAPD{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end:2; 
+
+}
+
+#charbon{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end:3; 	
+}
+
+#theatre{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end:4; 	
+}
+
+#sante{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end:4; 	
+}
+
+
+#infoghuit{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 4;
+	grid-row-end:5; 	
+}
+
+
+#sharegraphics{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end:5; 		
+}
+
+aside .headerTP{
+	max-width: 70rem;
+	margin: 2em auto;
+
+}
+
+
+
+#freeCOM aside .headerTP, #freeEdit aside .headerTP,  #freeMotion aside .headerTP{
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+/*	border: 1px solid green;*/
+	max-width: 65rem;
+}
+
+
+
+aside .presentationTP{
+	width: 60%;
+/*	margin: 30px auto;*/
+	vertical-align: top;
+	margin-top: 0.2em;
+	display: inline-block;
+	/*border: 1px solid red;*/
+
+}
+aside .asideTP{
+	width: 24%;
+	vertical-align: top;	
+/*	margin: 30px auto;*/
+	margin-top: -1.3em;
+/*	margin-left: 4em;*/
+	display: inline-block;
+	margin-left: 100px; 		
+
+}
+
+
+.presentationTP p{
+	font-size: 1.2em;
+	line-height: 1.5em;	
+	margin-top: 1.3em;	
+}
+
+.presentationTP h3{
+	font-size: 1.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.ajoutpresentationTP{
+	font-size: 1.2em;
+	line-height: 1.5em;	
+	margin-top: 1.3em;	
+	width: 60%;	
+	margin-bottom: 0px;
+}
+
+.ajoutpresentationTP a, .presentationTP p a{
+	line-height: 1em;
+	border-bottom: 1px solid black; 
+}
+
+.asideTP h5{
+	margin-top: 1.6em;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-family:'ETC Trispace Variable',Helvetica,Arial,sans-serif;
+  	font-variation-settings: "wght" 400, "wdth" 90;	
+  	color:#03CEA4;
+}
+
+.asideTP p{
+	margin-top: 0.2em;
+	line-height: 1.2em;
+	font-family: Palanquin,Helvetica,Arial,sans-serif;
+}
+
+
+
