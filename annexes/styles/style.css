@@ -252,6 +252,10 @@ a{
   	font-variation-settings: "wght" 300, "wdth" 90;	
 
 }
+#header p a{
+	text-decoration:underline;
+}
+
 
 #logo{
 
@@ -436,15 +440,24 @@ footer{
 	background-image: url(../import/cours.png);	
 	background-size: cover;
 	background-position: center;
-	border: 1px solid black;
 	position: relative;
+	display: flex;
+	align-items: center;
+
+}
+
+#boitefooter{
+
 	color: white;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
     font-family: 'Source Sans 3 VF',Helvetica,Arial,sans-serif;
     font-weight: 100;
-    line-height: 1.3em;
+    line-height: 1.6em;
+    max-width: 80rem;
+    width: 80vw;
+	margin:  auto;
 }
 
 footer strong{
@@ -453,10 +466,13 @@ footer strong{
 
 footer strong a{
 	text-decoration: none;
+	border-bottom: 0px solid white;	
 }
 
 footer a {
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	padding-bottom: -3px;
 }
 
 

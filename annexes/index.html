@@ -13,6 +13,8 @@
 		<script type="text/javascript" src="js/jquery-ui.js"></script>	
 		<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>	
 
+		<script src="js/lottie.js" type="text/javascript"></script>
+
 	</head>
 	<body>
 					 
@@ -23,7 +25,7 @@
 
 		<div id="header">	
 			<p>
-				Page d'annexes illustratives réalisée dans le cadre d'une VAE pour le Master Design et Sciences sociales
+				Page d'annexes illustratives support <a href="">d'un dossier</a> constitué dans le cadre d'une VAE pour le Master Design et Sciences sociales
 			</p>
 		</div>
 
@@ -37,7 +39,7 @@
 			</h1> -->	
 				<article>
 					<div id="logo">
-						<img src="import/logo.png" alt="logo mélanie even" />
+						<!-- <img src="import/logo.png" alt="logo mélanie even" /> -->
 					</div>
 					<!-- <h5>bienvenue</h5> -->
 					<h1>
@@ -588,7 +590,7 @@
 			<article class="outils">
 				<header>
 						<ul>
-							<li id="coursoutilsmotion" class="actif">cours, travaux dirigés</li>
+							<li id="coursoutilsmotion" class="actif">cours, TD</li>
 							<li id="tdoutilsmotion">travaux pratiques</li>
 						</ul>
 				</header>	
@@ -1130,7 +1132,7 @@ motion
 				<header>
 						<ul>
 							<li id="coursoutilsweb" class="actif">cours</li>
-							<li id="tdoutilsweb">travaux dirigés, travaux pratiques</li>
+							<li id="tdoutilsweb">TD, travaux pratiques</li>
 						</ul>
 				</header>
 				
@@ -1463,34 +1465,35 @@ motion
 		</svg>
  -->
 	<footer>
-		<p>
-			<strong><a href="#header" class="scrollTolight">Mélanie Even</a></strong><br/>
-			Design et développement<br/> 
-			melanieeven[arobase]gmail[dot]com<br/> 
-			<br/> 
-			Typographies : 
-				<a href="https://etceteratype.co/trispace" target="_blank">
-					ETC Trispace Variable
-				</a>,
-				<a href="https://fonts.google.com/specimen/Palanquin" target="_blank">
-					Palanquin
-				</a>,
-				<a href="https://www.rosettatype.com/blog/2014/11/26/On-Skolar-Sans" target="_blank">
-					Skolar Sans Variable
-				</a> 
+		<div id="boitefooter">
+			<p>
+				<strong><a href="#header" class="scrollTolight">Mélanie Even</a></strong><br/>
+				Design et développement<br/> 
+				melanieeven[arobase]gmail[dot]com<br/> 
+				<br/> 
+				Typographies : 
+					<a href="https://etceteratype.co/trispace" target="_blank">
+						ETC Trispace Variable
+					</a>,
+					<a href="https://fonts.google.com/specimen/Palanquin" target="_blank">
+						Palanquin
+					</a>,
+					<a href="https://www.rosettatype.com/blog/2014/11/26/On-Skolar-Sans" target="_blank">
+						Skolar Sans Variable
+					</a> 
 
-				<br/>
-				Cursor : <a href="https://twitter.com/lokesh" target="_blank"> Lokesh Dhakar</a> 
-				<br/>
-				Slider : <a href="https://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a>
+					<br/>
+					Cursor : <a href="https://twitter.com/lokesh" target="_blank"> Lokesh Dhakar</a> 
+					<br/>
+					Slider : <a href="https://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a>
 
-		</p>
-		<ul>
-			<li>linkedin</li>
-			<li>twitter</li>
-			<li>cv</li>
-		</ul>
-
+			</p>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/melanieev1" target="_blank" title="Linkedin">linkedin</a></li>
+				<li><a href="https://twitter.com/Melanie_Even" target="_blank" title="twitter">twitter</a></li>
+				<li>cv</li>
+			</ul>
+		</div>
 	</footer>
 
 
@@ -1657,6 +1660,13 @@ motion
 
 
 
+			lottie.loadAnimation({
+							  container: document.getElementById('logo'), // the dom element that will contain the animation
+							  renderer: 'svg',
+							  loop: false,
+							  autoplay: true,
+							  path: 'image/data.json' // the path to the animation json
+			});
 
 
 
