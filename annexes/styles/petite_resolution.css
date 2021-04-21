@@ -17,13 +17,17 @@
 .sliderimagesedi{
 	width: 90vw;
 	margin: 0rem auto 0px;
-	height: 35vh;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr 1fr  ;	
+	height: 80vh;
 	grid-gap: 10px;		
 }
 
 
 
-
+#masque{
+	display: none;
+}
 
 
 #intro article{
@@ -53,12 +57,14 @@ overflow-y: scroll;
 	top:-70px;
 	left: -30px;
 	z-index: 95;
-
-
+	width: 56px; 
+	height: 56px;
 
 }
+
+
+
 #logo img{
-	width: 70%;
 
 }
 
