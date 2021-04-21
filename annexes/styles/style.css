@@ -984,7 +984,8 @@ aside{
 
 
 .sliderimages{
-	width: 70vw;
+	max-width: 65rem;
+/*	width: 70vw;*/
 	margin: 0px auto 10em;
 	position: relative;
 	display: grid;
