@@ -182,4 +182,13 @@ article header ul li{
 
 footer{
 	display: block;
+	height: 45vh;	
 }
+
+#boitefooter{
+	display: block;
+	padding-top: 20px;
+}
+
+
+
