@@ -995,7 +995,7 @@ aside{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr ;
 	grid-template-rows:1fr 1fr 1fr 1fr ;
-	height: 65vh;	
+	height: 60vh;	
 	grid-gap: 20px;
 	background-color: #161616;
 }
