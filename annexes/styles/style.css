@@ -988,14 +988,14 @@ aside{
 
 
 .sliderimages{
-	max-width: 65rem;
-/*	width: 70vw;*/
+/*	max-width: 65rem;*/
+	width: 70vw;
 	margin: 0px auto 10em;
 	position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr ;
 	grid-template-rows:1fr 1fr 1fr 1fr ;
-	height: 60vh;	
+	height: 100vh;	
 	grid-gap: 20px;
 	background-color: #161616;
 }
