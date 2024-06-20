@@ -313,9 +313,13 @@ https://www.topster.fr/texte-ascii/banner3.html
 }
 
 .vert{
-	border-bottom: 1px solid rgba(3,206,164,0.7);	
+	border-bottom: 1px solid rgba(3,206,164,0.7);
+	transition: all 0.5s ease;	
 }
+.vert:hover{
+	border-bottom: 10px solid rgba(3,206,164,0.7);	
 
+}
 
 
 .rose{
