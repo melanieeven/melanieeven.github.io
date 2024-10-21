@@ -1,3 +1,13 @@
+
+/*
+color : 
+#FF783A - orange
+#03cea4 - vert
+
+
+*/
+
+
 @font-face {
     font-family: 'Palanquin';
     src: url('font/Palanquin/Palanquin-Regular.ttf') format('truetype');
@@ -143,6 +153,24 @@
   }
 
 }
+
+
+
+@keyframes variablehover {
+  0% { 	
+  		font-variation-settings: "wght" 300, "wdth" 90;
+ 
+ 	     
+  	}
+
+   100% { 
+
+  	font-variation-settings: "wght" 300, "wdth" 120;
+  }
+
+}
+
+
 
 
 /*
@@ -402,7 +430,7 @@ h1 strong{
 #intro nav ul a:hover{
 	background-color: rgba(255,255,255,0.2);
 	border: 1px solid rgba(255,255,255,0);	
-  	font-variation-settings: "wght" 400, "wdth" 100;	
+	animation:variablehover 3s  infinite alternate ease-in-out ;
 }
 
 
@@ -410,9 +438,8 @@ h1 strong{
 
 
 
-
 #transition{
-	background-image: url(../import/beaub4.png);	
+	background-image: url(../import/beaub3.jpg);	
 	background-size: cover;
 	background-position: center;
 	height: 25vh;
