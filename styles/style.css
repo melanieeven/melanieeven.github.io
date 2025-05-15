@@ -156,21 +156,6 @@ color :
 
 
 
-@keyframes variablehover {
-  0% { 	
-  		font-variation-settings: "wght" 300, "wdth" 90;
- 
- 	     
-  	}
-
-   100% { 
-
-  	font-variation-settings: "wght" 300, "wdth" 120;
-  }
-
-}
-
-
 
 
 /*
@@ -265,35 +250,17 @@ a{
 }
 
 
-#header{
-	width: 100vw;
-/*	border: 1px solid black;*/
-	height: 2em;
-	line-height: 2em;	
-	background-color: white;
-}
-
-#header p{
-	padding: 0px 1em;
-	font-size: 0.7em;
-	font-family:'ETC Trispace Variable',Helvetica,Arial,sans-serif;
-  	font-variation-settings: "wght" 300, "wdth" 90;	
-
-}
-#header p a{
-	text-decoration:underline;
-}
 
 
 #logo{
 	position: absolute;
-	top:70px;
-	left: -70px;
+	top:-120%;
+	left: 3%;
 	z-index:301;
 	width: 80px;
 	height: 80px;
 
-
+	cursor: grab;
 }
 
 #logo img{
@@ -317,7 +284,7 @@ https://www.topster.fr/texte-ascii/banner3.html
 #intro{
 	position: relative;
 	transition: all ease;
-	height: 85vh;
+	height: 100vh;
 	width: 100%;
 	background-color: black;	
 	background-image: url(../import/beaub4.jpg);
@@ -329,81 +296,13 @@ https://www.topster.fr/texte-ascii/banner3.html
 	align-items: center;
 	justify-content: space-around;
 }
-#intro p a {
-	border-bottom: 1px solid rgba(255,120,58,0.7);
-	transition: ease 0.1s all;
-
-}
-#intro p a:hover {
-	border-bottom: 1px solid rgba(3,206,164,0);	
-	background-color: rgba(255,120,58,0.7);
-
-}
-
-.vert{
-	border-bottom: 1px solid rgba(3,206,164,0.7);
-	transition: all 0.5s ease;	
-}
-.vert:hover{
-	border-bottom: 10px solid rgba(3,206,164,0.7);	
-
-}
-
-
-.rose{
-	border-bottom: 1px solid rgba(255,44,94,0.7);	
-}
-
-
-
-h1{
-    max-width: 60rem;
-	font-family:'ETC Trispace Variable',Helvetica,Arial,sans-serif;
-  	font-variation-settings: "wght" 200, "wdth" 90;	
-  	font-size: 1em;
-	margin: 1em auto;
-	font-weight: 200;
-	line-height: 2em;
-	text-align:left;
-	text-transform: uppercase;
-}
-
-h1 strong{
-  	font-variation-settings: "wght" 400, "wdth" 90;		
-	font-size: 1em;
-}
-
-
-#intro article{
-    max-width: 60rem;
-    width: 60vw;
-	margin: 4vh auto 4vh;
-	font-family: Palanquin,Helvetica,Arial,sans-serif;
-	position: relative;
-
-}
-
-#intro article h5{
-	font-size: 0.9em;
-	text-transform: uppercase;
-	margin-bottom: 1em;
-	color: white;
-	font-weight: 400;
-}
-
-#intro article p{
-	font-size: 1.8em;
-	line-height: 1.5em;
-	color: rgba(255,255,255,0.9);
-	font-weight: 200;	
-}
-
 
 
 #intro nav{
     width: 60vw;	
     max-width: 60rem;
 	margin: auto;
+	position: relative;
 /*	position: absolute;
 	right: 10%;
 	top: 0px;*/
@@ -411,12 +310,13 @@ h1 strong{
 
 #intro nav ul{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 #intro nav ul a{
 	font-size: 1em;
-	width: 40%;
+	width: 60%;
+	position: relative;
 	height: 2.5em;
 	line-height: 2.5em;
 	border: 1px solid grey;
@@ -424,13 +324,15 @@ h1 strong{
 	font-family:'ETC Trispace Variable',Helvetica,Arial,sans-serif;
   	font-variation-settings: "wght" 300, "wdth" 90;
   	text-transform: uppercase;	
-  	transition: all ease 0.2s;
+  	transition: all ease 1s;
+  	font-weight: 600;
 }
 
 #intro nav ul a:hover{
 	background-color: rgba(255,255,255,0.2);
 	border: 1px solid rgba(255,255,255,0);	
-	animation:variablehover 3s  infinite alternate ease-in-out ;
+	font-weight: 200;
+	font-variation-settings: "wght" 600, "wdth" 110;
 }
 
 
